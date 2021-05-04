@@ -1,0 +1,31 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+html, body, #mapid {
+    height: 100%;
+    width: 100vw;
+}
+
+/* #mapid {
+    height: calc(100vh - 100px);
+} */
+
+.leaflet-tooltip.my-labels {
+    background-color: transparent;
+    border: transparent;
+    box-shadow: none;
+}
+
+.leaflet-control-container .leaflet-routing-container-hide {
+    display: none;
+}
+
+.leaflet-container .leaflet-control-mouseposition {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 5px #bbb;
+    padding: 0 5px;
+    margin:0;
+    color: #333;
+    font: 11px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+  }

@@ -1,0 +1,2356 @@
+[
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "99 Ranch Market",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "013be8af39c441b089f27cb936fee5c6",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        186.33734,
+                        101.97241
+                    ],
+                    [
+                        186.35862,
+                        93.4289
+                    ],
+                    [
+                        178.18658,
+                        93.40854
+                    ],
+                    [
+                        176.96636,
+                        101.94906
+                    ],
+                    [
+                        149.15954,
+                        101.87977
+                    ],
+                    [
+                        149.01202,
+                        166.3491
+                    ],
+                    [
+                        173.77596,
+                        166.42082
+                    ],
+                    [
+                        173.76832,
+                        154.73942
+                    ],
+                    [
+                        214.68294,
+                        154.82169
+                    ],
+                    [
+                        214.69059,
+                        166.35044
+                    ],
+                    [
+                        238.51736,
+                        166.41948
+                    ],
+                    [
+                        238.68618,
+                        93.55699
+                    ],
+                    [
+                        231.21797,
+                        93.53838
+                    ],
+                    [
+                        229.12619,
+                        102.07903
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Flame Cafe",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "01f0930a08fc4996baa4ca1d5cbef56e",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        213.93454,
+                        166.39224
+                    ],
+                    [
+                        193.97224,
+                        166.39224
+                    ],
+                    [
+                        193.97224,
+                        155.13093
+                    ],
+                    [
+                        213.93454,
+                        155.13093
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Ross Dress for Less",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "04abc1a54b28424bb8881e076ebdaa65",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        291.0213,
+                        123.50278
+                    ],
+                    [
+                        291.0213,
+                        166.18927
+                    ],
+                    [
+                        241.65431,
+                        166.18927
+                    ],
+                    [
+                        241.65431,
+                        123.50278
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Skechers",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "05a7a7f771514ff68e1152f211aa28f4",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        291.28087,
+                        123.45977
+                    ],
+                    [
+                        291.28087,
+                        166.3211
+                    ],
+                    [
+                        317.17573,
+                        166.3211
+                    ],
+                    [
+                        317.17573,
+                        123.45977
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "D1-VACANT",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "09444fb680ea4c88b7198315009f5571",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        373.47035,
+                        66.88738
+                    ],
+                    [
+                        373.08973,
+                        156.36057
+                    ],
+                    [
+                        384.41369,
+                        156.40859
+                    ],
+                    [
+                        384.38807,
+                        162.11824
+                    ],
+                    [
+                        396.50916,
+                        162.16963
+                    ],
+                    [
+                        396.54171,
+                        156.46001
+                    ],
+                    [
+                        419.64414,
+                        156.55797
+                    ],
+                    [
+                        420.02476,
+                        67.08477
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "DDs Discounts",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "0ae36aae09824ee8baebfdb9dd4c53f2",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        420.84297,
+                        93.05423
+                    ],
+                    [
+                        450.03682,
+                        93.05423
+                    ],
+                    [
+                        450.03682,
+                        156.68339
+                    ],
+                    [
+                        420.84297,
+                        156.68339
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "UEI College",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "0e69ed16bf4743cba65c55487d579309",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        450.80934,
+                        104.70932
+                    ],
+                    [
+                        454.22052,
+                        104.70932
+                    ],
+                    [
+                        454.22052,
+                        107.29899
+                    ],
+                    [
+                        476.6464,
+                        107.63223
+                    ],
+                    [
+                        476.83266,
+                        156.83241
+                    ],
+                    [
+                        501.85806,
+                        156.83161
+                    ],
+                    [
+                        502.23868,
+                        67.15929
+                    ],
+                    [
+                        475.01905,
+                        67.04349
+                    ],
+                    [
+                        475.04506,
+                        61.20049
+                    ],
+                    [
+                        468.88903,
+                        61.17457
+                    ],
+                    [
+                        468.94451,
+                        48.13187
+                    ],
+                    [
+                        460.57478,
+                        48.0995
+                    ],
+                    [
+                        460.49328,
+                        67.25636
+                    ],
+                    [
+                        428.32178,
+                        67.09771
+                    ],
+                    [
+                        428.05565,
+                        92.63615
+                    ],
+                    [
+                        450.46002,
+                        92.75363
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "D4 - Vacant",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "0f21e1b0803f46409224ad7df43c011a",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        450.76447,
+                        156.68949
+                    ],
+                    [
+                        450.76447,
+                        105.08247
+                    ],
+                    [
+                        452.74588,
+                        105.08247
+                    ],
+                    [
+                        452.74588,
+                        108.16006
+                    ],
+                    [
+                        475.92246,
+                        108.16006
+                    ],
+                    [
+                        475.94683,
+                        156.68949
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "WSS Shoes",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "1a640e5ae417444d9c87d476370fb2a0",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        522.70304,
+                        185.21153
+                    ],
+                    [
+                        522.84429,
+                        142.47063
+                    ],
+                    [
+                        504.62551,
+                        142.27415
+                    ],
+                    [
+                        504.48424,
+                        185.02537
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Falafel & Sharma Plannet",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "20381d32f4564fa4af9ba3bdf416ca0c",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        193.6132,
+                        155.13093
+                    ],
+                    [
+                        193.6132,
+                        166.36623
+                    ],
+                    [
+                        174.49596,
+                        166.36623
+                    ],
+                    [
+                        174.49596,
+                        155.13093
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "99c Only Store",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "2561bfed675c4c67a67e2dc382980ef4",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        549.04763,
+                        142.40794
+                    ],
+                    [
+                        549.04763,
+                        185.11953
+                    ],
+                    [
+                        523.11718,
+                        185.11953
+                    ],
+                    [
+                        523.11718,
+                        142.40794
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Starbucks",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "2f9544444aeb48359e096b37f4b21c08",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        75.67855,
+                        256.7514
+                    ],
+                    [
+                        88.87226,
+                        256.7514
+                    ],
+                    [
+                        88.87226,
+                        271.07518
+                    ],
+                    [
+                        71.39198,
+                        271.13088
+                    ],
+                    [
+                        71.44769,
+                        266.79784
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "T-Mobile",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "34d22f03ac2948cfaaa047d04fed7d81",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        89.33155,
+                        271.10303
+                    ],
+                    [
+                        103.81959,
+                        271.10303
+                    ],
+                    [
+                        103.81959,
+                        256.66797
+                    ],
+                    [
+                        89.33155,
+                        256.66797
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Stanton Optical",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "469b82e1d8a64a6eb11070341c3cb0ed",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        47.83784,
+                        234.38562
+                    ],
+                    [
+                        39.47592,
+                        253.33274
+                    ],
+                    [
+                        52.09443,
+                        258.62224
+                    ],
+                    [
+                        59.85019,
+                        239.49393
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "PAD B2 - Vacant",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "4cd117f0dca84decbd34dc5598ec08c1",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        50.29502,
+                        228.42803
+                    ],
+                    [
+                        66.44284,
+                        235.25081
+                    ],
+                    [
+                        64.25123,
+                        240.96327
+                    ],
+                    [
+                        48.10342,
+                        234.14049
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Parking 1",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "50428e8a52f343f594d55abc038129b2",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        28.36074,
+                        278.19722
+                    ],
+                    [
+                        23.26279,
+                        274.08252
+                    ],
+                    [
+                        62.08438,
+                        175.76509
+                    ],
+                    [
+                        114.74681,
+                        175.76509
+                    ],
+                    [
+                        114.87129,
+                        256.01401
+                    ],
+                    [
+                        62.59084,
+                        254.59735
+                    ],
+                    [
+                        74.62563,
+                        224.3249
+                    ],
+                    [
+                        54.32937,
+                        216.11613
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Ono Hawaiian BBQ",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "5c7493ef2dff4d59bf4c06573876ecd7",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        70.03839,
+                        226.69344
+                    ],
+                    [
+                        66.58656,
+                        234.9982
+                    ],
+                    [
+                        50.4117,
+                        228.01719
+                    ],
+                    [
+                        53.86353,
+                        219.71242
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "F&M Bank",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "67ed8a878d5b497cb429935a39b51583",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        550.6695,
+                        256.57671
+                    ],
+                    [
+                        550.69008,
+                        250.83523
+                    ],
+                    [
+                        545.58475,
+                        250.81697
+                    ],
+                    [
+                        545.58957,
+                        249.07133
+                    ],
+                    [
+                        540.29222,
+                        249.0405
+                    ],
+                    [
+                        540.27172,
+                        269.22892
+                    ],
+                    [
+                        543.33478,
+                        269.25114
+                    ],
+                    [
+                        543.32753,
+                        271.09997
+                    ],
+                    [
+                        552.57099,
+                        271.14849
+                    ],
+                    [
+                        552.63671,
+                        256.58325
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Parking 2",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "68799e931b2949338bc20591e43adc6f",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        245.91662,
+                        288.63867
+                    ],
+                    [
+                        245.91662,
+                        243.42983
+                    ],
+                    [
+                        324.23096,
+                        243.42983
+                    ],
+                    [
+                        324.23096,
+                        169.9731
+                    ],
+                    [
+                        122.52892,
+                        172.97879
+                    ],
+                    [
+                        122.52892,
+                        244.07292
+                    ],
+                    [
+                        186.59237,
+                        244.07292
+                    ],
+                    [
+                        186.59237,
+                        288.63867
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Parking 3",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "6893c9a23d0a441d93900b6c2a2a14c6",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        373.91741,
+                        169.32631
+                    ],
+                    [
+                        373.91741,
+                        165.09975
+                    ],
+                    [
+                        499.16737,
+                        165.09975
+                    ],
+                    [
+                        499.16737,
+                        289.30327
+                    ],
+                    [
+                        336.98942,
+                        289.30327
+                    ],
+                    [
+                        336.98942,
+                        169.32631
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Golden 1 Credit Union",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "6e766465cf7b4519976bf21660956b4a",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        538.0091,
+                        250.89767
+                    ],
+                    [
+                        527.78908,
+                        250.88324
+                    ],
+                    [
+                        527.73802,
+                        269.22892
+                    ],
+                    [
+                        540.15442,
+                        269.24661
+                    ],
+                    [
+                        540.15025,
+                        249.0405
+                    ],
+                    [
+                        538.01666,
+                        249.0405
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Parking 4",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "6fa02129add644d2a0d36f2ede0631b0",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        628.31322,
+                        291.46702
+                    ],
+                    [
+                        628.31322,
+                        192.28005
+                    ],
+                    [
+                        502.24509,
+                        192.28005
+                    ],
+                    [
+                        502.24509,
+                        291.46702
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Tastea",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "74b8c6b01f054c4cb8ccf407eced8415",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        82.18859,
+                        161.05279
+                    ],
+                    [
+                        102.22201,
+                        161.05279
+                    ],
+                    [
+                        102.22201,
+                        155.22516
+                    ],
+                    [
+                        82.18859,
+                        155.22516
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "MetroPCS",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "75790961350440008f4514ab44055c14",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        82.18859,
+                        161.21745
+                    ],
+                    [
+                        102.05721,
+                        161.21745
+                    ],
+                    [
+                        102.12646,
+                        169.91724
+                    ],
+                    [
+                        100.16787,
+                        169.91724
+                    ],
+                    [
+                        100.16787,
+                        167.49606
+                    ],
+                    [
+                        92.99774,
+                        167.49606
+                    ],
+                    [
+                        92.99774,
+                        169.85096
+                    ],
+                    [
+                        79.81608,
+                        169.85096
+                    ],
+                    [
+                        79.81608,
+                        165.16828
+                    ],
+                    [
+                        82.18859,
+                        165.16828
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "7 - Vacant",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "75fced55ebb149bf947b7c40c02f7e2e",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        82.25319,
+                        155.08457
+                    ],
+                    [
+                        108.93875,
+                        155.08457
+                    ],
+                    [
+                        108.93875,
+                        148.56474
+                    ],
+                    [
+                        82.25319,
+                        148.56474
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Thai Issan",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "770a507d81874abf96392936bad58a65",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        113.6522,
+                        139.37857
+                    ],
+                    [
+                        113.64553,
+                        141.83681
+                    ],
+                    [
+                        115.66847,
+                        141.84296
+                    ],
+                    [
+                        115.7207,
+                        136.24762
+                    ],
+                    [
+                        89.23917,
+                        136.14732
+                    ],
+                    [
+                        89.20546,
+                        148.36072
+                    ],
+                    [
+                        108.89329,
+                        148.33411
+                    ],
+                    [
+                        108.93658,
+                        139.37222
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Spicy Dragon",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "778c3d1623f649e69cb72aa27fc694b6",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        93.41399,
+                        128.42106
+                    ],
+                    [
+                        93.41399,
+                        124.00207
+                    ],
+                    [
+                        115.73983,
+                        124.00207
+                    ],
+                    [
+                        115.73983,
+                        135.82167
+                    ],
+                    [
+                        95.91841,
+                        135.82167
+                    ],
+                    [
+                        95.86502,
+                        128.42106
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "10 - Vacant",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "7903ee1fb9cc4684a0de236bc369f858",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        317.47863,
+                        149.46671
+                    ],
+                    [
+                        317.47863,
+                        166.29526
+                    ],
+                    [
+                        328.84058,
+                        166.29526
+                    ],
+                    [
+                        328.84058,
+                        149.46671
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Sally Beauty",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "81fd7ffcba8c4677b67c896e6301794a",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        338.51048,
+                        166.29526
+                    ],
+                    [
+                        329.32413,
+                        166.29526
+                    ],
+                    [
+                        329.32413,
+                        149.54711
+                    ],
+                    [
+                        338.51048,
+                        149.54711
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Yum Buffet & Grill",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "8616a651ec2a469d895bef1ee9577d57",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        361.46608,
+                        123.70993
+                    ],
+                    [
+                        361.46186,
+                        166.51651
+                    ],
+                    [
+                        338.75884,
+                        166.22224
+                    ],
+                    [
+                        338.65943,
+                        123.63018
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Champs Sports",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "8af274d613d749a0b511619824eaef5f",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        361.5663,
+                        123.6652
+                    ],
+                    [
+                        361.5663,
+                        166.48881
+                    ],
+                    [
+                        370.67335,
+                        166.48881
+                    ],
+                    [
+                        370.67335,
+                        123.6652
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "14 - Vacant",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "9339926bb33c4bf08358fbf4c28b8c57",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        549.2484,
+                        142.37456
+                    ],
+                    [
+                        549.2484,
+                        185.21824
+                    ],
+                    [
+                        564.00064,
+                        185.21824
+                    ],
+                    [
+                        564.00064,
+                        142.37456
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Baskin-Robbins",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "9592e81560804522a2e8462e1e32ed48",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        572.21524,
+                        154.19849
+                    ],
+                    [
+                        572.21524,
+                        184.62249
+                    ],
+                    [
+                        564.98593,
+                        184.62249
+                    ],
+                    [
+                        564.98593,
+                        154.19849
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "H&R Block",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "a4199399720341eca3ed02aa9157a467",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        578.96681,
+                        184.68219
+                    ],
+                    [
+                        578.96681,
+                        154.1863
+                    ],
+                    [
+                        572.51389,
+                        154.1863
+                    ],
+                    [
+                        572.51389,
+                        184.68219
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Tap Plastics",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "a7163b6684be4345a50e1f20b9899c9e",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        584.70252,
+                        184.7419
+                    ],
+                    [
+                        579.26545,
+                        184.7419
+                    ],
+                    [
+                        579.26545,
+                        154.18036
+                    ],
+                    [
+                        584.70252,
+                        154.18036
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Parking Marketing Event",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "a7b9115a1785416f859ff5e99f344d75",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        582.62815,
+                        199.27186
+                    ],
+                    [
+                        575.36175,
+                        216.81449
+                    ],
+                    [
+                        582.62815,
+                        234.35712
+                    ],
+                    [
+                        600.17078,
+                        241.62352
+                    ],
+                    [
+                        617.71342,
+                        234.35712
+                    ],
+                    [
+                        624.97981,
+                        216.81449
+                    ],
+                    [
+                        617.71342,
+                        199.27186
+                    ],
+                    [
+                        600.17078,
+                        192.00546
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Parking 5",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "b67773c62263411eae232e54e33ed863",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        566.24855,
+                        142.61657
+                    ],
+                    [
+                        566.02745,
+                        153.88914
+                    ],
+                    [
+                        627.49467,
+                        154.55223
+                    ],
+                    [
+                        627.71577,
+                        187.92788
+                    ],
+                    [
+                        652.70065,
+                        187.70685
+                    ],
+                    [
+                        652.67237,
+                        118.23085
+                    ],
+                    [
+                        626.72849,
+                        93.69758
+                    ],
+                    [
+                        569.93241,
+                        93.69758
+                    ],
+                    [
+                        443.01772,
+                        2.57402
+                    ],
+                    [
+                        425.48807,
+                        2.22354
+                    ],
+                    [
+                        425.31604,
+                        66.28213
+                    ],
+                    [
+                        459.43352,
+                        67.10396
+                    ],
+                    [
+                        460.18073,
+                        47.96395
+                    ],
+                    [
+                        470.14961,
+                        47.96395
+                    ],
+                    [
+                        470.17903,
+                        61.07401
+                    ],
+                    [
+                        475.99702,
+                        60.98584
+                    ],
+                    [
+                        475.99702,
+                        66.93098
+                    ],
+                    [
+                        502.50925,
+                        67.10732
+                    ],
+                    [
+                        502.56543,
+                        142.41809
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Cricket Wireless",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "c1ed6b02fa0c4d9191cd2231c53d964c",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        585.1207,
+                        184.7419
+                    ],
+                    [
+                        585.1207,
+                        168.02569
+                    ],
+                    [
+                        593.12679,
+                        168.02569
+                    ],
+                    [
+                        593.12679,
+                        184.7419
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "My Le Beauty Salon",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "d60c97b782b643fa869df53559ce8477",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        608.36259,
+                        154.23476
+                    ],
+                    [
+                        608.36259,
+                        184.8613
+                    ],
+                    [
+                        593.36586,
+                        184.8613
+                    ],
+                    [
+                        593.36586,
+                        154.23476
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Party Essentials",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "d6b2c36c777b45a8ae2ad61b6d7b77ee",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        624.32682,
+                        154.21665
+                    ],
+                    [
+                        608.68354,
+                        153.89197
+                    ],
+                    [
+                        608.58167,
+                        184.66919
+                    ],
+                    [
+                        624.15298,
+                        184.9906
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Panda Wok",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "dd4084baa144406b8c0bb792c95ddb6c",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        648.33348,
+                        232.13648
+                    ],
+                    [
+                        629.33294,
+                        232.13648
+                    ],
+                    [
+                        629.33294,
+                        225.00454
+                    ],
+                    [
+                        648.33348,
+                        225.00454
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Parking 7",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "e11dd4a7261244d7872c2c2fd0b53405",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        110.06387,
+                        143.23091
+                    ],
+                    [
+                        110.06387,
+                        156.58295
+                    ],
+                    [
+                        104.31029,
+                        156.58295
+                    ],
+                    [
+                        104.31029,
+                        170.34581
+                    ],
+                    [
+                        147.66761,
+                        170.34581
+                    ],
+                    [
+                        147.66761,
+                        101.5315
+                    ],
+                    [
+                        90.5428,
+                        105.22899
+                    ],
+                    [
+                        82.52889,
+                        123.30558
+                    ],
+                    [
+                        117.05035,
+                        123.30558
+                    ],
+                    [
+                        117.05035,
+                        143.23091
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Domino's Pizza",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "e32e6ccb0a4946afbb584d08d6a93221",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        629.33294,
+                        224.83056
+                    ],
+                    [
+                        629.33294,
+                        219.7465
+                    ],
+                    [
+                        648.33348,
+                        219.7465
+                    ],
+                    [
+                        648.33348,
+                        224.83056
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Boost Mobile",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "e4ea6cad1b88484ba17ae8140d7e26a5",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        648.33348,
+                        214.33326
+                    ],
+                    [
+                        648.33348,
+                        219.41733
+                    ],
+                    [
+                        629.33294,
+                        219.41733
+                    ],
+                    [
+                        629.33294,
+                        214.33326
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Coco Nails & Spa",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "e696abc14d5d4285bfd47c37ebbfed9b",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        648.33348,
+                        209.13909
+                    ],
+                    [
+                        648.33348,
+                        214.22316
+                    ],
+                    [
+                        629.33294,
+                        214.22316
+                    ],
+                    [
+                        629.33294,
+                        209.13909
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "UPS Store",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "e752ab29d5ae412785388fe169d83563",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        648.33348,
+                        208.80784
+                    ],
+                    [
+                        629.33294,
+                        208.80784
+                    ],
+                    [
+                        629.33294,
+                        203.72377
+                    ],
+                    [
+                        648.33348,
+                        203.72377
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "Parking 6",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "pid": "f1554d8ef8ce41b9b6e7b527e8accbbf",
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        371.21648,
+                        121.90387
+                    ],
+                    [
+                        371.89337,
+                        66.07934
+                    ],
+                    [
+                        419.95245,
+                        65.741
+                    ],
+                    [
+                        419.60631,
+                        36.46508
+                    ],
+                    [
+                        119.74883,
+                        35.71639
+                    ],
+                    [
+                        90.6368,
+                        104.31838
+                    ],
+                    [
+                        148.06588,
+                        100.70342
+                    ],
+                    [
+                        176.66127,
+                        101.50743
+                    ],
+                    [
+                        177.41139,
+                        92.69585
+                    ],
+                    [
+                        187.22979,
+                        92.69585
+                    ],
+                    [
+                        187.22979,
+                        100.80396
+                    ],
+                    [
+                        227.99746,
+                        101.01734
+                    ],
+                    [
+                        230.77222,
+                        92.48247
+                    ],
+                    [
+                        240.23855,
+                        92.13078
+                    ],
+                    [
+                        240.23855,
+                        121.22721
+                    ]
+                ]
+            ]
+        }
+    }
+]

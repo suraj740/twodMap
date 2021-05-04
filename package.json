@@ -1,0 +1,26 @@
+{
+  "name": "leaflet-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index_bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@turf/turf": "^6.3.0",
+    "leaflet": "^1.7.1",
+    "leaflet-control-geocoder": "^2.2.0",
+    "leaflet-routing-machine": "^3.2.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.0",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0"
+  }
+}
