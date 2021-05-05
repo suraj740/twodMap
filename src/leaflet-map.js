@@ -14,6 +14,7 @@ class TwoDMap {
     }
 
     setGeoJsonData(data) {
+        this.data = data;
         // console.log('states', states);
         const getColor = d => {
             return d > 1000 ? '#800026' :
@@ -130,9 +131,10 @@ class TwoDMap {
         });
     }
 
-    _selectPlaces(obj) {
-        console.log('_selectPlaces', obj);
-        var data = JSON.parse(obj);
+    _selectPlaces(id) {
+        // console.log('_selectPlaces', this.data);
+        var data = this.data.find(item => item.properties.pid === id);
+        // console.log('data', data);
         let latLngs = data.geometry.coordinates[0];
         let center = turf.centerOfMass(data).geometry.coordinates;
         let mask = [];
