@@ -108,7 +108,7 @@ class TwoDMap {
         }).addTo(this.map);
     }
 
-    addRouting(start, end, autoRoute=false) {
+    addRouting(start, end, autoRoute = false) {
         // var startCoord = L.latLng(data.features[0].geometry.coordinates[0][1], data.features[0].geometry.coordinates[0][0]);
         // console.log('startCoord', startCoord);
         var routeControl = L.Routing.control({
@@ -130,43 +130,81 @@ class TwoDMap {
         });
     }
 
-    _selectPlaces(data) {
-        let latLngs = data.geometry.coordinates[0];
-        let center = turf.centerOfMass(data).geometry.coordinates;
-        let mask = [];
-        for (var i = 0; i < latLngs.length; i++) {
-            mask.push(new L.LatLng(latLngs[i][1], latLngs[i][0]));
-        }
-        // this.areaMode.bounds = mask;
-        // self._map.setView([center[1], center[0]], self._map.getMaxZoom());
-        // self._map.dragging.disable();
-        // self._map.touchZoom.disable();
-        // self._map.doubleClickZoom.disable();
-        // self._map.scrollWheelZoom.disable();
-        var maskAdded = L.mask(mask, {
-            stroke: false,
-            color: '#333',
-            fillOpacity: 0.5,
-            clickable: true,
-            outerBounds: new L.LatLngBounds({
-                "_southWest": {
-                    "lat": 30.247195,
-                    "lng": -88.471115
-                },
-                "_northEast": {
-                    "lat": 35.00118,
-                    "lng": -84.889196
+    _selectPlaces(id) {
+        // console.log('_selectPlaces', data);
+        var data = {
+            "type": "Feature",
+            "properties": {
+                "name": [
+                    {
+                        "text": "Parking 2",
+                        "language": "en_US"
+                    }
+                ],
+                "type": "",
+                "center": [],
+                "pid":
+                    "68799e931b2949338bc20591e43adc6f",
+                "style": {
+                    "weight": 2,
+                    "opacity": 0.8,
+                    "className": "default-animate"
                 }
-            })
-        }).addTo(this.map).bindTooltip(data.properties.name[0].text,
-            {
-                className: 'tooltip-area-label',
-                offset: L.point(0, 9),
-                direction: 'top',
-                permanent: true,
-                sticky: true,
-                opacity: 0.7
-            }).openTooltip([center[1], center[0]]);
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [245.91662, 288.63867],
+                        [245.91662, 243.42983],
+                        [324.23096, 243.42983],
+                        [324.23096, 169.9731],
+                        [122.52892, 172.97879],
+                        [122.52892, 244.07292],
+                        [186.59237, 244.07292],
+                        [186.59237, 288.63867]
+                    ]
+                ]
+            }
+        };
+        if (id === data.properties.pid) {
+            let latLngs = data.geometry.coordinates[0];
+            let center = turf.centerOfMass(data).geometry.coordinates;
+            let mask = [];
+            for (var i = 0; i < latLngs.length; i++) {
+                mask.push(new L.LatLng(latLngs[i][1], latLngs[i][0]));
+            }
+            // this.areaMode.bounds = mask;
+            // self._map.setView([center[1], center[0]], self._map.getMaxZoom());
+            // self._map.dragging.disable();
+            // self._map.touchZoom.disable();
+            // self._map.doubleClickZoom.disable();
+            // self._map.scrollWheelZoom.disable();
+            var maskAdded = L.mask(mask, {
+                stroke: false,
+                color: '#333',
+                fillOpacity: 0.5,
+                clickable: true,
+                outerBounds: new L.LatLngBounds({
+                    "_southWest": {
+                        "lat": 30.247195,
+                        "lng": -88.471115
+                    },
+                    "_northEast": {
+                        "lat": 35.00118,
+                        "lng": -84.889196
+                    }
+                })
+            }).addTo(this.map).bindTooltip(data.properties.name[0].text,
+                {
+                    className: 'tooltip-area-label',
+                    offset: L.point(0, 9),
+                    direction: 'top',
+                    permanent: true,
+                    sticky: true,
+                    opacity: 0.7
+                }).openTooltip([center[1], center[0]]);
+        }
     }
 
     _selectMultiplePlaces(dataList) {
