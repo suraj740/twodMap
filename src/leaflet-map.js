@@ -178,12 +178,12 @@ class TwoDMap {
         //     }).openTooltip([center[1], center[0]]);
         var myIcon = L.icon({
             iconUrl: './pngegg.png',
-            iconSize: [38, 95],
-            iconAnchor: [22, 94],
-            popupAnchor: [-3, -76],
-            shadowUrl: './pngegg.png',
-            shadowSize: [38, 95],
-            shadowAnchor: [22, 94]
+            iconSize: [28, 65],
+            iconAnchor: [10, 64],
+            popupAnchor: [5, -50],
+            // shadowUrl: './pngegg.png',
+            // shadowSize: [28, 65],
+            // shadowAnchor: [22, 64]
         });
         var marker = L.marker([center[1], center[0]], {
             icon: myIcon, bounceOnAdd: true,
