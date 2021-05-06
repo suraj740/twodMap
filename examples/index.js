@@ -36,6 +36,7 @@ fetch('./assets/venues.json')
         twod._selectPlaces("68799e931b2949338bc20591e43adc6f")
         // twod._selectMultiplePlaces(data);
     });
+    
 
 
 

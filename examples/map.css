@@ -29,3 +29,11 @@ html, body, #mapid {
     color: #333;
     font: 11px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
   }
+
+.popup-marker > .leaflet-popup-tip-container{
+    display: none;
+}
+.popup-marker > .leaflet-popup-content-wrapper{
+    background: #333;
+    color: #fff;
+}

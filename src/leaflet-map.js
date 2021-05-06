@@ -3,6 +3,7 @@ require('leaflet-routing-machine');
 require('leaflet-control-geocoder');
 require('./mouseposition.control.js');
 require('./mask.polygon.js');
+require('./bouncemarker.js');
 var turf = require('@turf/turf');
 class TwoDMap {
     constructor() {
@@ -102,11 +103,13 @@ class TwoDMap {
                 mouseout: resetHighlight,
                 click: zoomToFeature,
             });
+            // layer._leaflet_id = feature.properties.pid;
         }
         geojson = L.geoJson(data, {
             // style: style,
             onEachFeature: onEachFeature
         }).addTo(this.map);
+        // console.log('geojson', geojson);
     }
 
     addRouting(start, end, autoRoute = false) {
@@ -162,15 +165,33 @@ class TwoDMap {
                     "lng": -84.889196
                 }
             })
-        }).addTo(this.map).bindTooltip(data.properties.name[0].text,
-            {
-                className: 'tooltip-area-label',
-                offset: L.point(0, 9),
-                direction: 'top',
-                permanent: true,
-                sticky: true,
-                opacity: 0.7
-            }).openTooltip([center[1], center[0]]);
+        }).addTo(this.map);
+        
+        // .bindTooltip(data.properties.name[0].text,
+        //     {
+        //         className: 'tooltip-area-label',
+        //         offset: L.point(0, 9),
+        //         direction: 'top',
+        //         permanent: true,
+        //         sticky: true,
+        //         opacity: 0.7
+        //     }).openTooltip([center[1], center[0]]);
+        var myIcon = L.icon({
+            iconUrl: './pngegg.png',
+            iconSize: [38, 95],
+            iconAnchor: [22, 94],
+            popupAnchor: [-3, -76],
+            shadowUrl: './pngegg.png',
+            shadowSize: [38, 95],
+            shadowAnchor: [22, 94]
+        });
+        var marker = L.marker(center, {
+            icon: myIcon, bounceOnAdd: true,
+            bounceOnAddOptions: { duration: 500, height: 250, loop: 1 },
+            bounceOnAddCallback: function () { console.log("done"); }
+        })
+            .addTo(this.map)
+            .bindPopup(data.properties.name[0].text, {className: 'popup-marker', closeOnClick: false, closeButton: false}).openPopup();
     }
 
     _selectMultiplePlaces(dataList) {
