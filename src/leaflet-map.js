@@ -145,7 +145,7 @@ class TwoDMap {
             mask.push(new L.LatLng(latLngs[i][1], latLngs[i][0]));
         }
         // this.areaMode.bounds = mask;
-        // self._map.setView([center[1], center[0]], self._map.getMaxZoom());
+        // this.map.setView([center[1], center[0]], this.map.getMaxZoom());
         // self._map.dragging.disable();
         // self._map.touchZoom.disable();
         // self._map.doubleClickZoom.disable();
@@ -185,13 +185,13 @@ class TwoDMap {
             shadowSize: [38, 95],
             shadowAnchor: [22, 94]
         });
-        var marker = L.marker(center, {
+        var marker = L.marker([center[1], center[0]], {
             icon: myIcon, bounceOnAdd: true,
-            bounceOnAddOptions: { duration: 500, height: 250, loop: 1 },
+            bounceOnAddOptions: { duration: 500, height: 150, loop: 1 },
             bounceOnAddCallback: function () { console.log("done"); }
         })
             .addTo(this.map)
-            .bindPopup(data.properties.name[0].text, {className: 'popup-marker', closeOnClick: false, closeButton: false}).openPopup();
+            .bindPopup(data.properties.name[0].text, {className: 'popup-marker', closeOnClick: false, closeButton: false}).openPopup([center[1], center[0]]);
     }
 
     _selectMultiplePlaces(dataList) {

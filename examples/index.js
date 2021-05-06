@@ -33,7 +33,7 @@ fetch('./assets/venues.json')
     .then(data => {
         twod.setGeoJsonData(data)
         // twod.addRouting(L.latLng(32.8, -96), L.latLng(37.8, -96), true);
-        twod._selectPlaces("68799e931b2949338bc20591e43adc6f")
+        twod._selectPlaces("01f0930a08fc4996baa4ca1d5cbef56e")
         // twod._selectMultiplePlaces(data);
     });
     
