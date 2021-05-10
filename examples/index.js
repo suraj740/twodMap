@@ -17,16 +17,18 @@ var options = {
     // projection: L.Projection.LonLat,
     // minZoom: 1,
     zoom: 0,
-    center: L.latLng(123.0,322),
+    maxBounds: [[0, 0], [310.535, 677.664]],
+    // center: L.latLng(123.0,322),
+    center: [0, 0],
     zoomSnap: 0.25,
     zoomControlPosition: "bottomright",
     // center: L.latLng(37.8, -96)
     // center: latLng([ 46.879966, -121.726909 ])
 };
-twod.showLabel = false;
+twod.showLabel = true;
 
 twod.initMap('mapid', options);
-fetch('./assets/venues.json')
+fetch('./assets/pois.json')
     .then(response => {
         return response.json();
     })

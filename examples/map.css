@@ -33,7 +33,11 @@ html, body, #mapid {
 .popup-marker > .leaflet-popup-tip-container{
     display: none;
 }
+.popup-marker .leaflet-popup-content{
+    margin: 6px 17px;
+}
 .popup-marker > .leaflet-popup-content-wrapper{
     background: #333;
     color: #fff;
+    padding: -5px;
 }

@@ -106,7 +106,7 @@ class TwoDMap {
             // layer._leaflet_id = feature.properties.pid;
         }
         geojson = L.geoJson(data, {
-            // style: style,
+            style: style,
             onEachFeature: onEachFeature
         }).addTo(this.map);
         // console.log('geojson', geojson);
