@@ -321,10 +321,10 @@ class TwoDMap {
             }).addTo(this.map);
 
             var myIcon = L.icon({
-                iconUrl: './pngegg.png',
-                iconSize: [20, 50],
-                iconAnchor: [10, 44],
-                popupAnchor: [0, -30],
+                iconUrl: './marker.png',
+                iconSize: [28, 65],
+                iconAnchor: [10, 64],
+                popupAnchor: [5, -50],
                 // shadowUrl: './pngegg.png',
                 // shadowSize: [28, 65],
                 // shadowAnchor: [22, 64]
