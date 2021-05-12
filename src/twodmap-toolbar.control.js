@@ -116,6 +116,7 @@ L.Control.Toolbar = L.Control.extend({
     onAdd: function(map) {
 
         var self = this;
+        self.previousElement = ''
         self.toolbarContainer = L.DomUtil.create('div', 'zoom');
         
         self.zoomFab = L.DomUtil.create('a', 'zoom-fab zoom-btn-large', self.toolbarContainer);
@@ -243,8 +244,15 @@ L.Control.Toolbar = L.Control.extend({
         var self = this;
         // console.log('_selectAreas', e.currentTarget.getAttribute('id'), self._osMap);
         let id = e.currentTarget.getAttribute('id');
+        if (!self.previousElement) {
+            self.previousElement = e.currentTarget; 
+        }
         if (!L.DomUtil.hasClass(e.currentTarget, 'control-enabled')) {
             L.DomUtil.addClass(e.currentTarget, 'control-enabled');
+            if (self.previousElement && self.previousElement !== e.currentTarget) {
+                L.DomUtil.removeClass(self.previousElement, 'control-enabled');
+                self.previousElement = e.currentTarget;
+            }
             self._osMap._selectMultiplePlaces(id.split(' '));
         }
         else {
