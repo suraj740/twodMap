@@ -71,9 +71,9 @@ class TwoDMap {
         var boundSet = this._getMapBounds(data[0].floor[0].map_info);
         this._bounds = boundSet['imagebounds'];
         this._floorBounds = boundSet['floorbounds'];
-        this.map.fitBounds(this._bounds, {
-            padding: [20, 30]
-        });
+        // this.map.fitBounds(this._bounds, {
+        //     padding: [20, 30]
+        // });
         this.map.setMaxBounds(this._bounds);
         this._addToolbar(data);
     }
