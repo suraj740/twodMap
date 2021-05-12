@@ -57,3 +57,26 @@ html, body, #mapid {
 .control-enabled .mdi {
     color: #000;
 }
+
+/* for leaflet zoom control */
+
+.leaflet-touch .leaflet-bar {
+    border: none;
+}
+
+.leaflet-touch .leaflet-bar a {
+    width: 20px;
+    height: 20px;
+    line-height: 19px;
+    background: #000;
+    color: #fff;
+}
+
+.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out {
+    font-size: 16px;
+}
+
+.leaflet-bar a.leaflet-disabled {
+    background-color: #444 !important;
+    color: #bbb im !important;
+}
