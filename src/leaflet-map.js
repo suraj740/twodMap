@@ -22,7 +22,8 @@ class TwoDMap {
         //     padding: [20, 30]
         // });
         // this.map.setMaxBounds([[0, 0], [310.535, 677.664]]);
-        // L.TileLayer.boundaryCanvas('./pngegg.png', {boundary: [[0, 0], [310.535, 677.664]], tileSize: 1200})
+        // L.TileLayer.boundaryCanvas('https://wallpapercave.com/wp/XqRBXyO.jpg', {boundary: this.data, tileSize: 1200, }).addTo(this.map)
+        L.imageOverlay('https://wallpapercave.com/wp/XqRBXyO.jpg', [[0, 0], [310.535, 677.664]]).addTo(this.map);
         L.control.mousePosition({ position: 'bottomright', lngFirst: true }).addTo(this.map)
     }
 
@@ -322,8 +323,8 @@ class TwoDMap {
             var myIcon = L.icon({
                 iconUrl: './pngegg.png',
                 iconSize: [20, 50],
-                // iconAnchor: [10, 64],
-                popupAnchor: [2, -10],
+                iconAnchor: [10, 44],
+                popupAnchor: [0, -30],
                 // shadowUrl: './pngegg.png',
                 // shadowSize: [28, 65],
                 // shadowAnchor: [22, 64]
