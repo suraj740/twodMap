@@ -14,6 +14,7 @@
     "@turf/turf": "^6.3.0",
     "leaflet": "^1.7.1",
     "leaflet-control-geocoder": "^2.2.0",
+    "leaflet-rotate-map": "^0.2.6",
     "leaflet-routing-machine": "^3.2.12"
   },
   "devDependencies": {

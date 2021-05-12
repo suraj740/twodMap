@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    --l: 3.5em;
 }
 html, body, #mapid {
     height: 100%;
@@ -34,10 +35,25 @@ html, body, #mapid {
     display: none;
 }
 .popup-marker .leaflet-popup-content{
-    margin: 6px 17px;
+    margin: 0px 10px;
 }
 .popup-marker > .leaflet-popup-content-wrapper{
     background: #333;
     color: #fff;
     padding: -5px;
+}
+
+.mdi {
+    /* position: relative;
+    top: -12px;
+    left: -6px; */
+    color: #fff;
+}
+
+.control-enabled > a {
+    background: #fff;
+}
+
+.control-enabled .mdi {
+    color: #000;
 }
