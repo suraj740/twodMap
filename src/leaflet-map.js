@@ -5,6 +5,7 @@ require('./mouseposition.control.js');
 require('./mask.polygon.js');
 require('./bouncemarker.js');
 require('./twodmap-toolbar.control.js');
+require('./twodmap.search.control.js');
 require('./boundarycanvas.js');
 var turf = require('@turf/turf');
 class TwoDMap {
@@ -144,7 +145,8 @@ class TwoDMap {
         }
 
         const onEachFeature = (feature, layer) => {
-
+            let area =  turf.area(feature);
+            console.log('area', area);
             // console.log(feature, layer);
             if (this.showLabel) {
                 layer.bindTooltip(feature.properties.name[0].text, {
@@ -175,10 +177,15 @@ class TwoDMap {
             });
             // layer._leaflet_id = feature.properties.pid;
         }
+       
         geojson = L.geoJson(data, {
             style: style,
             onEachFeature: onEachFeature
         }).addTo(this.map);
+         this.map.on('zoom', (e) => {
+            console.log('zoom level', this.map.getZoom())
+        })
+        this.featuresLayer = geojson;
         // console.log('geojson', geojson);
     }
 
@@ -380,6 +387,42 @@ class TwoDMap {
             'imagebounds': [[0, 0], [map_info.scale_y, map_info.scale_x]],
         };
     };
+
+
+    addSearchControl() {
+        // console.log('this.featuresLayer', this.featuresLayer)
+        var searchControl = new L.Control.Search({
+            layer: this.featuresLayer,
+            propertyName: "name.0.text",
+            collapsed: true,
+            position: 'topright',
+            marker: false,
+            moveToLocation: function(latlng, title, map) {
+                //map.fitBounds( latlng.layer.getBounds() );
+                var zoom = map.getBoundsZoom(latlng.layer.getBounds());
+                  map.setView(latlng, zoom); // access the zoom
+            }
+        });
+    
+        searchControl.on('search:locationfound', function(e) {
+            
+            //console.log('search:locationfound', );
+    
+            //map.removeLayer(this._markerSearch)
+    
+            e.layer.setStyle({fillColor: '#3f0', color: '#0f0'});
+            if(e.layer._popup)
+                e.layer.openPopup();
+    
+        }).on('search:collapsed', function(e) {
+    
+            featuresLayer.eachLayer(function(layer) {	//restore feature color
+                featuresLayer.resetStyle(layer);
+            });	
+        });
+        
+        this.map.addControl(searchControl);
+    }
 
     changeTheme() {
 

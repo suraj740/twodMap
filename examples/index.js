@@ -11,12 +11,12 @@ var options = {
     // zoomControl: false,
     attributionControl: false,
     crs: L.CRS.Simple, // vvv imp.
-    minZoom: -1,
+    minZoom: 0,
     // zoomOffset: -1,
     // maxZoom: 18,
     // projection: L.Projection.LonLat,
     // minZoom: 1,
-    zoom: -1,
+    zoom: 0,
     // rotate: true,
     // maxBounds: [[0, 0], [310.535, 677.664]],
     projection: L.Projection.LonLat,
@@ -27,7 +27,7 @@ var options = {
     // center: L.latLng(37.8, -96)
     // center: latLng([ 46.879966, -121.726909 ])
 };
-twod.showLabel = false;
+twod.showLabel = true;
 
 twod.initMap('mapid', options);
 (async () => {
@@ -40,6 +40,8 @@ twod.initMap('mapid', options);
     var floor = await response.json();
     console.log('floor', floor);
     twod._getFloorInformation(floor.building);
+    // twod._selectPlaces("01f0930a08fc4996baa4ca1d5cbef56e")
+
     var zoomBtn = document.querySelector('#zoomBtn')
 
     zoomBtn.addEventListener('click', function(event) {
@@ -48,6 +50,7 @@ twod.initMap('mapid', options);
         btn.classList.toggle('scale-out');
         })
     });
+    twod.addSearchControl();
 })();
 // fetch('./assets/pois.json')
 //     .then(response => {
