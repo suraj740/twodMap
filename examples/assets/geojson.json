@@ -1,0 +1,3854 @@
+[
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "TEKKIE TOWN",
+                    "language": "en_US"
+                }
+            ],
+            "cateogory_ids": [
+                "dsa"
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        359.88,
+                        141.9
+                    ],
+                    [
+                        309.16,
+                        141.9
+                    ],
+                    [
+                        309.16,
+                        199.19
+                    ],
+                    [
+                        359.88,
+                        199.19
+                    ],
+                    [
+                        359.88,
+                        141.9
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "LIQUOR CITY",
+                    "language": "en_US"
+                }
+            ],
+            "cateogory_id": "21313",
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        305.71,
+                        154.05
+                    ],
+                    [
+                        305.71,
+                        148.31
+                    ],
+                    [
+                        307.81,
+                        148.31
+                    ],
+                    [
+                        307.81,
+                        141.9
+                    ],
+                    [
+                        286.49,
+                        141.9
+                    ],
+                    [
+                        286.49,
+                        154.54
+                    ],
+                    [
+                        304.45,
+                        154.55
+                    ],
+                    [
+                        304.45,
+                        154.05
+                    ],
+                    [
+                        305.71,
+                        154.05
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "STANDARD BANK",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        297.64,
+                        199.19
+                    ],
+                    [
+                        307.78,
+                        199.19
+                    ],
+                    [
+                        307.78,
+                        163.36
+                    ],
+                    [
+                        297.64,
+                        163.36
+                    ],
+                    [
+                        297.64,
+                        199.19
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "SHOE ZONE",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        269.83,
+                        139.52
+                    ],
+                    [
+                        269.91,
+                        140.53
+                    ],
+                    [
+                        269.12,
+                        140.53
+                    ],
+                    [
+                        269.12,
+                        145.62
+                    ],
+                    [
+                        269.83,
+                        145.62
+                    ],
+                    [
+                        270,
+                        147.79
+                    ],
+                    [
+                        277.64,
+                        147.79
+                    ],
+                    [
+                        277.63,
+                        149.77
+                    ],
+                    [
+                        284.25,
+                        149.77
+                    ],
+                    [
+                        284.25,
+                        148.84
+                    ],
+                    [
+                        285.05,
+                        148.84
+                    ],
+                    [
+                        285.05,
+                        141.16
+                    ],
+                    [
+                        284.24,
+                        141.15
+                    ],
+                    [
+                        284.24,
+                        139.52
+                    ],
+                    [
+                        269.83,
+                        139.52
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "FASHION EXPRESS",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        284.24,
+                        135.27
+                    ],
+                    [
+                        284.24,
+                        136.61
+                    ],
+                    [
+                        285.06,
+                        136.61
+                    ],
+                    [
+                        285.06,
+                        138.29
+                    ],
+                    [
+                        269.92,
+                        138.29
+                    ],
+                    [
+                        269.92,
+                        129.15
+                    ],
+                    [
+                        283.32,
+                        129.15
+                    ],
+                    [
+                        283.32,
+                        135.27
+                    ],
+                    [
+                        284.24,
+                        135.27
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "TOTAL SPORTS",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        269.12,
+                        112.94
+                    ],
+                    [
+                        269.12,
+                        122.3
+                    ],
+                    [
+                        269.92,
+                        122.26
+                    ],
+                    [
+                        269.92,
+                        127.92
+                    ],
+                    [
+                        285.05,
+                        127.92
+                    ],
+                    [
+                        285.05,
+                        112.27
+                    ],
+                    [
+                        269.87,
+                        112.27
+                    ],
+                    [
+                        269.87,
+                        112.94
+                    ],
+                    [
+                        269.12,
+                        112.94
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "MILADYS",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        270.81,
+                        110.46
+                    ],
+                    [
+                        270.81,
+                        111.04
+                    ],
+                    [
+                        285.05,
+                        111.04
+                    ],
+                    [
+                        285.05,
+                        99.52
+                    ],
+                    [
+                        273.04,
+                        99.52
+                    ],
+                    [
+                        270.87,
+                        97.36
+                    ],
+                    [
+                        269.87,
+                        98.12
+                    ],
+                    [
+                        269.87,
+                        110.46
+                    ],
+                    [
+                        270.81,
+                        110.46
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "WOOLWORTHS",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        271.73,
+                        96.47
+                    ],
+                    [
+                        273.55,
+                        98.29
+                    ],
+                    [
+                        285.05,
+                        98.29
+                    ],
+                    [
+                        285.05,
+                        75.51
+                    ],
+                    [
+                        273.84,
+                        75.51
+                    ],
+                    [
+                        273.87,
+                        91.07
+                    ],
+                    [
+                        273.25,
+                        94.25
+                    ],
+                    [
+                        271.73,
+                        96.47
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "STYLE ZONE",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        248.41,
+                        68.99
+                    ],
+                    [
+                        239.57,
+                        68.99
+                    ],
+                    [
+                        239.57,
+                        58.29
+                    ],
+                    [
+                        225.91,
+                        58.28
+                    ],
+                    [
+                        225.91,
+                        52.77
+                    ],
+                    [
+                        238.19,
+                        52.77
+                    ],
+                    [
+                        238.19,
+                        38.25
+                    ],
+                    [
+                        285.05,
+                        38.25
+                    ],
+                    [
+                        285.05,
+                        74.28
+                    ],
+                    [
+                        272.68,
+                        74.28
+                    ],
+                    [
+                        272.68,
+                        81.93
+                    ],
+                    [
+                        272.21,
+                        82.55
+                    ],
+                    [
+                        258.38,
+                        82.55
+                    ],
+                    [
+                        257.91,
+                        81.93
+                    ],
+                    [
+                        257.91,
+                        74.28
+                    ],
+                    [
+                        248.41,
+                        74.28
+                    ],
+                    [
+                        248.41,
+                        68.99
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "SHOE STYLES",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        249.91,
+                        79.18
+                    ],
+                    [
+                        249.91,
+                        75.51
+                    ],
+                    [
+                        256.68,
+                        75.51
+                    ],
+                    [
+                        256.68,
+                        82.45
+                    ],
+                    [
+                        249.41,
+                        82.45
+                    ],
+                    [
+                        248.25,
+                        82.45
+                    ],
+                    [
+                        248.07,
+                        82.35
+                    ],
+                    [
+                        249.91,
+                        79.18
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "FRANCO CECCATA",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        247.03,
+                        81.71
+                    ],
+                    [
+                        248.68,
+                        78.85
+                    ],
+                    [
+                        248.68,
+                        75.51
+                    ],
+                    [
+                        247.14,
+                        75.51
+                    ],
+                    [
+                        247.14,
+                        70.35
+                    ],
+                    [
+                        239.57,
+                        70.35
+                    ],
+                    [
+                        239.57,
+                        72.07
+                    ],
+                    [
+                        237.65,
+                        75.39
+                    ],
+                    [
+                        243.17,
+                        78.62
+                    ],
+                    [
+                        242.8,
+                        79.26
+                    ],
+                    [
+                        247.03,
+                        81.71
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "CLICKS",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        225.37,
+                        68.2
+                    ],
+                    [
+                        236.59,
+                        74.76
+                    ],
+                    [
+                        238.34,
+                        71.74
+                    ],
+                    [
+                        238.34,
+                        59.51
+                    ],
+                    [
+                        225.91,
+                        59.52
+                    ],
+                    [
+                        225.91,
+                        67.26
+                    ],
+                    [
+                        225.37,
+                        68.2
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "TRUWORTHS",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        222.39,
+                        66.45
+                    ],
+                    [
+                        224.31,
+                        67.57
+                    ],
+                    [
+                        224.68,
+                        66.93
+                    ],
+                    [
+                        224.68,
+                        30.76
+                    ],
+                    [
+                        205.38,
+                        30.76
+                    ],
+                    [
+                        205.38,
+                        66.45
+                    ],
+                    [
+                        222.39,
+                        66.45
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "IDENTITY",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        173.45,
+                        65.5
+                    ],
+                    [
+                        174.02,
+                        66.45
+                    ],
+                    [
+                        204.15,
+                        66.45
+                    ],
+                    [
+                        204.15,
+                        40.84
+                    ],
+                    [
+                        174.68,
+                        40.83
+                    ],
+                    [
+                        174.68,
+                        41.11
+                    ],
+                    [
+                        173.45,
+                        41.11
+                    ],
+                    [
+                        173.45,
+                        65.5
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "LEGIT",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        158.37,
+                        45.01
+                    ],
+                    [
+                        158.37,
+                        66.45
+                    ],
+                    [
+                        172.22,
+                        66.45
+                    ],
+                    [
+                        172.22,
+                        44.2
+                    ],
+                    [
+                        159.82,
+                        44.2
+                    ],
+                    [
+                        159.82,
+                        45.01
+                    ],
+                    [
+                        158.37,
+                        45.01
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "JET",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        153.98,
+                        48.17
+                    ],
+                    [
+                        153.98,
+                        49.98
+                    ],
+                    [
+                        154.91,
+                        49.98
+                    ],
+                    [
+                        154.91,
+                        66.45
+                    ],
+                    [
+                        140.14,
+                        66.45
+                    ],
+                    [
+                        140.14,
+                        48.17
+                    ],
+                    [
+                        153.98,
+                        48.17
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "CELL AND NONESI",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        122.36,
+                        80.4
+                    ],
+                    [
+                        136.31,
+                        66.45
+                    ],
+                    [
+                        138.91,
+                        66.45
+                    ],
+                    [
+                        138.91,
+                        30.72
+                    ],
+                    [
+                        116.49,
+                        30.72
+                    ],
+                    [
+                        116.49,
+                        76.16
+                    ],
+                    [
+                        118.12,
+                        76.16
+                    ],
+                    [
+                        122.36,
+                        80.4
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "PICK AND PAY",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        114.67,
+                        85.32
+                    ],
+                    [
+                        112.68,
+                        87.3
+                    ],
+                    [
+                        113.59,
+                        88.21
+                    ],
+                    [
+                        114.56,
+                        88.21
+                    ],
+                    [
+                        121.08,
+                        81.68
+                    ],
+                    [
+                        120.83,
+                        80.62
+                    ],
+                    [
+                        117.61,
+                        77.39
+                    ],
+                    [
+                        116.49,
+                        77.39
+                    ],
+                    [
+                        116.49,
+                        83.64
+                    ],
+                    [
+                        114.86,
+                        83.64
+                    ],
+                    [
+                        113.93,
+                        84.57
+                    ],
+                    [
+                        114.67,
+                        85.32
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "LONDON KEY",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        95.01,
+                        82.29
+                    ],
+                    [
+                        42.02,
+                        82.29
+                    ],
+                    [
+                        41.91,
+                        59.52
+                    ],
+                    [
+                        69.61,
+                        59.52
+                    ],
+                    [
+                        69.61,
+                        37.3
+                    ],
+                    [
+                        115.14,
+                        37.3
+                    ],
+                    [
+                        115.14,
+                        82.29
+                    ],
+                    [
+                        114.48,
+                        82.29
+                    ],
+                    [
+                        112.2,
+                        84.57
+                    ],
+                    [
+                        112.94,
+                        85.32
+                    ],
+                    [
+                        103.04,
+                        95.22
+                    ],
+                    [
+                        98.47,
+                        90.65
+                    ],
+                    [
+                        95.01,
+                        90.65
+                    ],
+                    [
+                        95.01,
+                        82.29
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "MUSICA",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        106.92,
+                        93.06
+                    ],
+                    [
+                        107.55,
+                        94.75
+                    ],
+                    [
+                        107.74,
+                        97.04
+                    ],
+                    [
+                        107.55,
+                        98.29
+                    ],
+                    [
+                        105.87,
+                        98.29
+                    ],
+                    [
+                        105.87,
+                        98.05
+                    ],
+                    [
+                        103.9,
+                        96.08
+                    ],
+                    [
+                        106.92,
+                        93.06
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "GAME",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        106.77,
+                        100.6
+                    ],
+                    [
+                        107.19,
+                        99.52
+                    ],
+                    [
+                        104.64,
+                        99.52
+                    ],
+                    [
+                        104.64,
+                        98.56
+                    ],
+                    [
+                        97.96,
+                        91.88
+                    ],
+                    [
+                        96.12,
+                        91.88
+                    ],
+                    [
+                        95.01,
+                        92.59
+                    ],
+                    [
+                        95.01,
+                        105.32
+                    ],
+                    [
+                        98.97,
+                        105.32
+                    ],
+                    [
+                        101.08,
+                        105.06
+                    ],
+                    [
+                        102.83,
+                        104.45
+                    ],
+                    [
+                        104.42,
+                        103.46
+                    ],
+                    [
+                        105.72,
+                        102.21
+                    ],
+                    [
+                        106.77,
+                        100.6
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "AFRICAN ROOTS",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        46.02,
+                        159.47
+                    ],
+                    [
+                        46.02,
+                        167.2
+                    ],
+                    [
+                        93.66,
+                        167.2
+                    ],
+                    [
+                        93.66,
+                        83.63
+                    ],
+                    [
+                        41.91,
+                        83.63
+                    ],
+                    [
+                        41.91,
+                        159.47
+                    ],
+                    [
+                        46.02,
+                        159.47
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "KING PIE",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        98.25,
+                        122.4
+                    ],
+                    [
+                        95.01,
+                        122.4
+                    ],
+                    [
+                        95.01,
+                        116.86
+                    ],
+                    [
+                        98.25,
+                        116.86
+                    ],
+                    [
+                        98.25,
+                        122.4
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "CELL C",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        101.55,
+                        116.58
+                    ],
+                    [
+                        99.48,
+                        116.58
+                    ],
+                    [
+                        99.48,
+                        122.4
+                    ],
+                    [
+                        105.47,
+                        122.4
+                    ],
+                    [
+                        105.47,
+                        120.5
+                    ],
+                    [
+                        101.55,
+                        116.58
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "NEDBANK",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        104.79,
+                        129.28
+                    ],
+                    [
+                        104.79,
+                        130.29
+                    ],
+                    [
+                        95.01,
+                        130.29
+                    ],
+                    [
+                        95.01,
+                        123.63
+                    ],
+                    [
+                        104.79,
+                        123.63
+                    ],
+                    [
+                        104.79,
+                        124.88
+                    ],
+                    [
+                        105.47,
+                        124.88
+                    ],
+                    [
+                        105.47,
+                        129.28
+                    ],
+                    [
+                        104.79,
+                        129.28
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "FIBRE COLLECTION",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        104.72,
+                        137.29
+                    ],
+                    [
+                        104.72,
+                        148.17
+                    ],
+                    [
+                        95.01,
+                        148.17
+                    ],
+                    [
+                        95.01,
+                        131.52
+                    ],
+                    [
+                        104.72,
+                        131.52
+                    ],
+                    [
+                        104.72,
+                        132.52
+                    ],
+                    [
+                        105.47,
+                        132.52
+                    ],
+                    [
+                        105.47,
+                        137.29
+                    ],
+                    [
+                        104.72,
+                        137.29
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "AFRICAN BANK",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        101.21,
+                        149.52
+                    ],
+                    [
+                        95.01,
+                        149.52
+                    ],
+                    [
+                        95.01,
+                        154.29
+                    ],
+                    [
+                        101.21,
+                        154.29
+                    ],
+                    [
+                        101.21,
+                        149.52
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "MR PRICE",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        101.21,
+                        155.86
+                    ],
+                    [
+                        100.47,
+                        155.52
+                    ],
+                    [
+                        95.01,
+                        155.52
+                    ],
+                    [
+                        95.01,
+                        167.31
+                    ],
+                    [
+                        103.18,
+                        167.31
+                    ],
+                    [
+                        103.18,
+                        166.02
+                    ],
+                    [
+                        101.21,
+                        164.05
+                    ],
+                    [
+                        101.21,
+                        155.86
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "GAME LIQUOR",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        77.5,
+                        184.28
+                    ],
+                    [
+                        77.5,
+                        187.98
+                    ],
+                    [
+                        103.18,
+                        187.98
+                    ],
+                    [
+                        103.18,
+                        168.54
+                    ],
+                    [
+                        74.45,
+                        168.54
+                    ],
+                    [
+                        74.45,
+                        184.28
+                    ],
+                    [
+                        77.5,
+                        184.28
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "JIMMY ELECTRICAL",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        99.81,
+                        196.85
+                    ],
+                    [
+                        103.01,
+                        193.65
+                    ],
+                    [
+                        103.01,
+                        189.2
+                    ],
+                    [
+                        84.91,
+                        189.2
+                    ],
+                    [
+                        84.91,
+                        196.85
+                    ],
+                    [
+                        99.81,
+                        196.85
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "CAPITEC",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        77.5,
+                        190.15
+                    ],
+                    [
+                        77.5,
+                        189.21
+                    ],
+                    [
+                        83.79,
+                        189.21
+                    ],
+                    [
+                        83.79,
+                        196.85
+                    ],
+                    [
+                        75.88,
+                        196.85
+                    ],
+                    [
+                        75.88,
+                        190.15
+                    ],
+                    [
+                        77.5,
+                        190.15
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "OLD MUTUAL",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        120.04,
+                        146.4
+                    ],
+                    [
+                        132.52,
+                        146.38
+                    ],
+                    [
+                        132.53,
+                        145.57
+                    ],
+                    [
+                        134.29,
+                        145.57
+                    ],
+                    [
+                        134.29,
+                        137.47
+                    ],
+                    [
+                        113.86,
+                        137.47
+                    ],
+                    [
+                        113.87,
+                        140.53
+                    ],
+                    [
+                        113.12,
+                        140.53
+                    ],
+                    [
+                        113.12,
+                        145.58
+                    ],
+                    [
+                        113.85,
+                        145.58
+                    ],
+                    [
+                        114.02,
+                        150.4
+                    ],
+                    [
+                        120.04,
+                        150.4
+                    ],
+                    [
+                        120.04,
+                        146.4
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "WIMPY",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        135.52,
+                        137.47
+                    ],
+                    [
+                        135.52,
+                        146.38
+                    ],
+                    [
+                        146.64,
+                        146.38
+                    ],
+                    [
+                        146.64,
+                        137.47
+                    ],
+                    [
+                        135.52,
+                        137.47
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "HUNGRY LION",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        160.68,
+                        146.4
+                    ],
+                    [
+                        147.87,
+                        146.4
+                    ],
+                    [
+                        147.87,
+                        137.47
+                    ],
+                    [
+                        160.68,
+                        137.47
+                    ],
+                    [
+                        160.68,
+                        146.4
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "EDGARS",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        176.63,
+                        144.16
+                    ],
+                    [
+                        177.61,
+                        142.72
+                    ],
+                    [
+                        173.9,
+                        139.77
+                    ],
+                    [
+                        173.9,
+                        137.47
+                    ],
+                    [
+                        161.91,
+                        137.47
+                    ],
+                    [
+                        161.91,
+                        146.4
+                    ],
+                    [
+                        174.79,
+                        146.4
+                    ],
+                    [
+                        175.26,
+                        145.44
+                    ],
+                    [
+                        175.79,
+                        145.69
+                    ],
+                    [
+                        176.63,
+                        144.16
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "PEP CELL",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        167.34,
+                        123.41
+                    ],
+                    [
+                        173.9,
+                        123.41
+                    ],
+                    [
+                        173.9,
+                        136.24
+                    ],
+                    [
+                        113.87,
+                        136.24
+                    ],
+                    [
+                        113.87,
+                        115.52
+                    ],
+                    [
+                        126.36,
+                        115.52
+                    ],
+                    [
+                        126.36,
+                        110.16
+                    ],
+                    [
+                        167.34,
+                        110.38
+                    ],
+                    [
+                        167.34,
+                        123.41
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "IDEALS",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        113.87,
+                        114.29
+                    ],
+                    [
+                        125.13,
+                        114.29
+                    ],
+                    [
+                        125.13,
+                        110.39
+                    ],
+                    [
+                        113.87,
+                        110.39
+                    ],
+                    [
+                        113.87,
+                        114.29
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "CRAZY STORE",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        147.11,
+                        107.85
+                    ],
+                    [
+                        147.94,
+                        107.85
+                    ],
+                    [
+                        147.94,
+                        101.24
+                    ],
+                    [
+                        142.65,
+                        101.24
+                    ],
+                    [
+                        142.65,
+                        97.21
+                    ],
+                    [
+                        122.03,
+                        97.21
+                    ],
+                    [
+                        120.34,
+                        95.46
+                    ],
+                    [
+                        118.12,
+                        97.6
+                    ],
+                    [
+                        114.97,
+                        102.32
+                    ],
+                    [
+                        113.9,
+                        106.85
+                    ],
+                    [
+                        113.87,
+                        109.16
+                    ],
+                    [
+                        147.14,
+                        109.16
+                    ],
+                    [
+                        147.11,
+                        107.85
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "STUDIO 88",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        121.19,
+                        94.62
+                    ],
+                    [
+                        122.55,
+                        95.98
+                    ],
+                    [
+                        142.65,
+                        95.98
+                    ],
+                    [
+                        142.65,
+                        83.86
+                    ],
+                    [
+                        134.04,
+                        83.86
+                    ],
+                    [
+                        132.99,
+                        82.81
+                    ],
+                    [
+                        131.96,
+                        82.79
+                    ],
+                    [
+                        121.24,
+                        93.51
+                    ],
+                    [
+                        121.19,
+                        94.62
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "GLOMAIL",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        176.68,
+                        76.35
+                    ],
+                    [
+                        163.7,
+                        76.35
+                    ],
+                    [
+                        163.7,
+                        95.66
+                    ],
+                    [
+                        176.68,
+                        95.66
+                    ],
+                    [
+                        176.68,
+                        76.35
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "PEP",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        141.97,
+                        74.95
+                    ],
+                    [
+                        139.71,
+                        74.95
+                    ],
+                    [
+                        133.89,
+                        80.85
+                    ],
+                    [
+                        133.87,
+                        81.94
+                    ],
+                    [
+                        134.55,
+                        82.63
+                    ],
+                    [
+                        142.65,
+                        82.63
+                    ],
+                    [
+                        142.66,
+                        75.6
+                    ],
+                    [
+                        141.97,
+                        75.6
+                    ],
+                    [
+                        141.97,
+                        74.95
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "STYLE DIVA",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        162.47,
+                        76.73
+                    ],
+                    [
+                        161.46,
+                        74.95
+                    ],
+                    [
+                        146.59,
+                        74.95
+                    ],
+                    [
+                        145.91,
+                        75.6
+                    ],
+                    [
+                        145.91,
+                        94.48
+                    ],
+                    [
+                        150.63,
+                        94.48
+                    ],
+                    [
+                        150.63,
+                        97.45
+                    ],
+                    [
+                        152,
+                        97.45
+                    ],
+                    [
+                        152,
+                        98.28
+                    ],
+                    [
+                        158.57,
+                        98.28
+                    ],
+                    [
+                        158.57,
+                        95.65
+                    ],
+                    [
+                        162.47,
+                        95.65
+                    ],
+                    [
+                        162.47,
+                        76.73
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "MTN",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        184.12,
+                        76.12
+                    ],
+                    [
+                        177.91,
+                        76.12
+                    ],
+                    [
+                        177.91,
+                        84.68
+                    ],
+                    [
+                        184.12,
+                        84.68
+                    ],
+                    [
+                        184.12,
+                        76.12
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "HOME LINEN",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        191.48,
+                        82.29
+                    ],
+                    [
+                        185.35,
+                        82.29
+                    ],
+                    [
+                        185.35,
+                        76.13
+                    ],
+                    [
+                        188.75,
+                        76.13
+                    ],
+                    [
+                        191.48,
+                        78.89
+                    ],
+                    [
+                        191.48,
+                        82.29
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "INTERNET CAFE",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        189.6,
+                        90.6
+                    ],
+                    [
+                        186.96,
+                        92.06
+                    ],
+                    [
+                        183.94,
+                        92.58
+                    ],
+                    [
+                        177.91,
+                        92.58
+                    ],
+                    [
+                        177.91,
+                        85.91
+                    ],
+                    [
+                        185.35,
+                        85.91
+                    ],
+                    [
+                        185.35,
+                        83.52
+                    ],
+                    [
+                        191.89,
+                        83.52
+                    ],
+                    [
+                        191.89,
+                        84.21
+                    ],
+                    [
+                        192.83,
+                        84.21
+                    ],
+                    [
+                        192.05,
+                        87.52
+                    ],
+                    [
+                        189.6,
+                        90.6
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "MUGG AND BEAN",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        191.97,
+                        99.45
+                    ],
+                    [
+                        177.16,
+                        99.51
+                    ],
+                    [
+                        177.16,
+                        103.56
+                    ],
+                    [
+                        177.98,
+                        103.56
+                    ],
+                    [
+                        177.98,
+                        106.28
+                    ],
+                    [
+                        191.97,
+                        106.28
+                    ],
+                    [
+                        191.97,
+                        104.72
+                    ],
+                    [
+                        192.72,
+                        104.72
+                    ],
+                    [
+                        192.72,
+                        100.52
+                    ],
+                    [
+                        191.97,
+                        100.52
+                    ],
+                    [
+                        191.97,
+                        99.45
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "DEBONAIRS",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        177.98,
+                        107.63
+                    ],
+                    [
+                        177.98,
+                        109.16
+                    ],
+                    [
+                        178.89,
+                        109.16
+                    ],
+                    [
+                        178.89,
+                        114.3
+                    ],
+                    [
+                        180.61,
+                        114.3
+                    ],
+                    [
+                        180.61,
+                        121.47
+                    ],
+                    [
+                        186.49,
+                        121.47
+                    ],
+                    [
+                        187.46,
+                        121.16
+                    ],
+                    [
+                        187.62,
+                        117.94
+                    ],
+                    [
+                        188.12,
+                        115.17
+                    ],
+                    [
+                        188.61,
+                        112.89
+                    ],
+                    [
+                        188.94,
+                        111.73
+                    ],
+                    [
+                        189.88,
+                        109.18
+                    ],
+                    [
+                        189.88,
+                        107.63
+                    ],
+                    [
+                        177.98,
+                        107.63
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "VACANT",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        177.4,
+                        126.6
+                    ],
+                    [
+                        177.4,
+                        125.27
+                    ],
+                    [
+                        176.56,
+                        125.27
+                    ],
+                    [
+                        176.56,
+                        122.7
+                    ],
+                    [
+                        186.49,
+                        122.7
+                    ],
+                    [
+                        187.43,
+                        123.08
+                    ],
+                    [
+                        187.46,
+                        124.94
+                    ],
+                    [
+                        187.58,
+                        126.6
+                    ],
+                    [
+                        177.4,
+                        126.6
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "GEEN AND RICHARDS",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        188.26,
+                        134.36
+                    ],
+                    [
+                        188.66,
+                        133.52
+                    ],
+                    [
+                        187.56,
+                        127.83
+                    ],
+                    [
+                        176.56,
+                        127.83
+                    ],
+                    [
+                        176.56,
+                        138.49
+                    ],
+                    [
+                        178.42,
+                        139.96
+                    ],
+                    [
+                        179.67,
+                        140.08
+                    ],
+                    [
+                        180.28,
+                        139.32
+                    ],
+                    [
+                        181,
+                        138.64
+                    ],
+                    [
+                        184.69,
+                        136.11
+                    ],
+                    [
+                        188.26,
+                        134.36
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "OLD FASHIONED FISH AND CHIPS",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        214.19,
+                        139.44
+                    ],
+                    [
+                        216.87,
+                        142.54
+                    ],
+                    [
+                        219.72,
+                        146.4
+                    ],
+                    [
+                        238.53,
+                        146.4
+                    ],
+                    [
+                        238.53,
+                        121.89
+                    ],
+                    [
+                        219.36,
+                        121.89
+                    ],
+                    [
+                        219.36,
+                        124.94
+                    ],
+                    [
+                        214.34,
+                        124.94
+                    ],
+                    [
+                        214.32,
+                        136.76
+                    ],
+                    [
+                        213.1,
+                        138.29
+                    ],
+                    [
+                        214.19,
+                        139.44
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "VACANT",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        207.98,
+                        123.51
+                    ],
+                    [
+                        212.16,
+                        123.51
+                    ],
+                    [
+                        212.16,
+                        124.94
+                    ],
+                    [
+                        213.09,
+                        124.94
+                    ],
+                    [
+                        213.09,
+                        136.31
+                    ],
+                    [
+                        211.99,
+                        137.51
+                    ],
+                    [
+                        206.13,
+                        134.13
+                    ],
+                    [
+                        205.76,
+                        133.49
+                    ],
+                    [
+                        206.25,
+                        131.45
+                    ],
+                    [
+                        207.1,
+                        124.09
+                    ],
+                    [
+                        207.98,
+                        124.09
+                    ],
+                    [
+                        207.98,
+                        123.51
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "MELLINS",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        204.87,
+                        109.19
+                    ],
+                    [
+                        204.87,
+                        107.63
+                    ],
+                    [
+                        216.91,
+                        107.63
+                    ],
+                    [
+                        216.91,
+                        122.28
+                    ],
+                    [
+                        207.34,
+                        122.24
+                    ],
+                    [
+                        207.16,
+                        119
+                    ],
+                    [
+                        206.65,
+                        115.25
+                    ],
+                    [
+                        205.77,
+                        111.68
+                    ],
+                    [
+                        204.87,
+                        109.19
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "JET MUSIC",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        202.66,
+                        104.72
+                    ],
+                    [
+                        202.66,
+                        106.28
+                    ],
+                    [
+                        216.93,
+                        106.28
+                    ],
+                    [
+                        216.93,
+                        101.73
+                    ],
+                    [
+                        211.69,
+                        101.73
+                    ],
+                    [
+                        211.69,
+                        99.51
+                    ],
+                    [
+                        203,
+                        99.51
+                    ],
+                    [
+                        201.87,
+                        100.52
+                    ],
+                    [
+                        201.87,
+                        104.72
+                    ],
+                    [
+                        202.66,
+                        104.72
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "JIMMYS",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        202.62,
+                        89.28
+                    ],
+                    [
+                        202.62,
+                        92.52
+                    ],
+                    [
+                        201.87,
+                        92.52
+                    ],
+                    [
+                        201.87,
+                        97.28
+                    ],
+                    [
+                        203,
+                        98.28
+                    ],
+                    [
+                        211.69,
+                        98.28
+                    ],
+                    [
+                        211.69,
+                        95.22
+                    ],
+                    [
+                        207.66,
+                        91.19
+                    ],
+                    [
+                        207.63,
+                        87.51
+                    ],
+                    [
+                        201.87,
+                        87.51
+                    ],
+                    [
+                        201.87,
+                        89.28
+                    ],
+                    [
+                        202.62,
+                        89.28
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "AMERICAN SWISS",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        202.65,
+                        83.52
+                    ],
+                    [
+                        202.65,
+                        84.19
+                    ],
+                    [
+                        201.87,
+                        84.19
+                    ],
+                    [
+                        201.87,
+                        86.28
+                    ],
+                    [
+                        207.63,
+                        86.28
+                    ],
+                    [
+                        207.63,
+                        83.51
+                    ],
+                    [
+                        202.65,
+                        83.52
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "MARKHAMS",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        204.93,
+                        75.47
+                    ],
+                    [
+                        207.63,
+                        75.47
+                    ],
+                    [
+                        207.63,
+                        82.29
+                    ],
+                    [
+                        201.87,
+                        82.33
+                    ],
+                    [
+                        201.87,
+                        78.54
+                    ],
+                    [
+                        204.93,
+                        75.47
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "FOSCHINI",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        212.92,
+                        100.5
+                    ],
+                    [
+                        212.92,
+                        94.71
+                    ],
+                    [
+                        208.86,
+                        90.64
+                    ],
+                    [
+                        208.86,
+                        75.47
+                    ],
+                    [
+                        218.36,
+                        75.47
+                    ],
+                    [
+                        218.36,
+                        100.5
+                    ],
+                    [
+                        212.92,
+                        100.5
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "EXACT",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        239.59,
+                        89.83
+                    ],
+                    [
+                        240.76,
+                        87.8
+                    ],
+                    [
+                        219.69,
+                        75.47
+                    ],
+                    [
+                        219.59,
+                        75.47
+                    ],
+                    [
+                        219.59,
+                        112.25
+                    ],
+                    [
+                        225.64,
+                        112.25
+                    ],
+                    [
+                        225.64,
+                        110.52
+                    ],
+                    [
+                        233.09,
+                        110.52
+                    ],
+                    [
+                        233.09,
+                        93.75
+                    ],
+                    [
+                        239.59,
+                        93.75
+                    ],
+                    [
+                        239.59,
+                        89.83
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "THE SCENE",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        241.35,
+                        89.24
+                    ],
+                    [
+                        240.82,
+                        90.16
+                    ],
+                    [
+                        240.82,
+                        94.98
+                    ],
+                    [
+                        234.32,
+                        94.98
+                    ],
+                    [
+                        234.32,
+                        110.52
+                    ],
+                    [
+                        241.25,
+                        110.52
+                    ],
+                    [
+                        241.25,
+                        112.25
+                    ],
+                    [
+                        250.32,
+                        112.25
+                    ],
+                    [
+                        250.32,
+                        91.35
+                    ],
+                    [
+                        246.81,
+                        91.35
+                    ],
+                    [
+                        242.3,
+                        88.74
+                    ],
+                    [
+                        241.85,
+                        89.52
+                    ],
+                    [
+                        241.35,
+                        89.24
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "INCREDIBLE CONNECTION",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        260.72,
+                        100.63
+                    ],
+                    [
+                        260.72,
+                        95.57
+                    ],
+                    [
+                        259.26,
+                        93.55
+                    ],
+                    [
+                        258.81,
+                        91.35
+                    ],
+                    [
+                        253.58,
+                        91.35
+                    ],
+                    [
+                        253.58,
+                        100.63
+                    ],
+                    [
+                        260.72,
+                        100.63
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "JOHN CRAIG",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        261.47,
+                        102.54
+                    ],
+                    [
+                        261.47,
+                        113.39
+                    ],
+                    [
+                        260.72,
+                        113.39
+                    ],
+                    [
+                        260.72,
+                        114.29
+                    ],
+                    [
+                        253.58,
+                        114.29
+                    ],
+                    [
+                        253.58,
+                        101.86
+                    ],
+                    [
+                        260.72,
+                        101.86
+                    ],
+                    [
+                        260.72,
+                        102.54
+                    ],
+                    [
+                        261.47,
+                        102.54
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "VACANT",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        253.95,
+                        123.52
+                    ],
+                    [
+                        253.95,
+                        127.92
+                    ],
+                    [
+                        247.79,
+                        127.92
+                    ],
+                    [
+                        247.79,
+                        115.52
+                    ],
+                    [
+                        260.72,
+                        115.52
+                    ],
+                    [
+                        260.72,
+                        123.52
+                    ],
+                    [
+                        253.95,
+                        123.52
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "SHEET STREET",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        260.72,
+                        124.61
+                    ],
+                    [
+                        255.04,
+                        124.61
+                    ],
+                    [
+                        255.04,
+                        127.92
+                    ],
+                    [
+                        260.72,
+                        127.92
+                    ],
+                    [
+                        260.72,
+                        124.61
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": [
+                {
+                    "text": "KFC",
+                    "language": "en_US"
+                }
+            ],
+            "type": "",
+            "center": [],
+            "style": {
+                "weight": 2,
+                "opacity": 0.8,
+                "className": "default-animate"
+            }
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        260.68,
+                        129.15
+                    ],
+                    [
+                        241.91,
+                        129.15
+                    ],
+                    [
+                        241.91,
+                        138.29
+                    ],
+                    [
+                        260.68,
+                        138.29
+                    ],
+                    [
+                        260.68,
+                        129.15
+                    ]
+                ]
+            ]
+        }
+    }
+]

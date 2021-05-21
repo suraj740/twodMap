@@ -8,7 +8,7 @@ var twod = new Lf.TwoDMap();
 var options = {
     // layers: [ this.ikeaMaps, this.ikeaOverlay],
     // layers: [this.brooklynMaps],
-    // zoomControl: false,
+    zoomControl: !L.Browser.mobile,
     attributionControl: false,
     crs: L.CRS.Simple, // vvv imp.
     minZoom: 0,
@@ -16,7 +16,7 @@ var options = {
     // maxZoom: 18,
     // projection: L.Projection.LonLat,
     // minZoom: 1,
-    zoom: 0,
+    zoom: 0.5,
     // rotate: true,
     // maxBounds: [[0, 0], [310.535, 677.664]],
     projection: L.Projection.LonLat,
@@ -27,11 +27,22 @@ var options = {
     // center: L.latLng(37.8, -96)
     // center: latLng([ 46.879966, -121.726909 ])
 };
-twod.showLabel = true;
+twod.showLabel = false;
 
 twod.initMap('mapid', options);
+twod.changeTheme(
+    {
+        'primary_color': '',
+        'secondary_color': '',
+        'primary_text_color': '',
+        'secondary_text_color': '',
+        'hover': '',
+        'clicked': '',
+        'background': '#bfcab4',
+    }
+);
 (async () => {
-    var response = await fetch('./assets/pois.json');
+    var response = await fetch('./assets/geojson.json');
     var pois = await response.json();
     twod.setGeoJsonData(pois);
 

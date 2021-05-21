@@ -13,6 +13,7 @@ class TwoDMap {
         this.showLabel = true;
         this.maskAdded = {};
         this.marker = {};
+        
     }
     initMap(mapId, options) {
         this.map = L.map(mapId, options);
@@ -24,7 +25,7 @@ class TwoDMap {
         // });
         // this.map.setMaxBounds([[0, 0], [310.535, 677.664]]);
         // L.TileLayer.boundaryCanvas('https://wallpapercave.com/wp/XqRBXyO.jpg', {boundary: this.data, tileSize: 1200, }).addTo(this.map)
-        L.imageOverlay('https://wallpapercave.com/wp/XqRBXyO.jpg', [[0, 0], [310.535, 677.664]]).addTo(this.map);
+        L.imageOverlay('map_bg.png', [[-35, 0], [355, 390]]).addTo(this.map);
         L.control.mousePosition({ position: 'bottomright', lngFirst: true }).addTo(this.map)
     }
 
@@ -52,7 +53,7 @@ class TwoDMap {
 
 
     _getFloorInformation(data) {
-        
+
         // this._jQuery.ajax({
         //     type: "GET",
         //     url: self.options.api.url.base + self.options.api.url.venues + this._mapOptions.venueId,
@@ -61,7 +62,7 @@ class TwoDMap {
         //     data: { "projection": '{"building":1}', 'url': 1 },
         //     success: function (response) {
         //         self._log(Logger.DEBUG.name, 'Building Info', response);
-                
+
 
 
         //         self._map.spin(false);
@@ -75,7 +76,7 @@ class TwoDMap {
         // this.map.fitBounds(this._bounds, {
         //     padding: [20, 30]
         // });
-        this.map.setMaxBounds(this._bounds);
+        this.map.setMaxBounds([[-35, 0], [355, 390]]);
         this._addToolbar(data);
     }
 
@@ -145,7 +146,7 @@ class TwoDMap {
         }
 
         const onEachFeature = (feature, layer) => {
-            let area =  turf.area(feature);
+            let area = turf.area(feature);
             console.log('area', area);
             // console.log(feature, layer);
             if (this.showLabel) {
@@ -157,7 +158,7 @@ class TwoDMap {
             }
 
 
-            layer.on('reclipped', function(ev) {
+            layer.on('reclipped', function (ev) {
                 console.log('on clipped', ev);
             });
             // var smallIcon = L.icon({
@@ -177,16 +178,19 @@ class TwoDMap {
             });
             // layer._leaflet_id = feature.properties.pid;
         }
-       
+
         geojson = L.geoJson(data, {
             style: style,
             onEachFeature: onEachFeature
         }).addTo(this.map);
-         this.map.on('zoom', (e) => {
-            console.log('zoom level', this.map.getZoom())
-        })
+       
         this.featuresLayer = geojson;
         // console.log('geojson', geojson);
+
+
+        this.map.on('zoom', (e) => {
+            console.log('zoom level', this.map.getZoom())
+        })
     }
 
     addRouting(start, end, autoRoute = false) {
@@ -275,9 +279,10 @@ class TwoDMap {
                 bounceOnAddCallback: function () { console.log("done"); }
             })
                 .addTo(this.map)
-                .bindPopup(data.properties.name[0].text, {className: 'popup-marker', closeOnClick: false, closeButton: false}).openPopup([center[1], center[0]]);
+                .bindPopup(data.properties.name[0].text, { className: 'popup-marker', closeOnClick: false, closeButton: false }).openPopup([center[1], center[0]]);
         }
     }
+
 
     _clearPreviousLayers() {
         Object.keys(this.maskAdded).map((key) => {
@@ -355,7 +360,73 @@ class TwoDMap {
                     bounceOnAddCallback: function () { console.log("done"); }
                 })
                     .addTo(this.map)
-                    .bindPopup(data.properties.name[0].text, {className: 'popup-marker', closeOnClick: false, closeButton: false, autoClose: false}).openPopup([centers[key][1], centers[key][0]]);
+                    .bindPopup(data.properties.name[0].text, { className: 'popup-marker', closeOnClick: false, closeButton: false, autoClose: false }).openPopup([centers[key][1], centers[key][0]]);
+            });
+        }
+    }
+    _selectCategory(id) {
+        this._clearPreviousLayers();
+        var data = this.data.filter(item => item.properties.pid === id);
+        var mask = [];
+        var centers = [];
+        if (data.length) {
+            data.map((id) => {
+                // if (data.geometry.type === 'Polygon') {
+                mask.push([]);
+                // }
+            });
+            data.map((item, key) => {
+                
+                if (item.geometry.type === 'Polygon') {
+                    var latLngs = item.geometry.coordinates[0];
+                    // var latLngs = area.area.polygon.coordinates[0];
+                    centers.push(
+                        turf.centerOfMass(item).geometry.coordinates
+                    );
+                    // console.log('latLngs', latLngs, key, mask.length);
+                    latLngs.map((latlng) => {
+                        mask[key].push(new L.LatLng(latlng[1], latlng[0]));
+                    });
+                }
+            });
+            // console.log('mask', mask, centers);
+            this.maskAdded[data.join()] = L.mask(mask, {
+                stroke: false,
+                color: '#333',
+                fillOpacity: 0.5,
+                clickable: true,
+                outerBounds: new L.LatLngBounds(this._bounds)
+            }).addTo(this.map);
+
+            var myIcon = L.icon({
+                iconUrl: './marker.png',
+                iconSize: [28, 65],
+                iconAnchor: [10, 64],
+                popupAnchor: [5, -50],
+                // shadowUrl: './pngegg.png',
+                // shadowSize: [28, 65],
+                // shadowAnchor: [22, 64]
+            });
+            data.map((item, key) => {
+                // var data = this.data.find(item => item.properties.pid === id);
+                // var area = this._getAreaInfo(id);
+                // this.maskAdded.bindTooltip(new LanguageStorePipe().transform(area.name),
+                // {
+                //     className: 'tooltip-area-label',
+                //     offset: L.point(0, 9),
+                //     direction: 'top',
+                //     permanent: true,
+                //     sticky: true,
+                //     opacity: 0.7,
+                //     interactive: true
+                // }).openTooltip([centers[key][1], centers[key][0]]);
+                this.marker[id] = L.marker([centers[key][1], centers[key][0]], {
+                    icon: myIcon, bounceOnAdd: true,
+                    bounceOnAddOptions: { duration: 500, height: 150, loop: 1 },
+                    bounceOnAddCallback: function () { console.log("done"); }
+                })
+                    .addTo(this.map)
+                    .bindPopup(item.properties.name[0].text, { className: 'popup-marker', closeOnClick: false, closeButton: false, autoClose: false }).openPopup([centers[key][1], centers[key][0]]);
             });
         }
     }
@@ -369,19 +440,19 @@ class TwoDMap {
 
     _getMapBounds(map_info) {
         // Format follows [y-coordinate, x-coordinate]
-    
+
         map_info.scale_y = parseFloat(map_info.scale_y, 10);
         map_info.scale_x = parseFloat(map_info.scale_x, 10);
         var bottomLeft = [0, 0], topRight = [map_info.scale_y, map_info.scale_x];
-    
+
         if (map_info.orig_x) {
             bottomLeft[1] = -map_info.orig_x
         }
-    
+
         if (map_info.orig_y) {
             bottomLeft[0] = -map_info.orig_y
         }
-    
+
         return {
             'floorbounds': [bottomLeft, topRight],
             'imagebounds': [[0, 0], [map_info.scale_y, map_info.scale_x]],
@@ -395,37 +466,62 @@ class TwoDMap {
             layer: this.featuresLayer,
             propertyName: "name.0.text",
             collapsed: true,
+            autoCollapse: true,
             position: 'topright',
             marker: false,
-            moveToLocation: function(latlng, title, map) {
+            moveToLocation: function (latlng, title, map) {
                 //map.fitBounds( latlng.layer.getBounds() );
                 var zoom = map.getBoundsZoom(latlng.layer.getBounds());
-                  map.setView(latlng, zoom); // access the zoom
+                map.setView(latlng, zoom); // access the zoom
             }
         });
-    
-        searchControl.on('search:locationfound', function(e) {
-            
+
+        searchControl.on('search:locationfound',(e) => {
+
             //console.log('search:locationfound', );
-    
+
             //map.removeLayer(this._markerSearch)
-    
-            e.layer.setStyle({fillColor: '#3f0', color: '#0f0'});
-            if(e.layer._popup)
+
+            e.layer.setStyle({ fillColor: '#3f0', color: '#0f0' });
+
+            e.layer.bindTooltip(e.layer.feature.properties.name[0].text, {
+                permanent: false,
+                direction: "center",
+                className: "my-labels"
+            }).openTooltip();
+            if (e.layer._popup)
                 e.layer.openPopup();
-    
-        }).on('search:collapsed', function(e) {
-    
-            featuresLayer.eachLayer(function(layer) {	//restore feature color
-                featuresLayer.resetStyle(layer);
-            });	
+
+        })
+        .on('search:collapsed', (e) => {
+            this.featuresLayer.eachLayer((layer) => {	//restore feature color
+                this.featuresLayer.resetStyle(layer);
+            });
         });
-        
+
         this.map.addControl(searchControl);
     }
 
-    changeTheme() {
-
+    changeTheme(data) {
+        // const data1 = {
+        //     'primary_color': '',
+        //     'secondary_color': '',
+        //     'primary_text_color': '',
+        //     'secondary_text_color': '',
+        //     'hover': '',
+        //     'clicked': '',
+        //     'background': '',
+        //     // "default": "",
+        //     // "icon": {
+        //     //     "marker": "",
+        //     //     "offer": "",
+        //     //     "": ""
+        //     // }
+        // }
+        let r = document.querySelector(':root');
+        Object.entries(data).map((item, key) => {
+            r.style.setProperty('--' + item[0], item[1]);
+        });
     }
     // showLabel() {
     //     return this.showLabel;

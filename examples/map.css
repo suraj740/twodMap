@@ -3,6 +3,17 @@ body {
     margin: 0;
     --l: 3.5em;
 }
+
+
+:root {
+    --primary_color: #000;
+    --secondaryColor: #ffffff; 
+    --primary_text_color: #ddd;
+    --secondary_text_color: #eee;
+    --hover: #fdfdfd;
+    --clicked: #efefef;
+    --background: #ddd;
+}
 html, body, #mapid {
     height: 100%;
     width: 100vw;
@@ -11,6 +22,9 @@ html, body, #mapid {
 /* #mapid {
     height: calc(100vh - 100px);
 } */
+.leaflet-container {
+    background: var(--background);
+}
 
 .leaflet-tooltip.my-labels {
     background-color: transparent;
@@ -79,4 +93,9 @@ html, body, #mapid {
 .leaflet-bar a.leaflet-disabled {
     background-color: #444 !important;
     color: #bbb im !important;
+}
+
+
+.my-labels {
+    color: var(--primary_color);
 }
