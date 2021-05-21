@@ -8,17 +8,18 @@ body {
     border-radius: 50%;
 }
 
-
 :root {
     --primary_color: #000;
-    --secondaryColor: #ffffff; 
+    --secondaryColor: #ffffff;
     --primary_text_color: #ddd;
     --secondary_text_color: #eee;
     --hover: #fdfdfd;
     --clicked: #efefef;
     --background: #ddd;
 }
-html, body, #mapid {
+html,
+body,
+#mapid {
     height: 100%;
     width: 100vw;
 }
@@ -44,18 +45,18 @@ html, body, #mapid {
     background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0 0 5px #bbb;
     padding: 0 5px;
-    margin:0;
+    margin: 0;
     color: #333;
-    font: 11px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
-  }
+    font: 11px/1.5 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
 
-.popup-marker > .leaflet-popup-tip-container{
+.popup-marker > .leaflet-popup-tip-container {
     display: none;
 }
-.popup-marker .leaflet-popup-content{
+.popup-marker .leaflet-popup-content {
     margin: 0px 10px;
 }
-.popup-marker > .leaflet-popup-content-wrapper{
+.popup-marker > .leaflet-popup-content-wrapper {
     background: #333;
     color: #fff;
     padding: -5px;
@@ -68,13 +69,17 @@ html, body, #mapid {
     color: #fff;
 }
 
+.control-enabled {
+    background: #47a7f5 !important;
+}
+
 .control-enabled > a {
     background: #fff;
 }
 
-.control-enabled .mdi {
+/* .control-enabled .mdi {
     color: #000;
-}
+} */
 
 /* for leaflet zoom control */
 
@@ -90,7 +95,8 @@ html, body, #mapid {
     color: #fff;
 }
 
-.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out {
+.leaflet-touch .leaflet-control-zoom-in,
+.leaflet-touch .leaflet-control-zoom-out {
     font-size: 16px;
 }
 
@@ -99,7 +105,39 @@ html, body, #mapid {
     color: #bbb im !important;
 }
 
-
 .my-labels {
     color: var(--primary_color);
+}
+
+.categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* padding: auto; */
+}
+
+.category-item {
+    min-width: 92px;
+    min-height: 95px;
+    border-radius: 4px;
+    background-color: var(--background);
+    margin: 0.35rem;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+.ripple:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.ripple:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
 }

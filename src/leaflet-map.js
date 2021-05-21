@@ -6,6 +6,7 @@ require('./mask.polygon.js');
 require('./bouncemarker.js');
 require('./twodmap-toolbar.control.js');
 require('./twodmap.search.control.js');
+require('./twodmap.sidebar.js');
 require('./boundarycanvas.js');
 var turf = require('@turf/turf');
 class TwoDMap {
@@ -26,6 +27,7 @@ class TwoDMap {
         // this.map.setMaxBounds([[0, 0], [310.535, 677.664]]);
         // L.TileLayer.boundaryCanvas('https://wallpapercave.com/wp/XqRBXyO.jpg', {boundary: this.data, tileSize: 1200, }).addTo(this.map)
 
+        var sidebar = L.control.sidebar('sidebar', {position: 'right'}).addTo(this.map);
         L.imageOverlay('map_bg.png', [[-35, 0], [355, 390]]).addTo(this.map);
         L.control.mousePosition({ position: 'bottomright', lngFirst: true }).addTo(this.map)
     }
@@ -78,7 +80,7 @@ class TwoDMap {
         //     padding: [20, 30]
         // });
         this.map.setMaxBounds([[-35, 0], [355, 390]]);
-        this._addToolbar(data);
+        // this._addToolbar(data);
     }
 
 
@@ -384,7 +386,7 @@ class TwoDMap {
     _selectCategory(id) {
         this._clearPreviousLayers();
 
-        console.log('this.data', this.data);
+        // console.log('this.data', this.data);
         var data = this.data.filter(item => item.properties.category_ids ? item.properties.category_ids.includes(id) : false);
         var mask = [];
         var centers = [];
@@ -409,7 +411,7 @@ class TwoDMap {
                 }
             });
             // console.log('mask', mask, centers);
-            this.maskAdded[data.join()] = L.mask(mask, {
+            this.maskAdded[id] = L.mask(mask, {
                 stroke: false,
                 color: '#333',
                 fillOpacity: 0.5,
@@ -440,7 +442,7 @@ class TwoDMap {
                 //     opacity: 0.7,
                 //     interactive: true
                 // }).openTooltip([centers[key][1], centers[key][0]]);
-                this.marker[id] = L.marker([centers[key][1], centers[key][0]], {
+                this.marker[key] = L.marker([centers[key][1], centers[key][0]], {
                     icon: myIcon, bounceOnAdd: true,
                     bounceOnAddOptions: { duration: 500, height: 150, loop: 1 },
                     bounceOnAddCallback: function () { console.log("done"); }

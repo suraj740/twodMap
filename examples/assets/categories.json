@@ -1,0 +1,32 @@
+[
+    {
+        "id": "clothes",
+        "name": "Clothes",
+        "icon": "hanger"
+    },
+    {
+        "id": "shopping",
+        "name": "Shopping",
+        "icon": "shopping"
+    },
+    {
+        "id": "leisure",
+        "name": "Leisure",
+        "icon": "beach"
+    },
+    {
+        "id": "books",
+        "name": "Books",
+        "icon": "book"
+    },
+    {
+        "id": "parking",
+        "name": "Parking",
+        "icon": "parking"
+    },
+    {
+        "id": "restaurant",
+        "name": "Restaurants",
+        "icon": "food"
+    }
+]
