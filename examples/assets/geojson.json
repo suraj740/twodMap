@@ -8,8 +8,8 @@
                     "language": "en_US"
                 }
             ],
-            "cateogory_ids": [
-                "dsa"
+            "category_ids": [
+                "footwear", "clothes"
             ],
             "type": "",
             "center": [],
@@ -56,7 +56,9 @@
                     "language": "en_US"
                 }
             ],
-            "cateogory_id": "21313",
+            "category_ids": [
+                "footwear", "clothes"
+            ],
             "type": "",
             "center": [],
             "style": {
@@ -163,6 +165,9 @@
                     "language": "en_US"
                 }
             ],
+            "category_ids": [
+                "footwear", "clothes"
+            ],
             "type": "",
             "center": [],
             "style": {
@@ -247,6 +252,9 @@
                     "text": "FASHION EXPRESS",
                     "language": "en_US"
                 }
+            ],
+            "category_ids": [
+                "clothes"
             ],
             "type": "",
             "center": [],
@@ -369,6 +377,9 @@
                     "text": "MILADYS",
                     "language": "en_US"
                 }
+            ],
+            "category_ids": [
+                "clothes"
             ],
             "type": "",
             "center": [],

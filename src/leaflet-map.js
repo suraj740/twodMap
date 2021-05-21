@@ -25,6 +25,7 @@ class TwoDMap {
         // });
         // this.map.setMaxBounds([[0, 0], [310.535, 677.664]]);
         // L.TileLayer.boundaryCanvas('https://wallpapercave.com/wp/XqRBXyO.jpg', {boundary: this.data, tileSize: 1200, }).addTo(this.map)
+
         L.imageOverlay('map_bg.png', [[-35, 0], [355, 390]]).addTo(this.map);
         L.control.mousePosition({ position: 'bottomright', lngFirst: true }).addTo(this.map)
     }
@@ -107,7 +108,7 @@ class TwoDMap {
         const highlightFeature = e => {
             const layer = e.target;
             // console.log(layer)
-            if (!this.showLabel) {
+            if (!this.showLabel || !layer.getTooltip()) {
                 layer.bindTooltip(layer.feature.properties.name[0].text, {
                     permanent: false,
                     direction: "center",
@@ -147,7 +148,7 @@ class TwoDMap {
 
         const onEachFeature = (feature, layer) => {
             let area = turf.area(feature);
-            console.log('area', area);
+            // console.log('area', area);
             // console.log(feature, layer);
             if (this.showLabel) {
                 layer.bindTooltip(feature.properties.name[0].text, {
@@ -189,7 +190,23 @@ class TwoDMap {
 
 
         this.map.on('zoom', (e) => {
+
+            // this.featuresLayer.eachLayer((layer) => {//restore feature color
+            //     // layer.unbindTooltip();
+            //     if(!layer.getTooltip()) {
+            //         layer.bindTooltip(layer.feature.properties.name[0].text, {
+            //             permanent: false,
+            //             direction: "center",
+            //             className: "my-labels"
+            //         }).openTooltip();
+            //     }
+
+            //     else if (layer.getTooltip()) {
+            //         layer.unbindTooltip();
+            //     }
+            // });
             console.log('zoom level', this.map.getZoom())
+            
         })
     }
 
@@ -366,7 +383,9 @@ class TwoDMap {
     }
     _selectCategory(id) {
         this._clearPreviousLayers();
-        var data = this.data.filter(item => item.properties.pid === id);
+
+        console.log('this.data', this.data);
+        var data = this.data.filter(item => item.properties.category_ids ? item.properties.category_ids.includes(id) : false);
         var mask = [];
         var centers = [];
         if (data.length) {
@@ -395,13 +414,14 @@ class TwoDMap {
                 color: '#333',
                 fillOpacity: 0.5,
                 clickable: true,
-                outerBounds: new L.LatLngBounds(this._bounds)
+                className: 'mask',
+                outerBounds: new L.LatLngBounds([[-35, 0], [355, 390]])
             }).addTo(this.map);
 
             var myIcon = L.icon({
                 iconUrl: './marker.png',
-                iconSize: [28, 65],
-                iconAnchor: [10, 64],
+                iconSize: [28, 45],
+                iconAnchor: [10, 44],
                 popupAnchor: [5, -50],
                 // shadowUrl: './pngegg.png',
                 // shadowSize: [28, 65],

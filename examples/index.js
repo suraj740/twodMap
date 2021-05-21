@@ -52,15 +52,15 @@ twod.changeTheme(
     console.log('floor', floor);
     twod._getFloorInformation(floor.building);
     // twod._selectPlaces("01f0930a08fc4996baa4ca1d5cbef56e")
+    twod._selectCategory("clothes")
+    // var zoomBtn = document.querySelector('#zoomBtn')
 
-    var zoomBtn = document.querySelector('#zoomBtn')
-
-    zoomBtn.addEventListener('click', function(event) {
-        var zoomBtnSm = document.querySelectorAll('.zoom-btn-sm')
-        zoomBtnSm.forEach((btn) => {
-        btn.classList.toggle('scale-out');
-        })
-    });
+    // zoomBtn.addEventListener('click', function(event) {
+    //     var zoomBtnSm = document.querySelectorAll('.zoom-btn-sm')
+    //     zoomBtnSm.forEach((btn) => {
+    //     btn.classList.toggle('scale-out');
+    //     })
+    // });
     twod.addSearchControl();
 })();
 // fetch('./assets/pois.json')

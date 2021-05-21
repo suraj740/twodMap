@@ -4,6 +4,10 @@ body {
     --l: 3.5em;
 }
 
+.mask {
+    border-radius: 50%;
+}
+
 
 :root {
     --primary_color: #000;
