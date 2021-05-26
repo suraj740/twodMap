@@ -1,14 +1,17 @@
 L.Control.Toolbar = L.Control.extend({
     options: {
         'default' : {
-            position: 'bottomright'
+            position: 'bottomcenter'
         }
     },
 
     initialize: function (osMapInstance, options) {
         this._osMap = osMapInstance;
-        console.log('featureSet', options.featureSet);
-        this.options['retail'] = this.options['default'];
+        // console.log('featureSet', options.featureSet);
+        // this.options['retail'] = this.options['default'];
+        this.options['default']['position'] = options.position;
+        this.options['default']['categories'] = options.categories || null;
+        this.options['default']['venue'] = options.venue || null;
         if (options.type && this.options[options.type]) {
             this.options = this.options[options.type];
         }
@@ -17,7 +20,7 @@ L.Control.Toolbar = L.Control.extend({
             this.options = this.options['default'];
         }
 
-        // console.log('this.options', this.options, options.featureSet);
+        console.log('this.options', this.options);
 
 
         // this._osMap._jQuery.map(this.options.features, function (item) {
@@ -79,73 +82,123 @@ L.Control.Toolbar = L.Control.extend({
         // this._osmap = context;
     },
 
+    onAdd: function(map) {
+        var self = this;
+
+        if (self.options.categories) {
+            return self.createCategoriesToolbar(self.options.categories, self);
+        }
+        else if (self.options.venue) {
+            return self.createFloorSelection(self.options.venue, self);
+        }
+    },
     // onAdd: function(map) {
 
     //     var self = this;
-    //     self.toolbarContainer = L.DomUtil.create('div', 'wrapper');
+    //     self.previousElement = ''
+    //     self.toolbarContainer = L.DomUtil.create('div', 'zoom');
         
-    //     self.inputElement = L.DomUtil.create('input', 'customBox', self.toolbarContainer);
-    //     self.inputElement.setAttribute('type', 'checkbox');
-    //     self.inputElement.setAttribute('id', 'customBox');
+    //     self.zoomFab = L.DomUtil.create('a', 'zoom-fab zoom-btn-large', self.toolbarContainer);
+    //     self.zoomFab.setAttribute('id', 'zoomBtn');
+    //     L.DomUtil.create('i', 'mdi mdi-domain mdi-24px', self.zoomFab);
 
-    //     self.label = L.DomUtil.create('label', '', self.toolbarContainer);
-    //     self.label.setAttribute('for', 'customBox');
+    //     self.zoomMenu = L.DomUtil.create('ul', 'zoom-menu', self.toolbarContainer);
 
     //     var floors = [
-    //         {subItem: 'mdi mdi-stairs mdi-24px', class: 'one', id: '013be8af39c441b089f27cb936fee5c6'},
-    //         {subItem: 'mdi mdi-food-fork-drink mdi-24px', class : 'two', id: '01f0930a08fc4996baa4ca1d5cbef56e'},
-    //         {subItem: 'mdi mdi-parking mdi-24px', class: 'three', id: '04abc1a54b28424bb8881e076ebdaa65'}
+    //         {class: 'mdi mdi-stairs mdi-24px', id: '013be8af39c441b089f27cb936fee5c6 01f0930a08fc4996baa4ca1d5cbef56e'},
+    //         // {class: 'mdi mdi-food-fork-drink mdi-24px', id: '01f0930a08fc4996baa4ca1d5cbef56e'},
+    //         {class: 'mdi mdi-parking mdi-24px', id: '50428e8a52f343f594d55abc038129b2 68799e931b2949338bc20591e43adc6f 6893c9a23d0a441d93900b6c2a2a14c6 6fa02129add644d2a0d36f2ede0631b0 e11dd4a7261244d7872c2c2fd0b53405'}
     //     ];
     //     floors.map((fl) => {
-    //         var subitem = L.DomUtil.create('div', fl.class, self.toolbarContainer);
-    //         L.DomUtil.create('i', fl.subItem, subitem);
-    //         subitem.setAttribute('id', fl.id);
+    //         var list = L.DomUtil.create('li', '', self.zoomMenu);
+    //         list.setAttribute('id', fl.id);
+    //         var listBtn = L.DomUtil.create('a', 'zoom-fab zoom-btn-sm scale-transition scale-out', list);
+    //         L.DomUtil.create('i', fl.class, listBtn);
     //         L.DomEvent
-    //         .on(subitem, 'click', L.DomEvent.stopPropagation)
-    //         .on(subitem, 'dblclick', L.DomEvent.stopPropagation)
-    //         .on(subitem, 'wheel', L.DomEvent.stopPropagation)
-    //         .on(subitem, 'click', self._selectAreas, self);
+    //         .on(list, 'click', L.DomEvent.stopPropagation)
+    //         .on(list, 'dblclick', L.DomEvent.stopPropagation)
+    //         .on(list, 'wheel', L.DomEvent.stopPropagation)
+    //         .on(list, 'click', self._selectAreas, self);
     //     });
 
     //     L.DomEvent
-    //     .on(self.label, 'click', L.DomEvent.stopPropagation)
-    //     .on(self.label, 'dblclick', L.DomEvent.stopPropagation)
-    //     .on(self.label, 'wheel', L.DomEvent.stopPropagation)
+    //     .on(self.zoomFab, 'click', L.DomEvent.stopPropagation)
+    //     .on(self.zoomFab, 'dblclick', L.DomEvent.stopPropagation)
+    //     .on(self.zoomFab, 'wheel', L.DomEvent.stopPropagation)
     //     return self.toolbarContainer;
     // },
-    onAdd: function(map) {
 
-        var self = this;
+
+
+    createCategoriesToolbar: function (categories, self) {
+
         self.previousElement = ''
-        self.toolbarContainer = L.DomUtil.create('div', 'zoom');
-        
-        self.zoomFab = L.DomUtil.create('a', 'zoom-fab zoom-btn-large', self.toolbarContainer);
-        self.zoomFab.setAttribute('id', 'zoomBtn');
-        L.DomUtil.create('i', 'mdi mdi-domain mdi-24px', self.zoomFab);
+        self.toolbarContainer = L.DomUtil.create('div', 'scrollmenu');
 
-        self.zoomMenu = L.DomUtil.create('ul', 'zoom-menu', self.toolbarContainer);
+        categories.map((category) => {
+            var list = L.DomUtil.create('li', 'ripple', self.toolbarContainer);
+            // list.innerHTML = category.name;
 
-        var floors = [
-            {class: 'mdi mdi-stairs mdi-24px', id: '013be8af39c441b089f27cb936fee5c6 01f0930a08fc4996baa4ca1d5cbef56e'},
-            // {class: 'mdi mdi-food-fork-drink mdi-24px', id: '01f0930a08fc4996baa4ca1d5cbef56e'},
-            {class: 'mdi mdi-parking mdi-24px', id: '50428e8a52f343f594d55abc038129b2 68799e931b2949338bc20591e43adc6f 6893c9a23d0a441d93900b6c2a2a14c6 6fa02129add644d2a0d36f2ede0631b0 e11dd4a7261244d7872c2c2fd0b53405'}
-        ];
-        floors.map((fl) => {
-            var list = L.DomUtil.create('li', '', self.zoomMenu);
-            list.setAttribute('id', fl.id);
-            var listBtn = L.DomUtil.create('a', 'zoom-fab zoom-btn-sm scale-transition scale-out', list);
-            L.DomUtil.create('i', fl.class, listBtn);
+            list.setAttribute('id', category.id);
+            list.setAttribute('title', category.name);
+            L.DomUtil.create('i', 'mdi mdi-' + category.icon + ' mdi-24px' , list);
             L.DomEvent
             .on(list, 'click', L.DomEvent.stopPropagation)
             .on(list, 'dblclick', L.DomEvent.stopPropagation)
             .on(list, 'wheel', L.DomEvent.stopPropagation)
-            .on(list, 'click', self._selectAreas, self);
+            .on(list, 'click', self._selectItem, self);
+        });
+        L.DomEvent
+        .on(self.toolbarContainer, 'click', L.DomEvent.stopPropagation)
+        .on(self.toolbarContainer, 'dblclick', L.DomEvent.stopPropagation)
+        .on(self.toolbarContainer, 'wheel', L.DomEvent.stopPropagation)
+        .on(self.toolbarContainer, 'scroll', L.DomEvent.stopPropagation);
+        return self.toolbarContainer;
+    },
+
+    createFloorSelection: function (venue, self) {
+        self.toolbarContainer = L.DomUtil.create('div', 'zoom');
+
+        venue.building.map((building) => {
+            self.zoomFab = L.DomUtil.create('a', 'zoom-fab zoom-btn-large', self.toolbarContainer);
+            self.zoomFab.setAttribute('id', 'zoomBtn');
+            self.zoomFab.setAttribute('title', building.name[0].text);
+            L.DomUtil.create('i', 'mdi mdi-domain mdi-24px', self.zoomFab);
+
+            self.zoomMenu = L.DomUtil.create('ul', 'zoom-menu', self.toolbarContainer);
+            self.listBtn = [];
+            building.floor.map((fl, key) => {
+                var list = L.DomUtil.create('li', '', self.zoomMenu);
+                list.setAttribute('id', fl.floor_id);
+                self.listBtn[key] = L.DomUtil.create('a', 'zoom-fab zoom-btn-sm scale-transition scale-out', list);
+                self.listBtn[key].setAttribute('title', fl.site_index);
+                L.DomUtil.create('i', 'mdi mdi-layers', self.listBtn[key]);
+                // self.listBtn[key].innerHTML = fl.site_index;
+                L.DomEvent
+                .on(list, 'click', L.DomEvent.stopPropagation)
+                .on(list, 'dblclick', L.DomEvent.stopPropagation)
+                .on(list, 'wheel', L.DomEvent.stopPropagation)
+                // .on(list, 'click', self._selectAreas, self);
+            });
+            L.DomEvent
+            .on(self.zoomFab, 'click', L.DomEvent.stopPropagation)
+            .on(self.zoomFab, 'dblclick', L.DomEvent.stopPropagation)
+            .on(self.zoomFab, 'wheel', L.DomEvent.stopPropagation)
+            .on(self.zoomFab, 'click', function(event) {
+                console.log('self', self.listBtn);
+                self.listBtn.forEach((btn) => {
+
+                    if (!L.DomUtil.hasClass(btn, 'scale-out')) {
+                        L.DomUtil.addClass(btn, 'scale-out');
+                    }
+                    else {
+                        L.DomUtil.removeClass(btn, 'scale-out');
+                    }
+                })
+                
+            })
         });
 
-        L.DomEvent
-        .on(self.zoomFab, 'click', L.DomEvent.stopPropagation)
-        .on(self.zoomFab, 'dblclick', L.DomEvent.stopPropagation)
-        .on(self.zoomFab, 'wheel', L.DomEvent.stopPropagation)
         return self.toolbarContainer;
     },
 
@@ -261,6 +314,27 @@ L.Control.Toolbar = L.Control.extend({
         }
         
 
+    },
+
+    _selectItem: function (e) {
+        var self = this;
+        let id = e.currentTarget.getAttribute('id');
+
+        if (!self.previousElement) {
+            self.previousElement = e.currentTarget; 
+        }
+        if (!L.DomUtil.hasClass(e.currentTarget, 'control-enabled')) {
+            L.DomUtil.addClass(e.currentTarget, 'control-enabled');
+            if (self.previousElement && self.previousElement !== e.currentTarget) {
+                L.DomUtil.removeClass(self.previousElement, 'control-enabled');
+                self.previousElement = e.currentTarget;
+            }
+            self._osMap._selectCategory(id);
+        }
+        else {
+            L.DomUtil.removeClass(e.currentTarget, 'control-enabled');
+            self._osMap._selectCategory(null);
+        }
     },
 
     _createSuboptions: function (e) {

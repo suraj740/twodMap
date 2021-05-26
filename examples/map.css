@@ -57,7 +57,7 @@ body,
     margin: 0px 10px;
 }
 .popup-marker > .leaflet-popup-content-wrapper {
-    background: #333;
+    background: #0000007a;
     color: #fff;
     padding: -5px;
 }
@@ -102,7 +102,7 @@ body,
 
 .leaflet-bar a.leaflet-disabled {
     background-color: #444 !important;
-    color: #bbb im !important;
+    color: #bbb !important;
 }
 
 .my-labels {
@@ -140,4 +140,28 @@ body,
     background-color: #6eb9f7;
     background-size: 100%;
     transition: background 0s;
+}
+
+/************************************************/
+/* control positioning */
+
+.leaflet-center {
+    position: relative !important;
+    left: 0;
+    right: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.leaflet-center .leaflet-control {
+    bottom: 0;
+}
+
+.leaflet-control-container .leaflet-control-bottomcenter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }

@@ -11,12 +11,12 @@ var options = {
     zoomControl: !L.Browser.mobile,
     attributionControl: false,
     crs: L.CRS.Simple, // vvv imp.
-    minZoom: 0,
+    // minZoom: 0,
     // zoomOffset: -1,
     // maxZoom: 18,
     // projection: L.Projection.LonLat,
     // minZoom: 1,
-    zoom: 0.5,
+    zoom: 0,
     // rotate: true,
     // maxBounds: [[0, 0], [310.535, 677.664]],
     projection: L.Projection.LonLat,
@@ -27,7 +27,7 @@ var options = {
     // center: L.latLng(37.8, -96)
     // center: latLng([ 46.879966, -121.726909 ])
 };
-twod.showLabel = false;
+twod.showLabel = true;
 
 twod.initMap('mapid', options);
 twod.changeTheme(
@@ -48,48 +48,50 @@ twod.changeTheme(
 
     //floor -data
     response = await fetch('./assets/venues.json');
-    var floor = await response.json();
-    console.log('floor', floor);
-    twod._getFloorInformation(floor.building);
+    var venue = await response.json();
+    console.log('venue', venue);
+    twod._getFloorInformation(venue);
     // twod._selectPlaces("01f0930a08fc4996baa4ca1d5cbef56e")
 
     //categories -data
     response = await fetch('./assets/categories.json');
     var categories = await response.json()
-    var categoriesContainer = document.querySelector('#categoriesList')
+
+    twod._addCategoriesToolbar(categories);
+    // var categoriesContainer = document.querySelector('#categoriesList')
 
 
-    // var categoriesList = '';
-    categories.forEach((category) => {
-        var categoriesList = '<div class="category-item ripple" id="' + category.id + '"> ' +
-         '<p>' + category.name + '</p>' +
-         '<i class="mdi mdi-' + category.icon +' mdi-24px"></i>' +
-        ' </div>';
-        categoriesContainer.insertAdjacentHTML('beforeend', categoriesList);
-    });
+    // // var categoriesList = '';
+    // categories.forEach((category) => {
+    //     var categoriesList = '<div class="category-item ripple" id="' + category.id + '"> ' +
+    //      '<p>' + category.name + '</p>' +
+    //      '<i class="mdi mdi-' + category.icon +' mdi-24px"></i>' +
+    //     ' </div>';
+    //     categoriesContainer.insertAdjacentHTML('beforeend', categoriesList);
+    // });
 
-    var categoryBtn = document.querySelectorAll('.category-item');
-    categoryBtn.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            // console.log('event', e);
-            var self = this;
-            if (!self.previousElement) {
-                self.previousElement = e.target; 
-            }
-            if (!e.target.classList.contains('control-enabled')) {
-                e.target.classList.add('control-enabled');
-                if (self.previousElement && self.previousElement !== e.target) {
-                    self.previousElement.classList.remove('control-enabled');
-                    self.previousElement = e.target;
-                }
-                twod._selectCategory(e.target.id);
-            }
-            else {
-                e.target.classList.remove('control-enabled');
-                twod._selectCategory(null);
-            }
-        });
-    });
+    // var categoryBtn = document.querySelectorAll('.category-item');
+    // categoryBtn.forEach(btn => {
+    //     btn.addEventListener('click', (e) => {
+    //         // console.log('event', e);
+    //         var self = this;
+    //         if (!self.previousElement) {
+    //             self.previousElement = e.target; 
+    //         }
+    //         if (!e.target.classList.contains('control-enabled')) {
+    //             e.target.classList.add('control-enabled');
+    //             if (self.previousElement && self.previousElement !== e.target) {
+    //                 self.previousElement.classList.remove('control-enabled');
+    //                 self.previousElement = e.target;
+    //             }
+    //             twod._selectCategory(e.target.id);
+    //         }
+    //         else {
+    //             e.target.classList.remove('control-enabled');
+    //             twod._selectCategory(null);
+    //         }
+    //     });
+    // });
     // twod._selectCategory("clothes")
     // var zoomBtn = document.querySelector('#zoomBtn')
 

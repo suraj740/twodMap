@@ -1,4 +1,6 @@
 var L = require('leaflet');
+require('leaflet-draw');
+require('./twodmap.center.control.js');
 require('leaflet-routing-machine');
 require('leaflet-control-geocoder');
 require('./mouseposition.control.js');
@@ -14,6 +16,7 @@ class TwoDMap {
         this.showLabel = true;
         this.maskAdded = {};
         this.marker = {};
+        this.currentFloorDetail = {};
         
     }
     initMap(mapId, options) {
@@ -21,13 +24,13 @@ class TwoDMap {
         // this.map.setMaxBounds(this.map.getBounds());
         // var mapBounds = L.latLngBounds(bounds);
         // this.map.setMaxBounds(mapBounds);
-        // this.map.fitBounds([[0, 0], [310.535, 677.664]], {
-        //     padding: [20, 30]
-        // });
+        this.map.fitBounds([[-35, 0], [355, 390]], {
+            padding: [20, 30]
+        });
         // this.map.setMaxBounds([[0, 0], [310.535, 677.664]]);
         // L.TileLayer.boundaryCanvas('https://wallpapercave.com/wp/XqRBXyO.jpg', {boundary: this.data, tileSize: 1200, }).addTo(this.map)
 
-        var sidebar = L.control.sidebar('sidebar', {position: 'right'}).addTo(this.map);
+        // var sidebar = L.control.sidebar('sidebar', {position: 'right'}).addTo(this.map);
         L.imageOverlay('map_bg.png', [[-35, 0], [355, 390]]).addTo(this.map);
         L.control.mousePosition({ position: 'bottomright', lngFirst: true }).addTo(this.map)
     }
@@ -55,27 +58,16 @@ class TwoDMap {
     }
 
 
-    _getFloorInformation(data) {
-
-        // this._jQuery.ajax({
-        //     type: "GET",
-        //     url: self.options.api.url.base + self.options.api.url.venues + this._mapOptions.venueId,
-        //     headers: self.options.api.headers,
-        //     dataType: 'json',
-        //     data: { "projection": '{"building":1}', 'url': 1 },
-        //     success: function (response) {
-        //         self._log(Logger.DEBUG.name, 'Building Info', response);
-
-
-
-        //         self._map.spin(false);
-
-        //         self._map.dragging.enable();
-        //     }
-        // });
-        var boundSet = this._getMapBounds(data[0].floor[0].map_info);
-        this._bounds = boundSet['imagebounds'];
-        this._floorBounds = boundSet['floorbounds'];
+    _getFloorInformation(venue) {
+        var toolbar = new L.Control.Toolbar(this, {
+            type: 'default',
+            position : 'bottomright',
+            categories: null,
+            venue: venue,
+        }).addTo(this.map);
+        // var boundSet = this._getMapBounds(data[0].floor[0].map_info);
+        // this._bounds = boundSet['imagebounds'];
+        // this._floorBounds = boundSet['floorbounds'];
         // this.map.fitBounds(this._bounds, {
         //     padding: [20, 30]
         // });
@@ -149,11 +141,14 @@ class TwoDMap {
         }
 
         const onEachFeature = (feature, layer) => {
+            // console.log('feature', feature);
             let area = turf.area(feature);
             // console.log('area', area);
             // console.log(feature, layer);
             if (this.showLabel) {
-                layer.bindTooltip(feature.properties.name[0].text, {
+                layer.bindTooltip((feature.properties.name[0].text.split(' ').map(name => {
+                    return name[0]
+                }).join('')), {
                     permanent: true,
                     direction: "center",
                     className: "my-labels"
@@ -453,10 +448,11 @@ class TwoDMap {
         }
     }
 
-    _addToolbar(data) {
+    _addCategoriesToolbar(data) {
         this._engageControl = new L.Control.Toolbar(this, {
             type: 'default',
-            featureSet: data
+            position : 'bottomleft',
+            categories: data,
         }).addTo(this.map);
     }
 
@@ -487,10 +483,11 @@ class TwoDMap {
         var searchControl = new L.Control.Search({
             layer: this.featuresLayer,
             propertyName: "name.0.text",
-            collapsed: true,
-            autoCollapse: true,
+            collapsed: false,
+            autoCollapse: false,
             position: 'topright',
             marker: false,
+            position: 'topcenter',
             moveToLocation: function (latlng, title, map) {
                 //map.fitBounds( latlng.layer.getBounds() );
                 var zoom = map.getBoundsZoom(latlng.layer.getBounds());

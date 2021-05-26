@@ -216,6 +216,24 @@
                         "orig_y": 0,
                         "map_type": "vg_3d"
                     }
+                },
+                {
+                    "site_index": "Ground Level1",
+                    "default": true,
+                    "floor_id": "e5chgvhga76b054719be2b69d227a91c8f",
+                    "number": "1",
+                    "alias": [
+                        {
+                            "text": "Ground Level",
+                            "language": "en_US"
+                        }
+                    ],
+                    "e_map": {
+                        "bn": "",
+                        "sn": "",
+                        "fn": ""
+                    },
+                    "type": "shopping"
                 }
             ],
             "gla": 36000,
