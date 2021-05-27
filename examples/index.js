@@ -49,7 +49,7 @@ twod.changeTheme(
     //floor -data
     response = await fetch('./assets/venues.json');
     var venue = await response.json();
-    console.log('venue', venue);
+    // console.log('venue', venue);
     twod._getFloorInformation(venue);
     // twod._selectPlaces("01f0930a08fc4996baa4ca1d5cbef56e")
 
@@ -102,6 +102,8 @@ twod.changeTheme(
     //     })
     // });
     twod.addSearchControl();
+
+    twod._addDialog();
 })();
 // fetch('./assets/pois.json')
 //     .then(response => {

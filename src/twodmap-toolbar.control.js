@@ -161,40 +161,48 @@ L.Control.Toolbar = L.Control.extend({
 
         venue.building.map((building) => {
             self.zoomFab = L.DomUtil.create('a', 'zoom-fab zoom-btn-large', self.toolbarContainer);
-            self.zoomFab.setAttribute('id', 'zoomBtn');
+            self.zoomFab.setAttribute('id', 'zoomBtn ' + building.building_id);
             self.zoomFab.setAttribute('title', building.name[0].text);
             L.DomUtil.create('i', 'mdi mdi-domain mdi-24px', self.zoomFab);
 
             self.zoomMenu = L.DomUtil.create('ul', 'zoom-menu', self.toolbarContainer);
             self.listBtn = [];
-            building.floor.map((fl, key) => {
-                var list = L.DomUtil.create('li', '', self.zoomMenu);
-                list.setAttribute('id', fl.floor_id);
-                self.listBtn[key] = L.DomUtil.create('a', 'zoom-fab zoom-btn-sm scale-transition scale-out', list);
-                self.listBtn[key].setAttribute('title', fl.site_index);
-                L.DomUtil.create('i', 'mdi mdi-layers', self.listBtn[key]);
-                // self.listBtn[key].innerHTML = fl.site_index;
-                L.DomEvent
-                .on(list, 'click', L.DomEvent.stopPropagation)
-                .on(list, 'dblclick', L.DomEvent.stopPropagation)
-                .on(list, 'wheel', L.DomEvent.stopPropagation)
-                // .on(list, 'click', self._selectAreas, self);
-            });
+            // building.floor.map((fl, key) => {
+            //     var list = L.DomUtil.create('li', '', self.zoomMenu);
+            //     list.setAttribute('id', fl.floor_id);
+            //     self.listBtn[key] = L.DomUtil.create('a', 'zoom-fab zoom-btn-sm scale-transition scale-out', list);
+            //     self.listBtn[key].setAttribute('title', fl.site_index);
+            //     L.DomUtil.create('i', 'mdi mdi-layers', self.listBtn[key]);
+            //     // self.listBtn[key].innerHTML = fl.site_index;
+            //     L.DomEvent
+            //     .on(list, 'click', L.DomEvent.stopPropagation)
+            //     .on(list, 'dblclick', L.DomEvent.stopPropagation)
+            //     .on(list, 'wheel', L.DomEvent.stopPropagation)
+            //     // .on(list, 'click', self._selectAreas, self);
+            // });
             L.DomEvent
             .on(self.zoomFab, 'click', L.DomEvent.stopPropagation)
             .on(self.zoomFab, 'dblclick', L.DomEvent.stopPropagation)
             .on(self.zoomFab, 'wheel', L.DomEvent.stopPropagation)
-            .on(self.zoomFab, 'click', function(event) {
-                console.log('self', self.listBtn);
-                self.listBtn.forEach((btn) => {
+            .on(self.zoomFab, 'click', (e) => {
+                console.log('self', self, building.floor);
+                // console.log(L.DomUtil.getStyle(self._osMap.dialog._container, 'display'));
+                if (L.DomUtil.getStyle(self._osMap.dialog._container, 'display') === 'block') {
+                    self._osMap.dialog.close();
+                    
+                }
+                else {
+                    self._osMap.dialog.open();
+                }
+                // self.listBtn.forEach((btn) => {
 
-                    if (!L.DomUtil.hasClass(btn, 'scale-out')) {
-                        L.DomUtil.addClass(btn, 'scale-out');
-                    }
-                    else {
-                        L.DomUtil.removeClass(btn, 'scale-out');
-                    }
-                })
+                //     if (!L.DomUtil.hasClass(btn, 'scale-out')) {
+                //         L.DomUtil.addClass(btn, 'scale-out');
+                //     }
+                //     else {
+                //         L.DomUtil.removeClass(btn, 'scale-out');
+                //     }
+                // })
                 
             })
         });

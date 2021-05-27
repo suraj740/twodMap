@@ -10,6 +10,7 @@ require('./twodmap-toolbar.control.js');
 require('./twodmap.search.control.js');
 require('./twodmap.sidebar.js');
 require('./boundarycanvas.js');
+require('./twodmap.dialog.js');
 var turf = require('@turf/turf');
 class TwoDMap {
     constructor() {
@@ -535,6 +536,15 @@ class TwoDMap {
         });
 
         this.map.addControl(searchControl);
+    }
+
+
+    _addDialog() {
+        this.dialog = L.control.dialog({
+            position: 'topcenter',
+            anchor: [50],
+            initOpen: false
+        }).addTo(this.map);
     }
 
     changeTheme(data) {
