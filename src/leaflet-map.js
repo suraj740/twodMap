@@ -545,6 +545,7 @@ class TwoDMap {
             anchor: [50],
             initOpen: false
         }).addTo(this.map);
+        this.dialog.freeze();
     }
 
     changeTheme(data) {

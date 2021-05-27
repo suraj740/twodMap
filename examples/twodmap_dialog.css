@@ -53,6 +53,11 @@
     line-height: 16px;
     color: #666;
   }
+
+
+  .leaflet-control-dialog-close > .mdi {
+        color: #000;
+    }
   
   .leaflet-control-dialog
     .leaflet-control-dialog-inner

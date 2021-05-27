@@ -216,7 +216,7 @@ L.Control.Dialog = L.Control.extend({
         "div",
         className + "-close"
       ));
-      var closeIcon = L.DomUtil.create("i", "fa fa-times");
+      var closeIcon = L.DomUtil.create("i", "mdi mdi-close");
       closeNode.appendChild(closeIcon);
       L.DomEvent.on(closeNode, "click", this._handleClose, this);
   
