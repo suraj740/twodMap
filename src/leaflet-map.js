@@ -139,20 +139,21 @@ class TwoDMap {
             }
             this.map.fitBounds(e.target.getBounds());
         }
-
+        let ploygonArea = {}
         const onEachFeature = (feature, layer) => {
             // console.log('feature', feature);
-            let area = turf.area(feature);
-            // console.log('area', area);
+            ploygonArea[feature.properties.pid] = turf.area(turf.toWgs84(feature));
             // console.log(feature, layer);
+            
             if (this.showLabel) {
                 layer.bindTooltip((feature.properties.name[0].text.split(' ').map(name => {
                     return name[0]
                 }).join('')), {
                     permanent: true,
                     direction: "center",
-                    className: "my-labels"
+                    className: "my-labels",
                 }).openTooltip();
+                // console.log(layer.getTooltip());
             }
 
 
@@ -185,24 +186,39 @@ class TwoDMap {
         this.featuresLayer = geojson;
         // console.log('geojson', geojson);
 
-
+        
         this.map.on('zoom', (e) => {
+            // console.log('area', ploygonArea);
+            let zoomLevel = this.map.getZoom();
+            console.log('zoom level', zoomLevel)
+            this.featuresLayer.eachLayer((layer) => {//restore feature color
+                // layer.unbindTooltip();
+                var textSize = ((ploygonArea[layer.feature.properties.pid]/ 4047) * zoomLevel) / layer.feature.properties.name[0].text.length;
+                var tipContent = '';
+                if (textSize < 0.06) {
+                    tipContent = (layer.feature.properties.name[0].text.split(' ').map(name => {
+                        return name[0]
+                    }).join(''));
 
-            // this.featuresLayer.eachLayer((layer) => {//restore feature color
-            //     // layer.unbindTooltip();
-            //     if(!layer.getTooltip()) {
-            //         layer.bindTooltip(layer.feature.properties.name[0].text, {
-            //             permanent: false,
-            //             direction: "center",
-            //             className: "my-labels"
-            //         }).openTooltip();
-            //     }
+                    layer.setTooltipContent(tipContent);
+                }
+                else {
+                    tipContent = layer.feature.properties.name[0].text;
+                    layer.setTooltipContent(tipContent);
+                }
+                // console.log(textSize, tipContent);
+                // if(!layer.getTooltip()) {
+                //     layer.bindTooltip(layer.feature.properties.name[0].text, {
+                //         permanent: false,
+                //         direction: "center",
+                //         className: "my-labels"
+                //     }).openTooltip();
+                // }
 
-            //     else if (layer.getTooltip()) {
-            //         layer.unbindTooltip();
-            //     }
-            // });
-            console.log('zoom level', this.map.getZoom())
+                // else if (layer.getTooltip()) {
+                //     layer.unbindTooltip();
+                // }
+            });
             
         })
     }
@@ -503,11 +519,11 @@ class TwoDMap {
 
             e.layer.setStyle({ fillColor: '#3f0', color: '#0f0' });
 
-            e.layer.bindTooltip(e.layer.feature.properties.name[0].text, {
-                permanent: false,
-                direction: "center",
-                className: "my-labels"
-            }).openTooltip();
+            // e.layer.bindTooltip(e.layer.feature.properties.name[0].text, {
+            //     permanent: false,
+            //     direction: "center",
+            //     className: "my-labels"
+            // }).openTooltip();
             if (e.layer._popup)
                 e.layer.openPopup();
 

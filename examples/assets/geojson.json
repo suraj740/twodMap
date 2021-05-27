@@ -9,7 +9,8 @@
                 }
             ],
             "category_ids": [
-                "shopping", "clothes"
+                "shopping",
+                "clothes"
             ],
             "type": "",
             "center": [],
@@ -17,7 +18,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "82e42ee3-c7d3-482e-b630-a7c38e0034c6"
         },
         "geometry": {
             "type": "Polygon",
@@ -57,7 +59,8 @@
                 }
             ],
             "category_ids": [
-                "shopping", "clothes"
+                "shopping",
+                "clothes"
             ],
             "type": "",
             "center": [],
@@ -65,7 +68,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "d8c46079-1fd6-465e-9b13-605979c127e4"
         },
         "geometry": {
             "type": "Polygon",
@@ -126,7 +130,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "47e794c6-b07f-4634-9887-701b23631732"
         },
         "geometry": {
             "type": "Polygon",
@@ -166,7 +171,8 @@
                 }
             ],
             "category_ids": [
-                "shopping", "clothes"
+                "shopping",
+                "clothes"
             ],
             "type": "",
             "center": [],
@@ -174,7 +180,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "2a46a1df-94ca-41fa-84f1-e7e44c004bc9"
         },
         "geometry": {
             "type": "Polygon",
@@ -262,7 +269,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "412480ed-e312-4076-b0d2-36099ee92dfa"
         },
         "geometry": {
             "type": "Polygon",
@@ -323,7 +331,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "7679adce-7c1e-4d88-bcbd-57b904ca359d"
         },
         "geometry": {
             "type": "Polygon",
@@ -387,7 +396,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "b7494718-1f87-43c7-94be-329e18533a0c"
         },
         "geometry": {
             "type": "Polygon",
@@ -448,7 +458,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "e2c638da-7606-4746-94e4-2de37612bd7a"
         },
         "geometry": {
             "type": "Polygon",
@@ -505,7 +516,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "05ed08d8-2253-4759-b1e6-93f6ee73cb84"
         },
         "geometry": {
             "type": "Polygon",
@@ -598,7 +610,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "16f0ba6e-ac78-40c6-a98f-52e28ee3ebfd"
         },
         "geometry": {
             "type": "Polygon",
@@ -655,7 +668,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "f881954b-a971-491a-907c-7947e9589827"
         },
         "geometry": {
             "type": "Polygon",
@@ -724,7 +738,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "721813fd-c5fd-4ccc-8538-444ff21374d9"
         },
         "geometry": {
             "type": "Polygon",
@@ -777,7 +792,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "a026f0f8-8f04-4e7f-be1a-eb0e5c64e102"
         },
         "geometry": {
             "type": "Polygon",
@@ -830,7 +846,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "72e59cd3-f6a0-4ca3-8e74-e8ec6225c7dc"
         },
         "geometry": {
             "type": "Polygon",
@@ -887,7 +904,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "45df2563-1003-4f00-9575-3c3a8648893a"
         },
         "geometry": {
             "type": "Polygon",
@@ -940,7 +958,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "51ce2047-f96f-4ceb-9f49-9440b7342c6d"
         },
         "geometry": {
             "type": "Polygon",
@@ -993,7 +1012,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "8d851e30-e46a-4469-a275-cc55f63c75b0"
         },
         "geometry": {
             "type": "Polygon",
@@ -1050,7 +1070,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "7900fc85-b8bc-4789-ab88-3d6d62477673"
         },
         "geometry": {
             "type": "Polygon",
@@ -1123,7 +1144,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "540d7f02-1d1d-4289-a28b-f580dac8da7f"
         },
         "geometry": {
             "type": "Polygon",
@@ -1204,7 +1226,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "939bf2e0-5359-478f-affa-151c3777d5e7"
         },
         "geometry": {
             "type": "Polygon",
@@ -1261,7 +1284,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "320375e4-8365-48d9-8241-dc2e716c47d1"
         },
         "geometry": {
             "type": "Polygon",
@@ -1342,7 +1366,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "c63fcef8-7d6e-4c6d-b1bc-1d9e0cfa9793"
         },
         "geometry": {
             "type": "Polygon",
@@ -1395,7 +1420,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "bf4fc9f7-df5a-4a15-b391-487df439ce1a"
         },
         "geometry": {
             "type": "Polygon",
@@ -1440,7 +1466,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "78700a54-3be7-4e85-876a-d3c0e05cb775"
         },
         "geometry": {
             "type": "Polygon",
@@ -1489,7 +1516,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "ca91fb0f-42e9-462c-bd24-475b2c6278b3"
         },
         "geometry": {
             "type": "Polygon",
@@ -1550,7 +1578,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "e9ebc89a-d94e-4577-b783-c4d8a1000b96"
         },
         "geometry": {
             "type": "Polygon",
@@ -1611,7 +1640,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "74f8c562-75db-4c1f-80dc-3e76d6155158"
         },
         "geometry": {
             "type": "Polygon",
@@ -1656,7 +1686,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "e1a9488f-2cc5-44bb-a68b-d20b8d889dc1"
         },
         "geometry": {
             "type": "Polygon",
@@ -1713,7 +1744,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "16e6d8bd-cb2e-4da4-8b60-0fb672176f61"
         },
         "geometry": {
             "type": "Polygon",
@@ -1766,7 +1798,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "48300442-6848-44d4-8c6c-c9b0484cb1c1"
         },
         "geometry": {
             "type": "Polygon",
@@ -1815,7 +1848,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "5c995878-d2c2-4343-b089-72b81a4e5951"
         },
         "geometry": {
             "type": "Polygon",
@@ -1868,7 +1902,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "0008d190-9a1b-4a9c-9f69-3539aea6f574"
         },
         "geometry": {
             "type": "Polygon",
@@ -1945,7 +1980,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "4da2b49d-3cba-4135-9dbd-231bb65758aa"
         },
         "geometry": {
             "type": "Polygon",
@@ -1990,7 +2026,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "dbcec843-1e03-4ad3-b24c-82e0d5722f7c"
         },
         "geometry": {
             "type": "Polygon",
@@ -2035,7 +2072,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "a378a2e0-d460-4ee3-9da8-b754145f5603"
         },
         "geometry": {
             "type": "Polygon",
@@ -2100,7 +2138,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "09c9bdd0-06cf-429d-9929-c7aed0d26e36"
         },
         "geometry": {
             "type": "Polygon",
@@ -2161,7 +2200,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "d9748c03-1d25-44e2-b9c8-fb26ea7039ed"
         },
         "geometry": {
             "type": "Polygon",
@@ -2206,7 +2246,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "9eeffb91-6922-4681-9fb5-d7ec5d6f1706"
         },
         "geometry": {
             "type": "Polygon",
@@ -2283,7 +2324,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "585eee66-3d6c-4dad-8ca7-17103bb73f27"
         },
         "geometry": {
             "type": "Polygon",
@@ -2344,7 +2386,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "74f978ce-75d8-4655-8540-2395b24db940"
         },
         "geometry": {
             "type": "Polygon",
@@ -2389,7 +2432,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "4d99da4b-fd96-4e79-b6f4-d9f01c3caf73"
         },
         "geometry": {
             "type": "Polygon",
@@ -2450,7 +2494,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "47b945ec-fdbe-4f98-9414-a76f04d76714"
         },
         "geometry": {
             "type": "Polygon",
@@ -2527,7 +2572,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "b5288701-62f7-4c84-aa9d-4d513ef61d15"
         },
         "geometry": {
             "type": "Polygon",
@@ -2572,7 +2618,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "efc0d75e-cb78-4c22-ad05-daadb81fdc7f"
         },
         "geometry": {
             "type": "Polygon",
@@ -2621,7 +2668,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "7109d59b-88eb-475f-a8cf-fd48820d2a03"
         },
         "geometry": {
             "type": "Polygon",
@@ -2694,7 +2742,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "4789faac-4a93-47cf-b5c2-75befbe51863"
         },
         "geometry": {
             "type": "Polygon",
@@ -2763,7 +2812,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "79923c35-3e14-4e4d-8822-965e958ef774"
         },
         "geometry": {
             "type": "Polygon",
@@ -2848,7 +2898,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "4233eae8-0627-4eac-8afb-4d5d18968966"
         },
         "geometry": {
             "type": "Polygon",
@@ -2909,7 +2960,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "15457863-6dc2-45c4-ad33-5d31a1dfbd84"
         },
         "geometry": {
             "type": "Polygon",
@@ -2978,7 +3030,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "d5d24665-73b8-4260-9e4f-a3df09e8aecf"
         },
         "geometry": {
             "type": "Polygon",
@@ -3047,7 +3100,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "6ffe060b-944b-43b2-a3d3-4964574f14af"
         },
         "geometry": {
             "type": "Polygon",
@@ -3120,7 +3174,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "8959247f-1c55-4300-b450-052b805c2133"
         },
         "geometry": {
             "type": "Polygon",
@@ -3181,7 +3236,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "191c9017-01d9-4138-9ca2-0fb749f5a3bb"
         },
         "geometry": {
             "type": "Polygon",
@@ -3246,7 +3302,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "698413e8-2359-4972-87cb-56646369cd77"
         },
         "geometry": {
             "type": "Polygon",
@@ -3319,7 +3376,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "b20ed5dd-33e0-4dae-a1bb-dba7b5c2eff3"
         },
         "geometry": {
             "type": "Polygon",
@@ -3372,7 +3430,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "963a4f36-e2d6-4189-9bb8-d4b971d77a8b"
         },
         "geometry": {
             "type": "Polygon",
@@ -3421,7 +3480,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "b48c203b-d5a5-46d1-a383-acf9dbc4b662"
         },
         "geometry": {
             "type": "Polygon",
@@ -3474,7 +3534,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "3a4abd8d-f932-4f0b-864c-173e0849e584"
         },
         "geometry": {
             "type": "Polygon",
@@ -3543,7 +3604,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "c305524a-08b0-40f2-be4d-6fffcd7c17eb"
         },
         "geometry": {
             "type": "Polygon",
@@ -3620,7 +3682,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "63eef21f-6b51-47b9-9994-eedc200be5f6"
         },
         "geometry": {
             "type": "Polygon",
@@ -3673,7 +3736,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "3a5fe302-3907-4072-91a2-d62b35c85d8a"
         },
         "geometry": {
             "type": "Polygon",
@@ -3734,7 +3798,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "f6bd30d4-ab91-4b61-9d80-88d850027589"
         },
         "geometry": {
             "type": "Polygon",
@@ -3787,7 +3852,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "458d2614-23ac-4f10-95d2-dcf045797aea"
         },
         "geometry": {
             "type": "Polygon",
@@ -3832,7 +3898,8 @@
                 "weight": 2,
                 "opacity": 0.8,
                 "className": "default-animate"
-            }
+            },
+            "pid": "e3e561ee-3d54-436a-aa0c-eb4840d834fd"
         },
         "geometry": {
             "type": "Polygon",

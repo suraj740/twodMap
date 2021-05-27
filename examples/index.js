@@ -13,7 +13,7 @@ var options = {
     crs: L.CRS.Simple, // vvv imp.
     // minZoom: 0,
     // zoomOffset: -1,
-    // maxZoom: 18,
+    maxZoom: 5,
     // projection: L.Projection.LonLat,
     // minZoom: 1,
     zoom: 0,
@@ -22,7 +22,7 @@ var options = {
     projection: L.Projection.LonLat,
     // center: L.latLng(123.0,322),
     center: [0, 0],
-    zoomSnap: 0.25,
+    // zoomSnap: 0.25,
     zoomControlPosition: "bottomright",
     // center: L.latLng(37.8, -96)
     // center: latLng([ 46.879966, -121.726909 ])
