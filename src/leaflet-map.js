@@ -11,14 +11,18 @@ require('./twodmap.search.control.js');
 require('./twodmap.sidebar.js');
 require('./boundarycanvas.js');
 require('./twodmap.dialog.js');
+var $ = require('jquery');
 var turf = require('@turf/turf');
+var jstree = require('jstree');
 class TwoDMap {
     constructor() {
         this.showLabel = true;
         this.maskAdded = {};
         this.marker = {};
         this.currentFloorDetail = {};
-        
+        this.categories = [];
+        this.$ = $;
+        console.log('jstree', jstree);
     }
     initMap(mapId, options) {
         this.map = L.map(mapId, options);
@@ -505,12 +509,16 @@ class TwoDMap {
             position: 'topright',
             marker: false,
             position: 'topcenter',
+            categories: this.categories,
+            $: $,
+            dialog: this.dialog,
             moveToLocation: function (latlng, title, map) {
                 //map.fitBounds( latlng.layer.getBounds() );
                 var zoom = map.getBoundsZoom(latlng.layer.getBounds());
                 map.setView(latlng, zoom); // access the zoom
             }
         });
+
 
         searchControl.on('search:locationfound',(e) => {
 
@@ -568,6 +576,34 @@ class TwoDMap {
         Object.entries(data).map((item, key) => {
             r.style.setProperty('--' + item[0], item[1]);
         });
+    }
+
+    _getReadableString(value) {
+        value = value.toLowerCase()
+        .replace(/([^a-z])([a-z])(?=[a-z]{2})|^([a-z])/g,
+        function (_, g1, g2, g3) {
+            return (typeof g1 === 'undefined') ?
+            g3.toUpperCase() :
+            g1 + g2.toUpperCase();
+        });
+        value = value.replace(/[_]/g, ' ');
+        return value;
+    }
+
+    _getTranslatedText(translateArray, languageCode) {
+        var text = '';
+        languageCode = languageCode ? languageCode: 'en_US';
+        if (translateArray !== undefined) {
+            translateArray.map((value, index) => {
+                languageCode = languageCode.replace(/['"]+/g, '');
+                // self._log('value in languageArr:', value.language , languageCode);
+                if (value.language === languageCode) {
+                    text = value.text;
+                    // self._log('test', text);
+                }
+            });
+        }
+        return text;
     }
     // showLabel() {
     //     return this.showLabel;

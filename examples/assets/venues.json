@@ -224,7 +224,7 @@
                     "number": "1",
                     "alias": [
                         {
-                            "text": "Ground Level",
+                            "text": "Ground Level1",
                             "language": "en_US"
                         }
                     ],
@@ -233,7 +233,60 @@
                         "sn": "",
                         "fn": ""
                     },
-                    "type": "shopping"
+                    "type": "shopping",
+                    "floor_zones": [
+                        "c2ff9951936742fbae80ffcf004f8197",
+                        "730a330b53d14e95b4321acccc7a3033",
+                        "94a6ded9a46740ccbcf455daf005dc96",
+                        "ab75f8ef05284e9e864ecf5529fe49eb",
+                        "7d5c0d47f9124083b773a3574d83007b",
+                        "d1261aa01f224e93b764a9b5d01de80f",
+                        "43d84138183040a7b7532d6aaebda3d7"
+                    ],
+                    "map_info": {
+                        "origin": "123.0,322",
+                        "floor_offset": {
+                            "production": [
+                                [-12.34, -12.43],
+                                [43, 50]
+                            ]
+                        },
+                        "name": [
+                            {
+                                "text": "Ground Level1",
+                                "language": "en_US"
+                            }
+                        ],
+                        "title": [
+                            {
+                                "text": "Ground Level1",
+                                "language": "en_US"
+                            }
+                        ],
+                        "file_type": "png",
+                        "use_scope": "INTERNAL",
+                        "coordinate_system": "WGS84",
+                        "ref_geo2": "10.0,10.0",
+                        "ref_geo1": "10.0,10.0",
+                        "image_id": {
+                            "production": "85693da63af7456f83296cdcffe9a037",
+                            "dev": "85693da63af7456f83296cdcffe9a037",
+                            "calibration": "85693da63af7456f83296cdcffe9a037"
+                        },
+                        "url": [
+                            {
+                                "text": "Ground Level",
+                                "language": "en_US"
+                            }
+                        ],
+                        "scale_x": "677.664",
+                        "scale_y": "310.535",
+                        "dim_x": 677.664,
+                        "dim_y": 310.535,
+                        "orig_x": 0,
+                        "orig_y": 0,
+                        "map_type": "vg_3d"
+                    }
                 }
             ],
             "gla": 36000,

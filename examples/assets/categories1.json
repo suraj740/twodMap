@@ -1,0 +1,342 @@
+[
+    {
+        "color": "EFAB35",
+        "description": "",
+        "icon": "shopping",
+        "id": "928e4239c2c74aa4b5ae86b3360e7979",
+        "image": "",
+        "name": "Shopping",
+        "parent": "",
+        "type": "main"
+    },
+    {
+        "color": "EFAB35",
+        "description": "",
+        "icon": "",
+        "id": "1dac59121cef4d11ab77d16d1d47999a",
+        "image": "",
+        "name": "Audio/Electronic, & Cellphones",
+        "parent": "928e4239c2c74aa4b5ae86b3360e7979",
+        "type": "sub"
+    },
+    {
+        "color": "9bD2F3",
+        "description": "",
+        "icon": "",
+        "id": "a7d7dc0ad7054c3f9ef7c634bc5751ee",
+        "image": "",
+        "name": "Banks, Forex & Financial",
+        "parent": "928e4239c2c74aa4b5ae86b3360e7979",
+        "type": "sub"
+    },
+    {
+        "color": "EFAB35",
+        "description": "",
+        "icon": "",
+        "id": "f91edac1390245008022c80bd28e7059",
+        "image": "",
+        "name": "Clothing",
+        "parent": "928e4239c2c74aa4b5ae86b3360e7979",
+        "type": "sub"
+    },
+    {
+        "color": "EFAB35",
+        "description": "",
+        "icon": "",
+        "id": "57142daa06db4762abdb0983d5b89377",
+        "image": "",
+        "name": "Department Stores",
+        "parent": "928e4239c2c74aa4b5ae86b3360e7979",
+        "type": "sub"
+    },
+    {
+        "color": "EFAB35",
+        "description": "",
+        "icon": "",
+        "id": "1394127957234209b5e45681f6287299",
+        "image": "",
+        "name": "Footwear",
+        "parent": "928e4239c2c74aa4b5ae86b3360e7979",
+        "type": "sub"
+    },
+    {
+        "color": "EFAB35",
+        "description": "",
+        "icon": "",
+        "id": "4714566a0b4c4362b24b3a33614fc588",
+        "image": "",
+        "name": "Groceries",
+        "parent": "928e4239c2c74aa4b5ae86b3360e7979",
+        "type": "sub"
+    },
+    {
+        "color": "EFAB35",
+        "description": "",
+        "icon": "",
+        "id": "4c6574cba8be42e495055edf9c16b402",
+        "image": "",
+        "name": "Hair, Health & Beauty",
+        "parent": "928e4239c2c74aa4b5ae86b3360e7979",
+        "type": "sub"
+    },
+    {
+        "color": "EFAB35",
+        "description": "",
+        "icon": "",
+        "id": "a1585591ca574abca3074baf2a4bcd0f",
+        "image": "",
+        "name": "Home, Décor, Interior & Furniture",
+        "parent": "928e4239c2c74aa4b5ae86b3360e7979",
+        "type": "sub"
+    },
+    {
+        "color": "9BD2F3",
+        "description": "",
+        "icon": "medical",
+        "id": "fbefe42dc2b546d1a98f1e917e4e16a7",
+        "image": "",
+        "name": "Medical Services",
+        "parent": "928e4239c2c74aa4b5ae86b3360e7979",
+        "type": "sub"
+    },
+    {
+        "color": "9BD2F3",
+        "description": "",
+        "icon": "",
+        "id": "899d67fd4dc047749a9f02dac842ec85",
+        "image": "",
+        "name": "Services ",
+        "parent": "928e4239c2c74aa4b5ae86b3360e7979",
+        "type": "sub"
+    },
+    {
+        "color": "EFAB35",
+        "description": "",
+        "icon": "",
+        "id": "099ed36805374ac1b77c6d4dc86b32e7",
+        "image": "",
+        "name": "Speciality",
+        "parent": "928e4239c2c74aa4b5ae86b3360e7979",
+        "type": "sub"
+    },
+    {
+        "color": "EFAB35",
+        "description": "",
+        "icon": "",
+        "id": "ed3523649a1a475f84441bf8e6285236",
+        "image": "",
+        "name": "Sport, Outdoor & Apparel",
+        "parent": "928e4239c2c74aa4b5ae86b3360e7979",
+        "type": "sub"
+    },
+    {
+        "color": "A3BE35",
+        "description": "",
+        "icon": "restuarant",
+        "id": "a0dda37c4bfd4b5dac0f85f4a34d3f37",
+        "image": "",
+        "name": "Restaurants",
+        "parent": "",
+        "type": "main"
+    },
+    {
+        "color": "A3BE35",
+        "description": "",
+        "icon": "",
+        "id": "29dfdfecc44c4043a21485f62c3771f8",
+        "image": "",
+        "name": "Food & Dining",
+        "parent": "a0dda37c4bfd4b5dac0f85f4a34d3f37",
+        "type": "sub"
+    },
+    {
+        "color": "A3BE35",
+        "description": "",
+        "icon": "",
+        "id": "77cd8800ce544d34a7362a636124955f",
+        "image": "",
+        "name": "Wine & Spirits",
+        "parent": "928e4239c2c74aa4b5ae86b3360e7979",
+        "type": "sub"
+    },
+    {
+        "color": "EFAB35",
+        "description": "",
+        "icon": "hide",
+        "id": "c7d278bb77d347bba924cd4c098e6a76",
+        "image": "",
+        "name": "Assets Hide",
+        "parent": "",
+        "type": "main"
+    },
+    {
+        "color": "9BD2F300",
+        "description": "",
+        "icon": "services2",
+        "id": "1722532bfca54366bdfcc0278c064877",
+        "image": "",
+        "name": "Services",
+        "parent": "",
+        "type": "main"
+    },
+    {
+        "color": "79B473",
+        "description": "Assets Grass ",
+        "icon": "icon_id",
+        "id": "00114bc88abe45bf91bac4c365fb02a8",
+        "image": "",
+        "name": "Assets Grass ",
+        "parent": "1722532bfca54366bdfcc0278c064877",
+        "type": "sub"
+    },
+    {
+        "color": "E5E7E8",
+        "description": "Assets Hallway",
+        "icon": "icon_id",
+        "id": "bea7cb628f1745dcbb8e6e4be5ebd251",
+        "image": "",
+        "name": "Assets Hallway",
+        "parent": "1722532bfca54366bdfcc0278c064877",
+        "type": "sub"
+    },
+    {
+        "color": "93999F",
+        "description": "Assets Parking",
+        "icon": "icon_id",
+        "id": "5c19302282c249d78d6fd97fb8fe0c71",
+        "image": "",
+        "name": "Assets Parking",
+        "parent": "1722532bfca54366bdfcc0278c064877",
+        "type": "sub"
+    },
+    {
+        "color": "666666",
+        "description": "Assets Road Access",
+        "icon": "icon_id",
+        "id": "11b927b263d94cf4bd40672c56716721",
+        "image": "",
+        "name": "Assets Road Access",
+        "parent": "1722532bfca54366bdfcc0278c064877",
+        "type": "sub"
+    },
+    {
+        "color": "9BD2F300",
+        "description": "ATMs",
+        "icon": "atm",
+        "id": "97aeae8a81974480b240f36f0a756833",
+        "image": "",
+        "name": "ATMs",
+        "parent": "1722532bfca54366bdfcc0278c064877",
+        "type": "sub"
+    },
+    {
+        "color": "A9A9A900",
+        "description": "Disabled Parking",
+        "icon": "disabled",
+        "id": "1a8d5baba6f041cd93d2953e0ae3ef87",
+        "image": "",
+        "name": "Disabled Parking",
+        "parent": "1722532bfca54366bdfcc0278c064877",
+        "type": "sub"
+    },
+    {
+        "color": "A9A9A900",
+        "description": "Entrances",
+        "icon": "entrance",
+        "id": "7384647ad5d741f186449e10d80d2618",
+        "image": "",
+        "name": "Entrances",
+        "parent": "1722532bfca54366bdfcc0278c064877",
+        "type": "sub"
+    },
+    {
+        "color": "A9A9A900",
+        "description": "Escalator",
+        "icon": "escalator",
+        "id": "ac31159c2c48415686de7d3e70513aa0",
+        "image": "",
+        "name": "Escalator",
+        "parent": "1722532bfca54366bdfcc0278c064877",
+        "type": "sub"
+    },
+    {
+        "color": "A9A9A900",
+        "description": "Lifts",
+        "icon": "elevator",
+        "id": "593f9a8cf0c7442599013dd7cbf17dc6",
+        "image": "",
+        "name": "Lifts",
+        "parent": "1722532bfca54366bdfcc0278c064877",
+        "type": "sub"
+    },
+    {
+        "color": "9BD2F300",
+        "description": "Parking",
+        "icon": "parking",
+        "id": "aa0330c6a8d847bf82940eeb50b7a883",
+        "image": "",
+        "name": "Parking",
+        "parent": "1722532bfca54366bdfcc0278c064877",
+        "type": "sub"
+    },
+    {
+        "color": "a8a9af00",
+        "description": "Rest Rooms",
+        "icon": "restroom",
+        "id": "32c3c72b04e14a8b836b873867595f88",
+        "image": "",
+        "name": "Rest Rooms",
+        "parent": "1722532bfca54366bdfcc0278c064877",
+        "type": "sub"
+    },
+    {
+        "color": "A9A9A917",
+        "description": "Security",
+        "icon": "security",
+        "id": "021af4dc4cdb4127931d1b555fef5485",
+        "image": "",
+        "name": "Security",
+        "parent": "1722532bfca54366bdfcc0278c064877",
+        "type": "sub"
+    },
+    {
+        "color": "A9A9A920",
+        "description": "",
+        "icon": "taxi",
+        "id": "178bc01293d04fe5b78cf4aaef345a9f",
+        "image": "",
+        "name": "Taxi",
+        "parent": "1722532bfca54366bdfcc0278c064877",
+        "type": "sub"
+    },
+    {
+        "color": "A9A9A913",
+        "description": "Stairs",
+        "icon": "stairs",
+        "id": "68bef86a3cdb40b995dce097c002cec7",
+        "image": "",
+        "name": "Stairs",
+        "parent": "1722532bfca54366bdfcc0278c064877",
+        "type": "sub"
+    },
+    {
+        "color": "EFAB35",
+        "description": "Invisible",
+        "icon": "icon_id",
+        "id": "563f05fec62d41aaa64aa4fd83d183ab",
+        "image": "",
+        "name": " Assets Invisible",
+        "parent": "",
+        "type": "main"
+    },
+    {
+        "color": "EFAB35",
+        "description": "Invisible",
+        "icon": "icon_id",
+        "id": "5c2d157d00244c8a9c88a4711b3504f8",
+        "image": "",
+        "name": "Assets Invisible",
+        "parent": "",
+        "type": "main"
+    }
+]

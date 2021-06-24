@@ -6,7 +6,7 @@ L.Control.Toolbar = L.Control.extend({
     },
 
     initialize: function (osMapInstance, options) {
-        this._osMap = osMapInstance;
+        this._twodMap = osMapInstance;
         // console.log('featureSet', options.featureSet);
         // this.options['retail'] = this.options['default'];
         this.options['default']['position'] = options.position;
@@ -186,14 +186,90 @@ L.Control.Toolbar = L.Control.extend({
             .on(self.zoomFab, 'wheel', L.DomEvent.stopPropagation)
             .on(self.zoomFab, 'click', (e) => {
                 console.log('self', self, building.floor);
-                // console.log(L.DomUtil.getStyle(self._osMap.dialog._container, 'display'));
-                if (L.DomUtil.getStyle(self._osMap.dialog._container, 'display') === 'block') {
-                    self._osMap.dialog.close();
+                // console.log(L.DomUtil.getStyle(self._twodMap.dialog._container, 'display'));
+                if (L.DomUtil.getStyle(self._twodMap.dialog._container, 'display') === 'block') {
+                    self._twodMap.dialog.close();
                     
                 }
                 else {
-                    self._osMap.dialog.open();
+                    self._twodMap.dialog.open();
                 }
+                // self._createTreeMenu(building);
+                var treeData = [];
+
+                var jstreeData = self._createMapNode(treeData, venue, '#');
+                console.log('jstreeData', jstreeData);
+                var treeContainer = L.DomUtil.create('div', 'twodmap-jstree');
+                self._twodMap.dialog.setContent(treeContainer);
+                // self._twodMap.$(document).ready(function() {
+
+                    self._twodMap.$('.twodmap-jstree').on('changed.jstree', function (e, data) {
+                        var i, j, r = null;
+                        for (i = 0, j = data.selected.length; i < j; i++) {
+                            label = data.instance.get_path(data.selected[i]).join(' &#x2192; ');
+                            r = data.instance.get_node(data.selected[i]);
+                            if (r.data) {
+                                r.data.venueId = data.instance.get_parent(data.instance.get_parent(data.selected[i]));
+                                r.data.buildingId = data.instance.get_parent(data.selected[i]);
+                                // self._mapOptions.venueId = r.data.venueId;
+                            }
+        
+                        }
+        
+                        // self._log(Logger.DEBUG.name, 'Node Data', r.data);
+                        // self._currentFloorDetail = r.data;
+                        // // console.log(r.data)
+                        // self._jQuery(self.options.menuOptions.closeButton).trigger('click');
+                        // if (this.isLoaded) {
+                        //     self._changeFloorMap(self._currentFloorDetail, label);
+                        // }
+        
+        
+                    }).jstree({
+                        plugins: [
+                          "contextmenu",
+                          "sort",
+                          "state",
+                          "types",
+                          "unique",
+                          "wholerow",
+                          "changed",
+                          "types"
+                        ],
+                        'types': {
+                          'default': {
+                            'icon': 'fa fa-angle-right fa-fw'
+                          },
+                          'f-open': {
+                            'icon': 'fa fa-folder-open fa-fw'
+                          },
+                          'f-closed': {
+                            'icon': 'fa fa-folder fa-fw'
+                          }
+                        },
+                        checkbox: {
+                          three_state: false
+                        },
+                        search: {
+                          show_only_matches: true
+                        },
+                        core: {
+                          data:jstreeData
+                        }
+                    // });
+                    //         .on('loaded.jstree', function () {
+                    //             // Do something here...
+                    //             // self._changeFloorMap(self._currentFloorDetail, label);
+                    //             // self._changeFloorMap(self._currentFloorDetail, label);
+                    //             this.isLoaded = true;
+                    //             console.log('Hello World', this, self._twodMap.$(".jstree-leaf:first-child"));
+                    //             // this.open_node(self._jQuery(".jstree-leaf:first-child"),function(){;},true)
+                    //     });
+                });
+                
+                // floorList.forEach((fl, key) => {
+                    
+                // });
                 // self.listBtn.forEach((btn) => {
 
                 //     if (!L.DomUtil.hasClass(btn, 'scale-out')) {
@@ -337,14 +413,221 @@ L.Control.Toolbar = L.Control.extend({
                 L.DomUtil.removeClass(self.previousElement, 'control-enabled');
                 self.previousElement = e.currentTarget;
             }
-            self._osMap._selectCategory(id);
+            self._twodMap._selectCategory(id);
         }
         else {
             L.DomUtil.removeClass(e.currentTarget, 'control-enabled');
-            self._osMap._selectCategory(null);
+            self._twodMap._selectCategory(null);
         }
     },
+    _createTreeMenu: function (building) {
+        var self = this;
+        var treeContainer = L.DomUtil.create('ul', 'tree');
+        // treeContainer.setAttribute('id', 'myUL')
+        // var floorList = [];
+        building.floor.map((fl, key) => {
+                var floorList = L.DomUtil.create('li', '', treeContainer);
+                floorList.setAttribute('id', fl.floor_id);
+                // var div = L.DomUtil.create('div', 'flex center', floorList);
+                var icon = L.DomUtil.create('i', 'mdi mdi-chevron-right mdi-24px', floorList);
+                var anchor = L.DomUtil.create('a', 'flex center', floorList);
+                anchor.setAttribute('href', '#');
+                anchor.innerHTML = fl.site_index;
+                
+                var categories = ['Stairs', 'Elevators', 'Restrooms', 'Restrooms', 'Restrooms', 'Restrooms', 'Restrooms']
+                categories.forEach(category => {
+                    var nestedCategory = L.DomUtil.create('ul', 'nested', floorList);
+                    // L.DomEvent
+                    // .on(div, 'click', (e) => {
+                    //     if (!L.DomUtil.hasClass(nestedCategory, 'active')) {
+                    //         L.DomUtil.addClass(nestedCategory, 'active');
+                    //         L.DomUtil.addClass(icon, 'caret-down');
+                    //     }
+                    //     else {
+                    //         L.DomUtil.removeClass(nestedCategory, 'active');
+                    //         L.DomUtil.removeClass(icon, 'caret-down');
+                    //     }
+                    // });
+                    var categoryList = L.DomUtil.create('li', '', nestedCategory);
+                    var innerAnchor = L.DomUtil.create('a', '', categoryList);
+                    innerAnchor.setAttribute('href', '#');
+                    innerAnchor.innerHTML = category;
+                });
+                // L.DomEvent
+                // .on(floorList, 'click', (e) => {
+                //     if (!L.DomUtil.hasClass(e.currentTarget, 'control-enabled')) {
+                //         L.DomUtil.addClass(e.currentTarget, 'control-enabled');
+                //     }
+                //     else {
+                //         L.DomUtil.removeClass(e.currentTarget, 'control-enabled');
+                //     }
+                // })
 
+        });
+        self._twodMap.dialog.setContent(treeContainer);
+
+
+        var tree = document.querySelectorAll('ul.tree a:not(:last-child), i:not(:last-child)');
+        // console.log('tree', tree);
+        for(var i = 0; i < tree.length; i++){
+            tree[i].addEventListener('click', function(e) {
+                // console.log('e', e);
+                console.log('dsfdsf', e.currentTarget.parentElement.getAttribute('id'));
+                var parent = e.target.parentElement;
+                var classList = parent.classList;
+                var closeAllOpenSiblings = function () {
+                    var opensubs = parent.parentElement.querySelectorAll(':scope .open');
+                    for(var i = 0; i < opensubs.length; i++){
+                        opensubs[i].classList.remove('open');
+                    }
+                }
+                if(classList.contains("open")) {
+                    classList.remove('open');
+                } else {
+                    closeAllOpenSiblings();
+                    classList.add('open');
+                }
+            });
+        }
+
+
+
+        var child = document.querySelectorAll('ul.tree a:last-child');
+        // console.log('click', child)
+        for(var i = 0; i < child.length; i++){
+            child[i].addEventListener('click', function(e) {
+                // console.log('click1', e.target)
+                var target = e.currentTarget;
+                var classList = target.classList;
+                
+                // console.log(e.target.parentElement.parentElement.parentElement)
+                var closeAllOpenSiblings = function(){
+                    var opensubs = e.target.parentElement.parentElement.parentElement
+                    .querySelectorAll('ul a');
+                    // console.log('opensubs', opensubs);
+                    for(var i = 0; i < opensubs.length; i++){
+                        opensubs[i].classList.remove('control-enabled');
+                    }
+                }
+                if(classList.contains("control-enabled")) {
+                    classList.remove('control-enabled');
+                } else {
+                    closeAllOpenSiblings();
+                    classList.add('control-enabled');
+                }
+            });
+        }
+
+    },
+
+    _createMapNode: function (treeData, venue, parent) {
+        var self = this;
+        var venueName = self._twodMap._getReadableString(self._twodMap._getTranslatedText(venue.full_name, 'en_US'));
+        var venueNode = self._createTreeNode(venue._id, venueName, parent, 'mdi mdi-domain',
+            { opened: false, disabled: true });
+        // treeData.push(venueNode);
+        // console.log('venueNode', venueNode);
+        venue.building.forEach((buildingData, key)  => {
+            //Need to implment Localization
+            var buildingName = self._twodMap._getReadableString(self._twodMap._getTranslatedText(buildingData.name, 'en_US'));
+            console.log('buildingName', key);
+            var buildingObj = {
+                id: buildingName,
+                title: buildingName,
+                nodes: []
+            };
+            var parentNode = self._createTreeNode(buildingData.building_id, buildingName, '#', 'mdi mdi-domain', { opened: false, disabled: true });
+            // parentNode.id = buildingName;
+            // parentNode.text = buildingName;
+            // parentNode.parent = '#';
+            // parentNode.icon = 'mdi mdi-domain';
+            // parentNode.state = { opened: true };
+            treeData.push(parentNode);
+
+            buildingData.floor.forEach((floor, key) => {
+                //Need to implment Localization
+
+                if (floor.map_info.name && floor.map_info.image_id) {
+
+                    // Add venue live_map_config in floormapdata
+                    // console.log('venue', venue);
+                    if (venue.config && venue.config['live_map_config']) {
+                        floor['live_map_config'] = venue.config['live_map_config'];
+                    }
+
+                    //Add timezone data for floormapdata
+                    floor.time_zone = venue.time_zone
+                    floor.time_zone_offset = venue.time_offset
+
+
+                    var floorName = self._twodMap._getReadableString(self._twodMap._getTranslatedText(floor.map_info.name, 'en_US'));
+                    var floorObj = buildingObj;
+                    var w = floor.map_info.scale_x;
+                    var h = floor.map_info.scale_y;
+                    // var southWest = map.unproject([0, h], map.getMaxZoom() - 1);
+                    // var northEast = map.unproject([w, 0], map.getMaxZoom() - 1);
+                    // var bounds = new L.LatLngBounds(southWest, northEast);
+                    var bounds = [[0, 0], [w, h]];
+                    floorObj.id = floor.floor_id;
+                    floorObj.title = floorName;
+                    floorObj.parent = buildingObj;
+                    floorObj.width = w;
+                    floorObj.height = h;
+                    floorObj.selected = true;
+                    floorObj.opened = true;
+                    var layerKey = floorName.replace(' ', '_');
+                    layerKey = buildingName + '_' + layerKey;
+                    floorObj.layer = {
+                        name: floorName,
+                        type: 'imageOverlay',
+                        url: floor.map_info.image_id.url,
+                        bounds: bounds,
+                        layerParams: {
+                            noWrap: true,
+                            attribution: '<a>Map ' + buildingName +
+                                ' ' + floorName + ' <\/a>'
+                        }
+                    };
+                    buildingObj.nodes.push(floorObj);
+                    var childNode;
+                    // if (self._mapOptions.venueId === venue._id && self.floorForAreaId && floor.floor_id === self.floorForAreaId) {
+                    //     childNode = self._createTreeNode(floor.floor_id, floorName, buildingData.building_id, 'mdi mdi-layers', { opened: true, selected: true });
+                    // }
+                    // else if (self._mapOptions.venueId === venue._id && !self.floorForAreaId && floor.default) {
+                    //     // console.log('Venue match');
+                    //     childNode = self._createTreeNode(floor.floor_id, floorName, buildingData.building_id, 'mdi mdi-layers', { opened: true, selected: true });
+                    // }
+                    // else if (!self._mapOptions.venueId && !self.floorForAreaId && floor.default) {
+                    //     // console.log('nor venue, floor default');
+                    //     childNode = self._createTreeNode(floor.floor_id, floorName, buildingData.building_id, 'mdi mdi-layers', { opened: true, selected: true });
+                    // }
+                    // else {
+                        // console.log('Else');
+                        childNode = self._createTreeNode(floor.floor_id, floorName, buildingData.building_id, 'mdi mdi-layers', { opened: false, selected: false });
+                    // }
+                    // childNode.data = floor;
+                    treeData.push(childNode);
+                }
+            });
+
+        }); 
+
+        // console.log('return treeData', treeData)
+        return treeData;
+    },
+    _createTreeNode: function (id, name, parent, icon, state) {
+
+        return {
+            'id': id,
+            'text': name,
+            'parent': parent,
+            'icon': icon,
+            'state': state,
+            'a_attr': {
+                class:'map-nodes'
+            },
+        };
+    },
     _createSuboptions: function (e) {
         // console.log('inside sub options');
         var self = this;

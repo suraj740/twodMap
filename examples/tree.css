@@ -1,0 +1,125 @@
+/* ul,
+#myUL {
+    list-style-type: none;
+}
+
+#myUL {
+    margin: 0;
+    padding: 0;
+}
+.tree .mdi {
+
+    color: #000;
+}
+
+.flex {
+    display: flex;
+}
+
+
+.center {
+    align-items: center;
+}
+
+.caret {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.caret::before {
+    content: '\25B6';
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.caret-down::before {
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.nested {
+    display: none;
+}
+
+.active {
+    display: block;
+} */
+
+
+
+ul.tree li {
+    list-style-type: none;
+    position: relative;
+}
+
+ul.tree {
+
+    padding: 0;
+}
+
+ul.tree li ul {
+    display: none;
+    padding: 0.2rem 2.5rem;
+
+}
+
+ul.tree li.open > ul {
+    display: block;
+
+}
+
+
+ul.tree li.open > i::before {
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+ul.tree li a {
+    color: black;
+    text-decoration: none;
+    display: inline;
+}
+
+.tree .mdi {
+
+    color: #000;
+}
+
+.tree i {
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+
+.center {
+    align-items: center;
+}
+
+/* ul.tree li a:before {
+    height: 1em;
+    padding: 1rem;
+    font-size: .8em;
+    display: block;
+    position: absolute;
+    left: -1.3em;
+    top: .2em;
+} */
+
+/* ul.tree li > a:not(:last-child):before {
+    content: '+';
+}
+
+ul.tree li.open > a:not(:last-child):before {
+    content: '-';
+} */

@@ -12,6 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "@turf/turf": "^6.3.0",
+    "jquery": "^3.6.0",
+    "jstree": "^3.3.11",
     "leaflet": "^1.7.1",
     "leaflet-control-geocoder": "^2.2.0",
     "leaflet-draw": "^1.0.4",

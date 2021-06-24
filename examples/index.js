@@ -58,6 +58,11 @@ twod.changeTheme(
     var categories = await response.json()
 
     twod._addCategoriesToolbar(categories);
+
+    response = await fetch('./assets/categories1.json');
+    var categories1 = await response.json()
+    twod.categories = categories1;
+
     // var categoriesContainer = document.querySelector('#categoriesList')
 
 
@@ -101,9 +106,9 @@ twod.changeTheme(
     //     btn.classList.toggle('scale-out');
     //     })
     // });
-    twod.addSearchControl();
-
     twod._addDialog();
+
+    twod.addSearchControl();
 })();
 // fetch('./assets/pois.json')
 //     .then(response => {
