@@ -1,342 +1,604 @@
 {
-    "_id": "80736d3841be43eb84468e90d310a931",
-    "site_name": "",
+    "_id": "c74c5f7485fe41729d322107dca9483f",
+    "site_name": "Randburg Square",
     "notification_list": [
-        {
-            "local": false
-        }
-    ],
-    "address": "",
-    "promotion_rule": "fifo",
-    "full_name": [
-        {
-            "text": "Southgate Plaza",
+      {
+        "notification_label": [
+          {
+            "text": "6 daily",
             "language": "en_US"
-        },
-        {
-            "text": "Southgate Plaza",
-            "language": "fr"
-        }
+          }
+        ],
+        "local": false
+      },
+      {
+        "notification_label": [
+          {
+            "text": "12 daily",
+            "language": "en_US"
+          }
+        ],
+        "local": true
+      }
+    ],
+    "country_iso_code": "ZAF",
+    "full_name": [
+      {
+        "text": "Randburg Square",
+        "language": "en_US"
+      }
     ],
     "pri_rest_url": "string",
-    "city": "Sacramento",
-    "state": "California",
-    "short_name": "SPZA",
-    "time_zone": "America/Los_Angeles",
-    "country_iso_code": "USA",
+    "city": "Johannesburg",
+    "uuid": "",
+    "domain_name": "",
+    "pri_cms_url": "string",
+    "sec_rest_url": "string",
     "geo_location": [
-        {
-            "radius": 111,
-            "location": {
-                "type": "Point",
-                "coordinates": [26.200661, 28.031277]
-            }
+      {
+        "message": {
+          "title": " Waya Waya ",
+          "body": "Welcome to Randburg Square"
+        },
+        "radius": 500,
+        "location": {
+          "coordinates": [
+            -26.091108752618023,
+            28.0030585026543
+          ],
+          "type": "Point"
         }
-    ],
-    "_updated": "2020-10-09T06:26:44.000Z",
-    "_created": "2019-11-19T08:58:34.000Z",
-    "currency_list": [
-        {
-            "local": false
+      },
+      {
+        "message": {
+          "title": " Waya Waya ",
+          "body": "Welcome to Randburg Square"
+        },
+        "radius": 100,
+        "location": {
+          "coordinates": [
+            -26.17441,
+            27.99186
+          ],
+          "type": "Point"
         }
-    ],
-    "language_list": [
-        {
-            "local": false
+      },
+      {
+        "message": {
+          "title": " Waya Waya ",
+          "body": "Welcome to Randburg Square"
+        },
+        "radius": 100,
+        "location": {
+          "coordinates": [
+            -32.178166,
+            115.966086
+          ],
+          "type": "Point"
         }
+      },
+      {
+        "message": {
+          "title": " Waya Waya ",
+          "body": "Welcome to Randburg Square"
+        },
+        "radius": 100,
+        "location": {
+          "coordinates": [
+            -26.158077,
+            28.047035
+          ],
+          "type": "Point"
+        }
+      }
     ],
+    "site_asset_number": "",
+    "campaign_approval_workflow_list": "string",
+    "event_approval_workflow_list": "string",
     "config": {
-        "loyalty": {
-            "enabled": false
-        },
-        "guest_login": "enable",
-        "site_info": {
-            "default": false,
-            "sidebar_tree": true
-        },
-        "engin": {
-            "area": {
-                "style": [
-                    {
-                        "style": {
-                            "color": "#1ca315",
-                            "opacity": 2,
-                            "weight": 1
-                        },
-                        "type": "B"
-                    },
-                    {
-                        "style": {
-                            "color": "#C7592A",
-                            "opacity": 2,
-                            "weight": 1
-                        },
-                        "type": "A"
-                    },
-                    {
-                        "style": {
-                            "color": "#095798",
-                            "opacity": 2,
-                            "weight": 1
-                        },
-                        "type": "O"
-                    }
-                ]
-            }
-        },
-        "live_map_config": {
-            "live_dots": {
-                "animate": false
+      "dashboard": "",
+      "loyalty": {
+        "enabled": true,
+        "description": [
+          {
+            "text": "<p>&nbsp;</p><p style=\"text-align: center; font-size: 15px;\">&nbsp;</p><p style=\"color: #868686; font-size: 15px; font-family: avenir; font-weight: 200; text-align: left;\">COLLECTING POINTS AND REDEEMING PROMOTIONS IS EASY:</p><p style=\"color: #868686; font-size: 15px; font-family: avenir; font-weight: 200; text-align: left;\">Simply&nbsp;scan the QR&nbsp;code presented to you at the till at participating retailers whenever you make a purchase above Rs.250</p><p style=\"color: #868686; font-size: 15px; font-family: avenir; font-weight: 200; text-align: left;\">KEEP UP TO DATE:&nbsp;</p><p style=\"color: #868686; font-size: 15px; font-family: avenir; font-weight: 200; text-align: left;\">We will send you latest promotions and offers, on your mobile app and via email.</p><p style=\"color: #868686; font-size: 15px; font-family: avenir; font-weight: 200; text-align: left;\">HOLD ONTO 3 STARS STATUS:</p><p style=\"color: #868686; font-size: 15px; font-family: avenir; font-weight: 200; text-align: left;\">your points expire after one year, keep scanning QR&nbsp;codes during qualifying purchases to keep your status.</p><p>&nbsp;</p>",
+            "language": "en_US"
+          }
+        ],
+        "title": "LOYALTY INFORMATION",
+        "value": 10,
+        "currency": "ZAR",
+        "levels": [
+          {
+            "label": [
+              {
+                "text": "Crystal",
+                "language": "en_US"
+              }
+            ],
+            "title": [
+              {
+                "text": "START AT THE 1 STAR LEVEL AND ENJOY IMMEDIATE ACCESS TO OFFERS LIKE",
+                "language": "en_US"
+              }
+            ],
+            "points": {
+              "max": 249,
+              "min": 1
             },
-            "features": [
-                "view",
-                "all",
-                "fitted",
-                "shell",
-                "calibration",
-                "areas",
-                "areamap",
-                "heatmap",
-                "visitors",
-                "dwell",
-                "count",
-                "passerby",
-                "abandonment",
-                "journey"
-            ]
-        },
-        "dashboard": "newmark_southgate",
-        "zone_flag": true,
-        "analytic_data_start_date": "2019-12-14T00:00:00.000Z",
-        "global_sankey_type": "zone",
-        "device_filters": ["access_point"],
-        "colour_config": ["#79de7c", "#fedd63", "#fcaf5d", "#ff6666"],
-        "map_device_label": "Tag",
-        "benchmarking": {
-            "image": "https://res.cloudinary.com/intelipower/image/upload/media/4ed31b242e994452b94634710517eda5/80736d3841be43eb84468e90d310a931/static/southgate_new.jpg",
-            "widgets": [
-                "fdb0078436b14f6a8a1ede4c5c4463eb",
-                "261ba2a6a27843988279b05522575f37",
-                "2c68dc771bd64127b2133e3b31fff3ee"
+            "description": [
+              {
+                "text": "-Free Coffee with your waffle at Belgian waffles.\n- 10% discount on evening dress at Coco Milen.",
+                "language": "en_US"
+              }
             ],
-            "id": "80736d3841be43eb84468e90d310a931",
-            "title": "Southgate Plaza"
-        },
-        "visitor_filters": ["Cross Shopping"],
-        "dashboard_info": {
-            "id": "367294e2024a496c919d8270da109581"
-        }
-    },
-    "belongs": {
-        "owner": {
-            "soId": "17553600dce64a8cae7ec1117b1e62fa",
-            "voId": "77bed03dd53d437e90e4da234d8a2480",
-            "spId": "4ed31b242e994452b94634710517eda5"
-        }
-    },
-    "time_offset": "-0800",
-    "identifier": "e4632dde1fcb46b49a98fdaa32ad78bd",
-    "building": [
-        {
-            "image_list_id": "",
-            "name": [
-                {
-                    "text": "Southgate Plaza",
-                    "language": "en_US"
-                }
+            "level": 1
+          },
+          {
+            "label": [
+              {
+                "text": "Diamond",
+                "language": "en_US"
+              }
             ],
-            "floor": [
-                {
-                    "site_index": "Ground Level",
-                    "default": true,
-                    "floor_id": "e5fb0ba76b094919be2b69d227a91c8f",
-                    "number": "1",
-                    "alias": [
-                        {
-                            "text": "Ground Level",
-                            "language": "en_US"
-                        }
-                    ],
-                    "e_map": {
-                        "bn": "",
-                        "sn": "",
-                        "fn": ""
-                    },
-                    "type": "shopping",
-                    "floor_zones": [
-                        "c2ff9951936742fbae80ffcf004f8197",
-                        "730a330b53d14e95b4321acccc7a3033",
-                        "94a6ded9a46740ccbcf455daf005dc96",
-                        "ab75f8ef05284e9e864ecf5529fe49eb",
-                        "7d5c0d47f9124083b773a3574d83007b",
-                        "d1261aa01f224e93b764a9b5d01de80f",
-                        "43d84138183040a7b7532d6aaebda3d7"
-                    ],
-                    "map_info": {
-                        "origin": "123.0,322",
-                        "floor_offset": {
-                            "production": [
-                                [-12.34, -12.43],
-                                [43, 50]
-                            ]
-                        },
-                        "name": [
-                            {
-                                "text": "Ground Level",
-                                "language": "en_US"
-                            }
-                        ],
-                        "title": [
-                            {
-                                "text": "Ground Level",
-                                "language": "en_US"
-                            }
-                        ],
-                        "file_type": "png",
-                        "use_scope": "INTERNAL",
-                        "coordinate_system": "WGS84",
-                        "ref_geo2": "10.0,10.0",
-                        "ref_geo1": "10.0,10.0",
-                        "image_id": {
-                            "production": "85693da63af7456f83296cdcffe9a037",
-                            "dev": "85693da63af7456f83296cdcffe9a037",
-                            "calibration": "85693da63af7456f83296cdcffe9a037"
-                        },
-                        "url": [
-                            {
-                                "text": "Ground Level",
-                                "language": "en_US"
-                            }
-                        ],
-                        "scale_x": "677.664",
-                        "scale_y": "310.535",
-                        "dim_x": 677.664,
-                        "dim_y": 310.535,
-                        "orig_x": 0,
-                        "orig_y": 0,
-                        "map_type": "vg_3d"
-                    }
-                },
-                {
-                    "site_index": "Ground Level1",
-                    "default": true,
-                    "floor_id": "e5chgvhga76b054719be2b69d227a91c8f",
-                    "number": "1",
-                    "alias": [
-                        {
-                            "text": "Ground Level1",
-                            "language": "en_US"
-                        }
-                    ],
-                    "e_map": {
-                        "bn": "",
-                        "sn": "",
-                        "fn": ""
-                    },
-                    "type": "shopping",
-                    "floor_zones": [
-                        "c2ff9951936742fbae80ffcf004f8197",
-                        "730a330b53d14e95b4321acccc7a3033",
-                        "94a6ded9a46740ccbcf455daf005dc96",
-                        "ab75f8ef05284e9e864ecf5529fe49eb",
-                        "7d5c0d47f9124083b773a3574d83007b",
-                        "d1261aa01f224e93b764a9b5d01de80f",
-                        "43d84138183040a7b7532d6aaebda3d7"
-                    ],
-                    "map_info": {
-                        "origin": "123.0,322",
-                        "floor_offset": {
-                            "production": [
-                                [-12.34, -12.43],
-                                [43, 50]
-                            ]
-                        },
-                        "name": [
-                            {
-                                "text": "Ground Level1",
-                                "language": "en_US"
-                            }
-                        ],
-                        "title": [
-                            {
-                                "text": "Ground Level1",
-                                "language": "en_US"
-                            }
-                        ],
-                        "file_type": "png",
-                        "use_scope": "INTERNAL",
-                        "coordinate_system": "WGS84",
-                        "ref_geo2": "10.0,10.0",
-                        "ref_geo1": "10.0,10.0",
-                        "image_id": {
-                            "production": "85693da63af7456f83296cdcffe9a037",
-                            "dev": "85693da63af7456f83296cdcffe9a037",
-                            "calibration": "85693da63af7456f83296cdcffe9a037"
-                        },
-                        "url": [
-                            {
-                                "text": "Ground Level",
-                                "language": "en_US"
-                            }
-                        ],
-                        "scale_x": "677.664",
-                        "scale_y": "310.535",
-                        "dim_x": 677.664,
-                        "dim_y": 310.535,
-                        "orig_x": 0,
-                        "orig_y": 0,
-                        "map_type": "vg_3d"
-                    }
-                }
+            "title": [
+              {
+                "text": "SCAN 25 TIMES SPENDING OVER R250 AND YOU'LL BE UPGRADED TO 2 STAR LEVEL BRINGING YOU REWARDS LIKE::",
+                "language": "en_US"
+              }
             ],
-            "gla": 36000,
-            "number": "3",
-            "geo_location": {
-                "type": "Point",
-                "coordinates": [-25.7656675, 57.4970622]
+            "points": {
+              "max": 499,
+              "min": 250
             },
-            "building_id": "91a338c5ad99430681bd7db772bddc01"
-        }
+            "description": [
+              {
+                "text": "-2 pizza for price of one. \n- Free Coke with KFC meal",
+                "language": "en_US"
+              }
+            ],
+            "level": 2
+          },
+          {
+            "label": [
+              {
+                "text": "Tanzanite",
+                "language": "en_US"
+              }
+            ],
+            "title": [
+              {
+                "text": "SCAN 25 TIMES SPENDING OVER R250 AND YOU'LL BE UPGRADED TO 3 STAR LEVEL BRINGING YOU REWARDS LIKE::",
+                "language": "en_US"
+              }
+            ],
+            "points": {
+              "max": 9999,
+              "min": 500
+            },
+            "description": [
+              {
+                "text": "-Free haloween costume at booksale. \n- Book at SPA and get 50% of an leg wax.",
+                "language": "en_US"
+              }
+            ],
+            "level": 3
+          }
+        ],
+        "points": 250
+      },
+      "guest_login": "enable",
+      "site_info": {
+        "default": false,
+        "sidebar_tree": false
+      },
+      "category_ids": {
+        "shop": "2c16e86c13bb4d328dd3403bf9e216a5",
+        "hide": "6111fde4a7254ecebf89619860e6f980",
+        "restaurant": "c6351c723f604f378135f754115cdf47",
+        "utilities": "e6cbdb629bd7453892f649c3d76245c9",
+        "food_dining": "17eacc3b8f1842cd91a06dbac3cad3a7"
+      },
+      "analytic_data_start_date": "2020-11-07 00:00:00"
+    },
+    "email": "bagatelle@gmail.co.za",
+    "average_footfall": 0,
+    "status": "draft",
+    "private_key": "string",
+    "description": [
+      {
+        "text": "Randburg Square shopping centre is situated in Randburg CBD in proximity to established residential suburbs and has been serving these suburbs for over 35 years. The centre is approximately 40,767 m2 big and has over 70 shops.It has a very big catchment area due to the taxi rank close to the centre that mainly services Diepsloot, Randburg, Soweto and Cosmo City. With an average foot count of over 700 000 customers per month, this vibey mall plays host to commuters, professionals, friends and families who all know that this is “the smart place to shop”.Whether you are hunting down a bargain, shopping for some groceries, filling the wardrobe with fashionable clothing or grabbing a quick bite to eat in our food court, Randburg Square will cater to all your shopping needs. Randburg Square has a GLA (Gross Lettable Area) of 40,767 m2 and anchor tenants include Shoprite, Pick N Pay, Mr. Price, Truworths,  Foschini, Dis-Chem, The SA Post Office, Clicks, FNB, Nedbank and Capitec Bank.The service offering at Randburg Square is immense, thus helping you finish those tedious errands in a flash and saving you time for things you really want to do. Discover the gems hidden in the heart of the CBD, come to Randburg Square!",
+        "language": "en_US"
+      },
+      {
+        "text": "Randburg Square shopping centre is situated in Randburg CBD in proximity to established residential suburbs and has been serving these suburbs for over 35 years. The centre is approximately 40,767 m2 big and has over 70 shops.It has a very big catchment area due to the taxi rank close to the centre that mainly services Diepsloot, Randburg, Soweto and Cosmo City. With an average foot count of over 700 000 customers per month, this vibey mall plays host to commuters, professionals, friends and families who all know that this is “the smart place to shop”.Whether you are hunting down a bargain, shopping for some groceries, filling the wardrobe with fashionable clothing or grabbing a quick bite to eat in our food court, Randburg Square will cater to all your shopping needs. Randburg Square has a GLA (Gross Lettable Area) of 40,767 m2 and anchor tenants include Shoprite, Pick N Pay, Mr. Price, Truworths,  Foschini, Dis-Chem, The SA Post Office, Clicks, FNB, Nedbank and Capitec Bank.The service offering at Randburg Square is immense, thus helping you finish those tedious errands in a flash and saving you time for things you really want to do. Discover the gems hidden in the heart of the CBD, come to Randburg Square!",
+        "language": "fr"
+      }
     ],
+    "short_name": "RAS",
+    "social": [
+      {
+        "logo": "",
+        "type": "fa",
+        "link": "https://www.facebook.com/",
+        "icon": "facebook-square"
+      },
+      {
+        "logo": "",
+        "type": "fa",
+        "link": "https://www.youtube.com/",
+        "icon": "youtube-square"
+      },
+      {
+        "logo": "",
+        "type": "fa",
+        "link": "https://twitter.com/",
+        "icon": "twitter-square"
+      },
+      {
+        "logo": "",
+        "type": "fa",
+        "link": "http://instagram.com/",
+        "icon": "instagram"
+      }
+    ],
+    "currency_list": [
+      {
+        "code": "ZAR",
+        "local": true,
+        "country_code": "SA"
+      }
+    ],
+    "loyalty_point_value": 0,
+    "phone": "",
+    "gla": 0,
+    "time_zone": "Africa/Johannesburg",
+    "language_list": [
+      {
+        "code": "en_UK",
+        "local": true,
+        "name": "English (uk)"
+      }
+    ],
+    "languages_id": "en_US",
+    "address": "Sentrum Rd and Oak Road, Randburg, Johannesburg, 2194 P.O. Box City Johannesburg Country South Africa",
+    "help_url": [
+      {
+        "text": "Lorem Ipsum",
+        "language": "en_US"
+      }
+    ],
+    "powered_by": [
+      {
+        "logo": "",
+        "link": "",
+        "name": ""
+      },
+      {
+        "logo": "",
+        "link": "",
+        "name": ""
+      }
+    ],
+    "privacy_policy_url": [
+      {
+        "text": "<div> <p>PRIVACY NOTICE: FREE WI-FI SERVICE</p> <p>&nbsp;</p> <p>INTRODUCTION</p> <p>&nbsp;</p> <p>Vukile Property Fund Limited (“Vukile”) will obtain, use and store personal information of users of the free Wi-Fi service available at certain properties belonging to Vukile.   </p> <p>&nbsp;</p> <p>Information about users and their shopping preferences is imperative to Vukile in order to achieve the goal with provision of the free Wi-Fi service offered.  If such service does not assist Vukile in its endeavors to ensure viable trading conditions for its tenants and improving customer satisfaction, the free Wi-Fi service will not benefit all parties involved and will not serve its intended purpose.  </p> <p>&nbsp;</p> <p>This Notice should be read with the Terms and Conditions: Free Wi-Fi Service and is subject to change from time to time in the discretion of Vukile and depending on any amendments to relevant legislation. </p> <p>&nbsp;</p> <p>COMPLIANCE WITH APPLICABLE LEGISLATION</p> <p>&nbsp;</p> <p>Vukile will comply in all respects with all applicable legislation in gathering, keeping, processing, protecting and utilizing personal information. </p> <p>&nbsp;</p> <p>By providing any personal information, the user authorizes Vukile to use such personal information for all purposes legally permissible.  </p> <p>&nbsp;</p> <p>No personal information of any person under the age of 18 provided by such minor person to Vukile will be used by Vukile unless it has been authorized by the parent or legal guardian of such minor person </p> <p>&nbsp;</p> <p>&nbsp;</p> <p>SHARING OF PERSONAL INFORMATION</p> <p>&nbsp;</p> <ol> <li><span>Vukile will at all times aim not to divulge specific information regarding any particular user and will generally use the information gathered for analytical and statistical purposes. The determinations and findings of these investigations may be shared by Vukile with any relevant third parties in its discretion. </span></li> </ol> <p> </p> <ol> <li value=\"2\">Where Vukile however is of the opinion that disclosure of certain personal information relevant to a particular user or group of users is necessary for the benefit of the tenants and customers of the shopping centre as a whole and in achieving the purpose of the free Wi-Fi service offering, Vukile may divulge such personal information as provided by the user through the application in its sole discretion. This includes disclosure to tenants and third parties for marketing purposes. Any such disclosure will at times be done in accordance with the provisions of the applicable laws. </li> </ol> <p>&nbsp;</p> <ol> <li value=\"3\">Where personal information is shared with international entities not bound by South African laws pertaining to protection of personal information, an undertaking from such entities regarding the non-disclosure of personal information within the scope of the South African laws will be required. </li> </ol> <p>&nbsp;</p> <p><span>ADDITIONAL INFORMATION GATHERED</span><b> </b></p> <p>&nbsp;</p> <ol> <li>When using the free Wi-Fi service, Vukile also collects standard information about the users’ <span>internet connection and internet usage. </span>This information is collected on each and every user of the free Wi-Fi service and may also be used for statistical purposes as well as determining whether there is an abuse of the service or any unlawful use thereof as envisaged in the Terms and Conditions.</li> </ol> <p>&nbsp;</p> <ol> <li value=\"2\">The types of information collected may include, but will not necessarily be limited to, the URL the user came from, IP address, domain type, browser type, the country and telephone code where the relevant device is located, the webpages viewed during each free Wi-Fi session, the advertisements users clicked on, and any search terms entered by the users.</li> </ol> <p>&nbsp;</p> <ol> <li value=\"3\">Vukile uses cookies to optimize the service, but users can opt out of this option.</li> </ol> <p>&nbsp;</p> <p>3.3.1<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>A cookie is a small piece of information stored by a browser on the <span>device. It may contain some personal details, the contents of </span>a shopping basket, and date and time information in an encrypted format, which can be recalled when the user returns to the Wi-Fi<span> service. This speeds up </span>the identification process when a user visits the same shopping centre again.</p> <p>&nbsp;</p> <p>3.3.2<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Cookies are used to identify the device the user uses to connect to the Wi-Fi service. Anonymous cookies are used to collect data about how the user uses the free Wi-Fi service to ensure that the purpose of this service is ultimately achieved. The anonymous DoubleClick cookie and Google Analytics cookie are used to optimize the user’s web experience and deliver relevant advertising on the Google Display Network based on the activity of users of our free wi-fi service.</p> <p>&nbsp;</p><ol> <li value=\"4\">4. Vukile uses location data on the Connect Waya-Waya® app.</li> </ol> <p>&nbsp;</p> <p>USERS’ RIGHTS AND PREFERENCES</p> <p> </p> <p>Users have the right to know what personal information Vukile has about them and which will be accessible through the application, to correct or verify such information and to opt out of any marketing at any time. </p> <p>&nbsp;</p> <p>Users may further request, at any time, that all personal details or information be deleted by Vukile, in which event the user will no longer be registered as a user of the free Wi-Fi service and will by implication no longer be eligible for any rewards or free Wi-Fi service usage. </p> <p>&nbsp;</p> <p>Where Vukile is however legally obliged to retain any information, it will not delete same but undertakes not to utilize any information requested by the user to be deleted.</p> <p> </p> <p>&nbsp;</p> <p>SECURITY</p> <p>&nbsp;</p> <p>Reasonable security safeguards have been implemented and will remain in place to protect the personal information of users of this service. </p> <p>&nbsp;</p> <p>Notwithstanding the aforegoing, Vukile gives no guarantees in this regard and the users accept that security threats and breaches may arise from time to time. </p> <p>&nbsp;</p> <p>Vukile will inform users of material security breaches which may jeopardize any users.</p> <p>&nbsp;</p> <p> </p> <p>&nbsp;</p> <p>&nbsp;</p> <p>Geo-Location Information</p> <p>&nbsp;</p> <p>The Connect Waya-Waya® App will request access or permission to track location-based information from your mobile device, either continuously or while you are using the Application, to provide services, which are designed to enhance your shopping experience. Like prompting you to open your App as you approach one of our shopping malls, so you can enjoy specials and collect rewards. If you wish to change our access or permissions, you may do so in your device’s settings.</p> <p>&nbsp;</p> <p> </p> <p>&nbsp;</p> <p>&nbsp;</p> </div>",
+        "language": "en_US"
+      }
+    ],
+    "promotion_rule": "fifo",
+    "terms_and_conditions_url": [
+      {
+        "text": "<div> <p>TERMS AND CONDITIONS: FREE WI-FI SERVICE </p> <p>&nbsp;</p> <p>&nbsp;</p> <ol> <li><span>INTRODUCTION: </span></li> </ol> <p>&nbsp;</p> <p>&nbsp;</p> <p>1.1<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Vukile Property Fund Limited (herein referred to as “Vukile”) is the registered owner of various shopping centres within South Africa. </p> <p>&nbsp;</p> <p>1.2<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Vukile is desirous to offer, subject to such terms and conditions as it may implement from time to time, free (but controlled) Wi-Fi service at certain of its properties with the main purpose of gathering costumer data for analysis to ultimately improve the shopping experience. </p> <p>&nbsp;</p> <p>1.3<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Use of this Wi-Fi service offering is totally optional and shall be in the sole discretion, at the sole election and at own risk of each user. For purposes of this document “user” shall refer to each and every person who use the Wi-Fi service as envisaged herein. </p> <p>&nbsp;</p> <p>&nbsp;</p> <ol> <li value=\"2\"><span>LIMITATION OF LIABILITY </span></li> </ol> <p>&nbsp;</p> <p>2.1<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Vukile does not give any warranties or make any representations as to the accessibility, stability, reliability of, or bandwidth for the Wi-Fi service. Vukile further accepts no responsibility for any Wi-Fi faults, failures, timeliness, completeness, security or reliability of any communications (including any transactions) made using the Wi-Fi service.<span> </span></p> <p>&nbsp;</p> <p>2.2<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Vukile shall not be held responsible for any breach in security of the device used or of information transmitted using the Wi-Fi service. Each user of the Wi-Fi service solely responsible for the security of his/her own device as well as any content, data or information downloaded or otherwise communicated via the Wi-Fi<span> service. </span>The user is also responsible for keeping all usernames, passwords and such other security-based information confidential and secure.</p> <p>&nbsp;</p> <p>2.3<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Vukile has the right at all times to immediately without any notice to any user terminate the offering at any and/or all of its properties within its sole and absolute discretion without any user having any claim against Vukile arising from such termination, interruption and/or suspension. </p> <p>&nbsp;</p> <p>2.4<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>The user hereby agree that it shall have no claim of whatsoever nature against and hereby indemnifies and holds Vukile harmless against any claim of whatsoever nature arising from or relating to the use or the attempted use of the Wi-Fi service offered at the relevant properties or of the termination, suspension and/or interruption of such Wi-Fi service.</p> <p>&nbsp;</p> <p>&nbsp;</p> <ol> <li value=\"3\"><span>ACCESS TO AND QUALITY OF WI-FI SERVICES</span></li> </ol> <p>&nbsp;</p> <p>3.1<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Each user is responsible to provide and use its own wireless device with its own power source. No devices or power sources are available for use on the relevant properties. </p> <p>&nbsp;</p> <p>3.2<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>The Wi-Fi service will only be accessible within range of the Wi-Fi signal in designated areas at each property and access in all locations on each property cannot be guaranteed. </p> <p>&nbsp;</p> <p>3.3<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Accessibility and availability of the Wi-Fi service is subject to independent service providers. Vukile shall not be held liable in any circumstances should the Wi-Fi service not be available for whatsoever reason, regardless of the duration of the interruption or suspension of the service. Interruptions and unavailability may also be caused by other factors such as the features of your mobile device, the range and strength of the Wi-Fi signal and the network and/or the traffic of other customers logged onto the Wi-Fi service. </p> <p>&nbsp;</p> <p>&nbsp;</p> <ol> <li value=\"4\"><span>THE APPLICATION AND RULES</span></li> </ol> <p>&nbsp;</p> <p>For purposes of these Terms and Conditions (including the Privacy Notice referred to herein, “application” shall refer to the “Connect Waya Waya” (or such other name as Vukile may elect from time to time) application through which access to the free Wi-Fi Service is gained. </p> <p>&nbsp;</p> <div> <div><span>4.1&nbsp;</span><span>To make use of the free Wi-Fi service, the user must (if it elects to use the service) register by connecting to the @WayaWaya Wi-Fi service which connection will only be available as set out in 3.2 above. The option to download the application will appear from the “Prompt Page”, the Level Up Page” and the “Help Page”. The user will be required to provide certain detail such as, name, surname, cell phone number and e-mail address. The type of personal information obtained will depend on what the user is willing to divulge through the application and also on the extent to which the user engages with the application. In order to achieve a higher level based on points, more personal information will be required. Once the required details have been completed a “one time password” (OTP) will be sent to the selected cell phone number to activate the service.</span></div> </div> <p>&nbsp;</p> <div> <div><span>4.2&nbsp;</span><span>Additional personal information will be requested via the application and providing such personal information shall at all times remain within the election of the user. If however this information is divulge to Vukile, Vukile shall be entitled to store, use and distribute same in accordance with the Privacy Notice applicable to the free Wi-Fi service. For more information please refer to: <span>www.connectwayawaya.co.za/privacy</span></span></div> </div> <p>&nbsp;</p> <div> <div><span>4.3&nbsp;</span><span>Rules for the use and enjoyment of the free Wi-Fi service are set by Vukile in its sole and absolute discretion and may, together with these terms and conditions, be amended from time to time. It is important that users peruse and consider the Terms and Conditions on a regular basis to familiarize itself with any amendments.</span></div> </div> <p>&nbsp;</p> <div> <div><span>4.4&nbsp;</span><span>The Rules applicable to the use of the Wi-Fi service can be summarized as follows: </span></div> </div> <p>&nbsp;</p> <p>4.4.1<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Upon registration (as set out in 4.1 above) the user will earn a determined amount of points which will be relevant to the reward system explained below as well as a determined time period of free Wi-Fi use, subject to what is recorded below; </p> <p>&nbsp;</p> <p>4.4.2<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Once you are registered you are required to login via the application (at any Vukile property where the service is available) at least once every three months in order to retain your user status and points earned. If you fail to do this, all points earned up to such date will be lost but you can reregister as a user again; </p> <p>&nbsp;</p> <p>4.4.3<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Each user is further required to complete at least 1 (one) mini survey (as will appear in the application from time to time) failing which will have the same results as a failure described in 4.4.2 above. Users are however restricted to complete a maximum of 2 (two) mini surveys per month and which will earn the user a determined amount of points per completed survey; <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p> <p>&nbsp;</p> <p>4.4.4<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Each time a user logs in after registration a determined time period of free Wi-Fi will be available and a determined amount of points will be earned; </p> <p> </p> <p>4.4.5<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Free Wi-Fi earned by registering or logging in cannot be “banked” for future use. It is a once off offer and if not used immediately and at once, will be lost;</p> <p>&nbsp;</p> <p>4.4.6<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Points earned will accumulate and will enable the user to claim rewards and gain access to the free Wi-Fi relevant to the points-status of the said user. The more points accumulated, the longer the session of free Wi-Fi and the more rewards will be available; </p> <p>&nbsp;</p> <p>4.4.7<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>The number of tasks per day to earn free Wi-Fi is unlimited; </p> <p></p> <p>4.4.8<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Users are required to verify the personal details provided at registration (or any additional personal information provided subsequent to that) on at least an annual basis and not more than once every month. By verifying personal information users will also earn points relevant to the rewards system; </p> <p>&nbsp;</p> <p>4.4.9<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Rewards offered will depend on participating tenants’ and other parties’ offering within the relevant shopping centre and will consist mostly of discounted offers at selected and participating shops and special promotions as well as any other rewards and/or opportunities which Vukile may from time to time implement in its sole discretion. It will not be redeemable in cash under any circumstances and will vary from time to time in nature and value. Points earned are not associated with currency and does not have an actual monetary value. Points will further not be decreased when rewards are redeemed<span> although rewards can only be claimed as a once off. </span></p> <p>&nbsp;</p> <p>4.4.10<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>The amount of points accumulated by the user will determine the level of the user. <span>The higher the level (in other words the more points accumulated) the more rewards and opportunities will be available to the user. </span></p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <ol> <li value=\"5\"><span>USE OF THE WI-FI SERVICE</span></li> </ol> <p>&nbsp;</p> <p>5.1<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>The user shall not: -</p> <p>&nbsp;</p> <p>5.1.1<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>use the free Wi-Fi service for any purpose or in connection with anything which may be, in the discretion of Vukile, inappropriate, offensive, unlawful or illegal and shall not allow any other person to use its device for such a purpose. To this effect the user acknowledges that Vukile may from time to time restrict or deny access to certain sites in its sole discretion, this includes a restriction on live streaming of any material whatsoever;</p> <p>&nbsp;</p> <p>5.1.2<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>do or omit to do anything which will in any way interfere with or compromise the Wi-Fi service at the Property;</p> <p>&nbsp;</p> <p>5.1.3<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>transmit any spam, junk mail or any other unsolicited content or anything which contain malware that may damage, modify, delete, detrimentally affect, interfere with, surreptitiously intercept, access without authority or expropriate any system, information, individual or entity (where applicable) and/or the Wi-Fi service;</p> <p>&nbsp;</p> <p>5.1.4<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>in any way whatsoever abuse the free Wi-Fi service;</p> <p>&nbsp;</p> <p>5.1.5<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>use, reproduce or distribute any copyright, trademark or other intellectual property right embodied in Vukile’s logo, text, images, video or any other content on the application or accessed through the Wi-Fi service.</p> <p>&nbsp;</p> <p>5.2<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>A failure by the user to observe the Terms and Conditions and specifically, without derogating form the generality of the aforegoing, this clause 5, will entitle Vukile to immediately, without notice, suspend, either permanently or temporarily in the discretion of Vukile, the user’s access to the Wi-Fi service provided at any and/or all of Vukile’s properties where similar services are available. </p> <p>&nbsp;</p> <p>&nbsp;</p> </div>",
+        "language": "en_US"
+      }
+    ],
+    "theme": {
+      "logo_id": "https://res.cloudinary.com/intelipower/image/upload/media/5203363f47bc4c2991a7a2bf3f4a2cb4/c74c5f7485fe41729d322107dca9483f/retailunits/logo/mall_logo_randburg_square_200x200_01_1_.png"
+    },
     "opening_times": [
-        {
-            "start_date": "00",
-            "end_date": "23"
-        }
+      {
+        "title": [
+          {
+            "text": "Monday - Saturday",
+            "language": "en_US"
+          }
+        ],
+        "period": [
+          {
+            "text": "Monday - Saturday",
+            "language": "en_US"
+          }
+        ],
+        "description": [
+          {
+            "text": "Monday - Saturday",
+            "language": "en_US"
+          }
+        ],
+        "open_time": "2020-01-01 09:00:00",
+        "close_time": "2020-01-02 17:00:00",
+        "start_date": "2020-01-01 00:00:00",
+        "end_date": "2030-01-01 01:00:00"
+      },
+      {
+        "title": [
+          {
+            "text": "Sunday & Public Holidays",
+            "language": "en_US"
+          }
+        ],
+        "period": [
+          {
+            "text": "Sunday & Public Holidays",
+            "language": "en_US"
+          }
+        ],
+        "description": [
+          {
+            "text": "Sunday & Public Holidays",
+            "language": "en_US"
+          }
+        ],
+        "open_time": "2020-01-01 09:00:00",
+        "close_time": "2020-01-02 15:00:00",
+        "start_date": "2020-01-01 00:00:00",
+        "end_date": "2030-01-01 01:00:00"
+      }
     ],
-    "segmentation_info": [
-        {
-            "name": "Pickup Drop-off",
-            "start_dwell": 0,
-            "end_dwell": 900,
-            "label": "1 - 15m",
-            "icon": "m106.23 350.13 0.51708-19.866 9.4967-28.495-5.2269-32.136c-5.6803-34.924-5.7981-38.215-1.6575-46.308 7.618-14.891 25.334-21.117 39.862-14.009 6.3661 3.1146 12.164 9.01 14.809 15.059 0.9916 2.2673 4.0873 18.126 6.8794 35.242 4.6932 28.77 5.7494 33.414 13.988 61.5 10.302 35.121 10.699 36.622 11.542 43.63l0.63158 5.25h-21.069v-3.8716c0-3.143-15.966-60.471-17.156-61.6-0.32404-0.30761-23.14 3.3743-23.434 3.7816-0.0755 0.10475-1.9978 5.8155-4.2718 12.69-4.0551 12.26-4.1473 12.851-4.7944 30.75l-0.65974 18.25h-19.974zm39.522-64.167c7.3787-1.0835 8.2482-1.4362 8.2326-3.3392-0.0474-5.7946-7.9873-49.986-9.3565-52.076-3.866-5.9002-13.783-5.0179-17.167 1.5274-1.6124 3.1181-1.5159 4.2058 2.6244 29.586 3.6067 22.109 4.5492 26.281 5.8576 25.931 0.85758-0.22969 5.2717-0.96278 9.8092-1.6291zm103.53 82.434c-2.5853-0.94894-5.9562-3.4765-8.6867-6.5136-6.2713-6.9752-6.9812-10.956-6.3833-35.798l0.48345-20.09-9.0944-6e-3c-11.04-7e-3 -15.242-1.0815-20.798-5.319-8.1956-6.251-9.254-9.1413-14.406-39.343l-4.6344-27.167 1.8719-3.8195c1.0295-2.1007 3.4009-4.8379 5.2697-6.0827 3.287-2.1893 4.1602-2.2632 26.75-2.2632 21.566 0 23.354-0.13386 23.372-1.75 0.0109-0.9625 1.3289-15.773 2.9288-32.912 3.0107-32.252 3.4333-34.235 8.4499-39.639 5.3668-5.7808 4.4018-5.6989 67.101-5.6989 46.085 0 58.209 0.26941 60.798 1.351 3.6163 1.511 9.3315 7.5437 10.796 11.396 0.52793 1.3886 4.1133 37.001 7.9675 79.139 6.1555 67.298 7.0009 79.208 6.9523 97.945-0.049 18.877-0.27247 21.753-1.9429 25-4.672 9.082-12.531 13.12-25.571 13.138-10.133 0.0137-16.731-2.2948-21.697-7.5918-4.8193-5.1401-5.803-9.0976-5.803-23.344v-13.032h-62.852l-0.32378 14.418c-0.31903 14.207-0.3681 14.481-3.3547 18.726-1.667 2.3695-5.2171 5.6598-7.889 7.3117-4.455 2.7543-5.6972 3.024-14.969 3.2494-7.175 0.17449-11.338-0.20438-14.336-1.3048zm19.143-19.008c1.3143-0.50435 1.5818-2.5336 1.5818-12v-11.393h-7.481c-7.2405 0-7.5021 0.0843-8.1397 2.6248-0.72306 2.8809 0.16217 18.824 1.1323 20.394 0.66185 1.0709 10.358 1.352 12.907 0.37413zm118 0c1.3143-0.50435 1.5818-2.5336 1.5818-12v-11.393h-15v11.417c0 8.1977 0.35245 11.559 1.25 11.921 1.8079 0.72952 10.311 0.76815 12.168 0.0553zm0.1946-52.143c-0.36423-4.8125-0.92721-10.662-1.2511-13l-0.58884-4.25h-28.773v-21h27.279l-0.6306-5.25c-0.34683-2.8875-0.63451-6.7125-0.63929-8.5l-0.00869-3.25h-120.72l-0.6306 5.25c-0.34683 2.8875-0.63451 6.7125-0.63929 8.5l-0.00869 3.25h26v21h-13.892c-16.249 0-14.625-1.5759-15.71 15.25l-0.69304 10.75h131.57zm-149.6-11.5c5e-3 -0.1375 0.90084-9.7 1.9916-21.25s1.987-21.338 1.9916-21.75c5e-3 -0.4125-7.4166-0.75-16.492-0.75-15.052 0-16.499 0.15357-16.488 1.75 6e-3 0.9625 1.3512 9.625 2.9885 19.25s2.9821 17.838 2.9885 18.25c6e-3 0.4125 0.91154 1.65 2.0115 2.75 1.7193 1.7193 3.3333 2 11.5 2 5.225 0 9.5038-0.1125 9.5084-0.25zm43.168-78.078c0.30667-13.571 0.46429-14.54 2.9845-18.344 4.7076-7.1051 5.8746-7.3285 38.29-7.3285 31.344 0 31.927 0.0948 36.892 5.9951 3.6946 4.3908 4.6456 8.9405 4.652 22.255l0.00558 11.75h16.906l-0.53607-4.75c-0.29483-2.6125-1.5134-16-2.708-29.75l-2.1719-25-106.12-0.51734-2.2279 25.259c-1.2253 13.892-2.4914 27.396-2.8134 30.009l-0.58556 4.75h17.11zm62.61 4.0778 0.28621-9.75h-43.072v20.04l42.5-0.53978zm-217.05-9.8272c-14.088-3.3597-22.522-14.671-21.508-28.845 1.278-17.861 17.797-29.175 35.379-24.233 9.5466 2.6835 17.529 12.454 18.999 23.253 0.83816 6.1599-1.6201 14.325-6.0656 20.147-5.7925 7.5862-17.639 11.863-26.804 9.6776zm10.867-22.035c4.0923-4.5219 0.83508-11.887-5.2569-11.887-8.0148 0-10.371 10.404-3.0536 13.48 3.5371 1.4873 5.9395 1.0267 8.3104-1.5931z"
+    "_updated": "2021-06-18 11:34:14",
+    "_created": "2020-09-21 15:54:11",
+    "belongs": {
+      "owner": {
+        "soId": "17553600dce64a8cae7ec1117b1e62fa",
+        "voId": "03c6e9cadf6d4da09e4f25dda203c3c9",
+        "spId": "5203363f47bc4c2991a7a2bf3f4a2cb4"
+      }
+    },
+    "time_offset": "+0200",
+    "identifier": "3b4ddeb3fbbe4ef1b81d80e849c9348f",
+    "building": [
+      {
+        "floor": [
+          {
+            "floor_id": "262b75822d72449abdca1ad54dcb285d",
+            "number": "6",
+            "e_map": {
+              "bn": "Randburg Square Centre",
+              "old": true,
+              "sn": "Vukile_Property_Fund",
+              "fn": "Sixth_Floor"
+            },
+            "geojson": "lower_level_geojson",
+            "alias": [
+              {
+                "text": "Sixth_Floor",
+                "language": "en_US"
+              }
+            ],
+            "type": "shopping",
+            "map_info": {
+              "origin": "123.0,322",
+              "name": [
+                {
+                  "text": "Sixth_Floor",
+                  "language": "en_US"
+                }
+              ],
+              "title": [
+                {
+                  "text": "Sixth_Floor",
+                  "language": "en_US"
+                }
+              ],
+              "file_type": "png",
+              "use_scope": "INTERNAL",
+              "coordinate_system": "WGS84",
+              "ref_geo2": "10.0,10.0",
+              "ref_geo1": "10.0,10.0",
+              "image_id": {
+                "production": "randburg_lower_level.png",
+                "dev": "35be093b1d754a10b38b87d1439ba529",
+                "calibration": "35be093b1d754a10b38b87d1439ba529"
+              },
+              "url": [
+                {
+                  "text": "Sixth_Floor",
+                  "language": "en_US"
+                }
+              ],
+              "map_type": "svg_2d",
+              "scale_x": "230",
+              "scale_y": "240",
+              "orig_x": "10",
+              "orig_y": "0"
+            }
+          },
+          {
+            "floor_id": "2edadbb210ef480e8a59995d5cbae0ca",
+            "number": "5",
+            "e_map": {
+              "bn": "Randburg Square Centre",
+              "old": true,
+              "sn": "Vukile_Property_Fund",
+              "fn": "Second_Floor"
+            },
+            "geojson": "upper_level_geojson",
+            "alias": [
+              {
+                "text": "Second_Floor",
+                "language": "en_US"
+              }
+            ],
+            "type": "shopping",
+            "map_info": {
+              "origin": "123.0,322",
+              "name": [
+                {
+                  "text": "Second_Floor",
+                  "language": "en_US"
+                }
+              ],
+              "title": [
+                {
+                  "text": "Second_Floor",
+                  "language": "en_US"
+                }
+              ],
+              "file_type": "png",
+              "use_scope": "INTERNAL",
+              "coordinate_system": "WGS84",
+              "ref_geo2": "10.0,10.0",
+              "ref_geo1": "10.0,10.0",
+              "image_id": {
+                "production": "randburg_upper_level.png",
+                "dev": "35be093b1d754a10b38b87d1439ba529",
+                "calibration": "35be093b1d754a10b38b87d1439ba529"
+              },
+              "url": [
+                {
+                  "text": "Second_Floor",
+                  "language": "en_US"
+                }
+              ],
+              "map_type": "svg_2d",
+              "scale_x": "310",
+              "scale_y": "290",
+              "orig_x": "0",
+              "orig_y": "20"
+            }
+          }
+        ],
+        "entrance": [
+          {
+            "location_xy": {
+              "type": "Point",
+              "coordinates": [
+                26.4970622,
+                57.4970622
+              ]
+            },
+            "geo_location": {
+              "type": "Point",
+              "coordinates": [
+                -26.17441,
+                27.99186
+              ]
+            },
+            "floor_number": "One",
+            "name": [
+              {
+                "text": "w",
+                "language": "en_US"
+              }
+            ]
+          }
+        ],
+        "image_list_id": "adafafdsfsdfsdfsdfsdfdsfs",
+        "name": [
+          {
+            "text": "Randburg Square Centre",
+            "language": "en_US"
+          }
+        ],
+        "gla": 36000,
+        "number": "1",
+        "geo_location": {
+          "type": "Point",
+          "coordinates": [
+            -26.17441,
+            27.99186
+          ]
         },
-        {
-            "name": "Quick Shopping",
-            "start_dwell": 900,
-            "end_dwell": 3000,
-            "label": "15m - 50m",
-            "icon": "m 164.82534,652.91588 c -3.5705,-1.45333 -4.78198,-3.37724 -5.72648,-9.09411 l -0.7433,-4.49889 -17.34733,-4.36211 c -9.54103,-2.39916 -20.64103,-6.01122 -24.66667,-8.02681 -7.42038,-3.71528 -13.31934,-8.26356 -13.31934,-10.26961 0,-0.60551 23.55001,-1.10926 52.33334,-1.11944 l 52.33338,-0.0185 -12.56011,-6.76052 C 121.62283,569.20093 72.539923,497.05518 59.605473,409.56342 c -4.15549,-28.10871 -2.51129,-77.29047 3.31183,-99.06428 l 0.96341,-3.60239 237.833727,-0.33701 c 130.8086,-0.18535 238.2704,0.11466 238.804,0.66666 0.5336,0.55203 2.0067,7.41266 3.2735,15.24584 l 2.3034,14.24216 28.7968,0.42451 c 26.2562,0.38705 29.3517,0.68085 35.0864,3.3302 9.3802,4.33348 18.7476,13.79944 23.2043,23.44856 l 3.8394,8.31241 v 52.00001 c 0,51.33991 -0.039,52.09752 -3.1016,59.68205 -3.5298,8.74295 -13.0428,19.31475 -21.0072,23.34536 -9.6579,4.88767 -17.8826,5.63926 -61.7113,5.63926 h -42.3555 l -3.1218,5.55453 c -6.0805,10.81868 -23.5056,32.62369 -36.6823,45.9026 -18.7825,18.9281 -48.3517,40.13506 -68.0203,48.78395 -3.4272,1.50703 2.6352,1.80913 42.3333,2.10953 26.8468,0.20315 46.3334,0.86328 46.3334,1.56959 0,2.62623 -10.2247,9.436 -19.2115,12.7952 -5.2004,1.94384 -15.4552,4.88868 -22.7885,6.54409 l -13.3334,3.00983 -0.4054,4.72389 c -0.2278,2.65463 -1.6031,5.80796 -3.1397,7.19868 -2.6201,2.37144 -8.1707,2.48559 -132.9279,2.73379 -71.9255,0.14309 -131.47523,-0.26264 -133.0572,-0.90656 z m 433.1622,-179.72343 3.0347,-3.03764 v -46.08059 -46.08057 l -3.1848,-2.57847 c -2.9213,-2.36515 -5.1273,-2.5484 -26.6666,-2.21511 l -23.4819,0.36335 -0.9155,15.58788 c -1.4526,24.73505 -8.2775,58.11784 -15.7658,77.11572 -4.5722,11.59995 -6.9058,10.811 30.6466,10.36158 32.6199,-0.39039 33.3606,-0.46043 36.3333,-3.43615 z M 291.56624,250.18672 c 21.3499,-23.78372 29.0566,-47.08179 21.9113,-66.23996 -3.7961,-10.17804 -16.7843,-23.2419 -29.8611,-30.03511 -20.0172,-10.39857 -28.7176,-22.22791 -29.6639,-40.33172 -0.4703,-8.99695 0,-12.36681 3.0106,-21.34985 5.8932,-17.612515 18.8705,-38.039058 35.1541,-55.333335 l 6.9048,-7.333333 -3.8566,8 c -9.2106,19.106327 -12.3576,37.752042 -9.0299,53.50146 2.9431,13.928488 7.8454,22.523368 18.5365,32.498538 22.2685,20.77719 26.5772,25.50361 30.0979,33.01595 3.1785,6.78206 3.5856,9.24026 3.5856,21.65072 0,12.95131 -0.3159,14.66693 -4.2181,22.90352 -2.32,4.89693 -6.7777,12.69693 -9.906,17.33333 -5.9529,8.82258 -26.5326,30.11231 -34.5425,35.73434 -4.2803,3.00422 -4.1249,2.67182 1.8773,-4.01455 z m 109.6461,-0.95167 c 3.6881,-4.5806 8.4541,-11.7806 10.5911,-16 3.338,-6.59066 3.8855,-9.18936 3.8855,-18.44286 0,-9.64178 -0.4195,-11.44947 -4,-17.2394 -3.8341,-6.19984 -8.6465,-10.01747 -26.7245,-21.20003 -11.9284,-7.3786 -17.1932,-20.67284 -13.9738,-35.28531 3.0506,-13.84655 17.1297,-37.43548 28.7508,-48.170703 l 3.6084,-3.333333 -2.708,5.373457 c -5.2855,10.487989 -7.2979,20.283339 -6.6759,32.495499 0.8856,17.38873 4.8245,23.968 24.503,40.92829 18.0829,15.58511 20.1154,35.69298 5.8403,57.77935 -6.1083,9.45074 -13.7843,18.02808 -23.1207,25.83567 l -6.6819,5.58773 z m -213.14584,2.99503 c 16.19644,-21.45715 20.22414,-33.24596 16.24864,-47.55915 -1.9109,-6.8798 -12.07966,-17.63782 -21.3343,-22.57049 -17.65161,-9.40822 -24.86597,-20.15631 -23.59708,-35.15536 1.27708,-15.09574 11.2406,-34.24748 26.03719,-50.048329 l 6.86724,-7.333337 -3.17935,6.744087 c -4.82328,10.231249 -6.4808,17.590219 -6.43934,28.589239 0.0633,16.79144 6.04533,28.13312 21.06354,39.93547 24.15,18.97879 25.4725,41.665 4.0266,69.0738 -3.9045,4.99006 -10.61202,12.05436 -14.90573,15.69846 -5.82504,4.94374 -7.04029,5.61024 -4.78741,2.62561 z"
-        },
-        {
-            "name": "Moderate Shopping",
-            "start_dwell": 3000,
-            "end_dwell": 7200,
-            "label": "50m - 120m",
-            "icon": "m93.33 183.97c-0.96453-0.58812-1.4059-1.2829-1.4059-2.213 0-0.69578 1.606-7.0156 5.2906-20.819 2.1642-8.1077 2.9875-11.317 3.1053-12.105l0.12862-0.85989h-10.165l-0.89958-0.89959c-0.69888-0.69888-0.89958-1.118-0.89958-1.8785 0-1.203 1.4012-2.7781 2.4715-2.7781 0.92271 0 1.0268-0.29518 0.42563-1.2071-0.2818-0.42749-0.51314-1.0395-0.5141-1.3599-0.0016-0.53019 0.14723-0.58978 1.6519-0.66145 0.9095-0.0433 2.9336-0.0416 4.4979 4e-3 2.7246 0.0792 2.8442 0.107 2.8425 0.66145-0.0011 0.31835-0.2323 0.92857-0.5141 1.3561-0.2818 0.42748-0.45258 0.87397-0.37952 0.99218 0.15532 0.25131 10.516 0.29594 10.765 0.0464 0.0927-0.0927-0.0537-0.48071-0.32533-0.8622-0.27165-0.38149-0.53602-0.99024-0.5875-1.3528l-0.0936-0.65917 4.5641-0.0724c5.1049-0.081 5.1324-0.0692 4.0339 1.7324-0.70083 1.1495-0.66727 1.3824 0.19942 1.384 1.2268 2e-3 2.2138 1.0196 2.3748 2.448 0.12963 1.15 0.0717 1.3086-0.79336 2.1737l-0.93319 0.93319h-10.177l0.16025 0.99218c0.0881 0.54571 0.34799 1.647 0.57744 2.4474 0.22946 0.80036 0.89883 3.3007 1.4875 5.5562 0.58866 2.2556 1.2291 4.6964 1.4232 5.424 0.19408 0.7276 0.82364 3.1088 1.399 5.2917 3.942 14.955 3.8224 14.355 3.076 15.421-0.51678 0.73781-1.7328 1.3803-2.6125 1.3803-0.91753 0-2.2471-1.2581-2.5165-2.3812-0.12215-0.50932-0.42545-1.6404-0.674-2.5135-0.51267-1.801-0.72626-2.6094-2.2021-8.3344-2.8917-11.217-3.5511-13.645-3.7663-13.869-0.27681-0.28735-0.36176-0.0828-0.92497 2.227-0.23063 0.94589-0.52275 2.077-0.64915 2.5135-0.45205 1.5612-1.0831 3.9696-4.4718 17.066-0.86376 3.3381-1.1891 4.2118-1.749 4.6964-0.85184 0.73729-2.0919 0.76783-3.2211 0.0793zm-27.927-1.2211c-1.1983-0.65017-1.214-1.0221-0.35758-8.4494 0.20136-1.7462 0.57922-5.1722 0.83969-7.6133l0.47359-4.4383-0.5767-0.40394c-0.89985-0.63028-1.0528-1.0895-2.1724-6.5215-0.57812-2.8051-1.3391-6.3503-1.6911-7.8782-1.172-5.0875-2.5382-11.807-2.5382-12.484 0-0.81527 1.104-2.0683 1.8222-2.0683 1.0601 0 1.9108 0.53351 2.2872 1.4345 0.20882 0.49976 0.85648 3.2687 1.4393 6.1532 0.58278 2.8845 1.2433 6.078 1.4679 7.0967 0.22457 1.0186 0.56981 2.626 0.7672 3.5719 0.92813 4.4476 1.2694 5.9642 1.3839 6.1494 0.17044 0.27578 5.1198 0.255 5.1198-0.0215 0-0.12216-0.27112-0.34564-0.60248-0.49662-1.1221-0.51128-2.2455-1.654-2.8683-2.9176-0.61556-1.249-0.6202-1.3295-0.62298-10.783-0.0028-9.3879 0.0059-9.5425 0.60095-10.742 1.2665-2.5541 3.0326-3.5598 6.946-3.9555 11.404-1.1532 16.286-1.5029 16.917-1.2117 0.92891 0.42869 1.4437 1.6087 1.1495 2.6347-0.40461 1.4108-1.2713 1.682-6.848 2.1429-2.7717 0.22908-5.153 0.41644-5.2917 0.41635-0.15679-1e-4 -0.22068 3.732-0.16893 9.8686 0.06884 8.1641 0.01587 10.064-0.30659 11l-0.3898 1.1314 1.1884 0.50941c0.65363 0.28018 1.2678 0.51027 1.3649 0.51131 0.6741 7e-3 5.2933 1.9808 5.6666 2.421 0.41678 0.49159 0.46302 1.2809 0.46302 7.9035 0 4.0466-0.07396 7.5501-0.16435 7.7857-0.20071 0.52305-1.4574 1.2025-2.2241 1.2025-0.30946 0-0.91069-0.34803-1.3361-0.7734l-0.7734-0.77339v-12.37l-0.99219-0.38256c-0.5457-0.21041-1.0839-0.42366-1.1961-0.47389-0.11214-0.0502-0.32619 0.25952-0.47568 0.68835-0.31152 0.89361-1.0368 1.3364-2.3631 1.4428l-0.92604 0.0742 0.06288 1.8521c0.0686 2.0206 0.72303 8.3178 1.1274 10.848 0.13953 0.87313 0.33224 2.7863 0.42825 4.2515l0.17456 2.664-0.74107 0.58292c-1.4781 1.1627-2.9909 0.96702-3.5266-0.45612-0.14332-0.38073-0.45041-2.5377-0.68241-4.7933-0.23201-2.2556-0.53997-5.1131-0.68437-6.35s-0.38483-3.6061-0.5343-5.2648c-0.14947-1.6587-0.33444-3.1172-0.41103-3.2412-0.17036-0.27566-4.088-0.29426-4.5168-0.0215-0.16926 0.10769-0.44415 1.4453-0.61088 2.9725-0.16673 1.5272-0.47127 4.2055-0.67675 5.9517-0.20548 1.7462-0.56578 4.8388-0.80066 6.8724-0.23488 2.0336-0.53873 3.9061-0.67522 4.1611-0.53866 1.0065-1.7359 1.2467-2.9447 0.59084zm62.83 4e-3c-1.2712-0.89036-1.2725-0.80465 0.18882-12.422 0.52631-4.1841 0.82927-7.8223 0.67251-8.0759-0.0879-0.14213-0.66603-0.25843-1.2848-0.25843-1.1267 0-1.9364-0.48555-2.5054-1.5024-0.22743-0.4064-0.36292-0.41592-1.3383-0.094l-1.0853 0.35817v12.391l-0.7734 0.77339c-0.82548 0.82549-1.5534 0.96186-2.4851 0.4656-1.2029-0.64066-1.2221-0.77498-1.231-8.5926-8e-3 -6.7078 0.0375-7.5008 0.45461-8.0072 0.40848-0.49584 1.6812-1.0301 6.1516-2.5823 2.1329-0.74057 2.1123-0.71608 1.6739-1.9886-0.31646-0.91852-0.37028-2.8705-0.30189-10.95l0.0832-9.8326-5.424-0.46194c-6.5518-0.55799-7.1269-0.78273-7.1269-2.785 0-0.50932 0.14504-1.115 0.32232-1.3458 0.47332-0.61649 1.4669-1.0838 1.986-0.93395 0.24917 0.0719 3.4296 0.37987 7.0676 0.68434 12.726 1.0651 12.437 1.0047 14.503 3.0209 1.805 1.7613 1.8574 2.0837 1.9371 11.936 0.0829 10.234-0.0357 11.045-1.8961 12.959-0.61594 0.63376-1.64 1.396-2.2757 1.6938l-1.1558 0.54154 3.1088 0.01c1.7099 5e-3 3.1089-0.0313 3.1089-0.0813 0-0.12045 1.4882-7.342 2.135-10.36 0.28066-1.3097 0.92872-4.4648 1.4401-7.0114 0.51141-2.5466 0.99263-4.9084 1.0694-5.2483 0.22831-1.0113 1.3053-1.8954 2.3088-1.8954 1.1011 0 2.0726 0.94118 2.0845 2.0193 8e-3 0.73307-1.3124 7.507-2.4173 12.4-0.29569 1.3097-0.96017 4.5244-1.4766 7.1438-1.154 5.8533-1.3036 6.3368-2.1707 7.0189l-0.69266 0.54485 0.45813 4.2879c0.25197 2.3584 0.63302 5.7762 0.84676 7.5952 0.72162 6.141 0.74608 7.4537 0.15272 8.1961-0.40277 0.50396-0.7722 0.65545-1.5984 0.65545-2.0563 0-1.958 0.37304-3.4469-13.085-0.70439-6.3669-0.88344-7.5534-1.1672-7.735-0.16707-0.10691-1.1695-0.19621-2.2277-0.19844-2.3622-5e-3 -2.3009-0.11001-2.6981 4.6262-0.15866 1.8918-0.40903 4.3326-0.55637 5.424-0.14735 1.0914-0.48633 3.7638-0.75328 5.9387-0.45052 3.6704-0.53627 3.9981-1.1942 4.5641-0.82552 0.71008-1.6467 0.77631-2.4705 0.19928zm-52.978-58.084c-4.5147-2.0412-5.7211-7.9989-2.3104-11.41 2.7905-2.7905 7.48-2.7504 10.167 0.087 4.2403 4.478 1.0793 11.861-5.0783 11.861-1.03 0-2.0056-0.18905-2.7781-0.53833zm53.181 0c-4.6851-2.1183-5.7035-8.252-1.9342-11.65 1.5066-1.3581 3.1191-1.9121 5.1639-1.7741 3.9357 0.26554 6.5599 3.053 6.5599 6.9681 0 2.7552-1.4663 5.0635-4.0971 6.4499-1.4211 0.74891-4.0429 0.75153-5.6925 6e-3z"
-        },
-        {
-            "name": "Dedicated Shopping",
-            "start_dwell": 7200,
-            "end_dwell": -1,
-            "label": "120m+",
-            "icon": "m110.5 372.49c-6.8578-3.6907-10.479-9.4068-10.494-16.566-5e-3 -2.4461 0.85813-2.8672 16.913-8.25 9.3054-3.1198 17.18-5.6723 17.5-5.6723 0.31963 0 0.56144 3.4875 0.53737 7.75-0.0855 15.139-5.525 23.188-16.196 23.968-3.5631 0.26039-6.2276-0.13645-8.2598-1.2302zm42 0.0246c-3.966-1.8627-5.7556-3.4068-8.0751-6.9674-1.8243-2.8004-1.951-5.8301-2.4249-58l-0.5-55.045-6.5-0.62672v23.063c0 12.685-0.39459 23.063-0.87686 23.063s-1.8911-2.3625-3.1307-5.25-3.545-8.0738-5.1232-11.525c-1.5781-3.4513-2.8693-6.5176-2.8693-6.8141s-1.0674-2.8727-2.372-5.725c-1.3046-2.8522-4.2785-9.6859-6.6087-15.186-6.9983-16.518-7.8579-18.185-11-21.327-1.6596-1.6596-4.7054-3.5612-6.7685-4.2257-5.2623-1.695-5.7089-2.2031-7.6912-8.7504-1.9042-6.2892-1.9267-6.0864 3.9576-35.697 0.76507-3.85 2.1347-11.05 3.0436-16 0.90889-4.95 2.2351-12.15 2.947-16 1.1582-6.2628 1.2-8.6476 0.1299-7.4167-0.19922 0.22917-1.9764 5.1417-3.9492 10.917-1.9728 5.775-4.6972 13.65-6.0542 17.5-1.357 3.85-4.9238 14.035-7.9263 22.633l-5.4591 15.633 8.3889 25.735 4.9311 0.31346c6.391 0.40626 8.5299 2.4685 12.527 12.079 2.8623 6.8811 5.5795 13.123 9.4058 21.608 0.74411 1.65 3.82 8.8606 6.8353 16.023s6.6022 15.488 7.9708 18.5 3.6591 8.2755 5.0901 11.696c5.3694 12.837 3.5697 14.844-20.398 22.753-9.625 3.176-19.15 5.8228-21.166 5.8818-6.5261 0.19111-7.9991-2.3696-12.284-21.354-4.3156-19.12-7.0961-31.122-8.5717-37-1.9162-7.6328-6.0178-25.777-6.8947-30.5-1.1481-6.1837 0.66496-10.739 4.9868-12.529 1.6114-0.66747 2.9199-1.4965 2.9077-1.8423s-1.7711-5.8037-3.9088-12.129c-3.4765-10.286-4.2394-11.695-7.2279-13.345-5.1569-2.848-7.7713-5.6897-8.9964-9.7787-1.3367-4.4615-1.0195-5.7978 6.1417-25.876 2.8444-7.975 6.8942-19.45 8.9995-25.5 13.899-39.942 17.189-48.991 19.695-54.178 3.9347-8.145 11.463-15.484 18.638-18.168 5.4225-2.0288 7.4928-2.1538 35.682-2.1538s30.259 0.12496 35.682 2.1538c10.008 3.7446 18.364 14.284 23.662 29.846 0.84258 2.475 4.084 11.7 7.2033 20.5s6.2596 17.8 6.9785 20c0.71898 2.2 3.8536 11.2 6.9658 20 9.3712 26.498 9.6817 27.607 9.0107 32.214-0.48796 3.3504-1.5247 5.0161-5.0579 8.1261l-4.4441 3.9118v21.833l4.25 1.1496c7.1549 1.9353 7.3417 2.5932 10.154 35.765 2.8453 33.561 4.5534 51.988 5.1733 55.807 0.3582 2.2074 0.0974 5.0638-0.62059 6.7972-2.2203 5.3603-4.7016 5.8955-27.33 5.8955h-20.473l-3.0767-2.5889c-2.9101-2.4487-3.0767-2.9781-3.0767-9.7762 0-3.953 0.43952-10.776 0.97671-15.161 0.5372-4.3856 1.4266-13.374 1.9765-19.974s1.686-20.185 2.5248-30.189c0.83879-10.004 1.9632-19.341 2.4986-20.75 1.0471-2.7542 6.4172-6.5517 9.2734-6.5578 1.5812-3e-3 1.75-1.3231 1.75-13.681 0-13.867-0.924-18.223-6.9614-32.822-0.4549-1.1-1.5846-4.25-2.5105-7s-2.071-5.9-2.5447-7c-0.75909-1.7627-9.8394-27.875-11.997-34.5-0.78367-2.4062-0.81746-2.382-0.90019 0.64304-0.0473 1.7287 0.55844 6.4537 1.346 10.5 0.78759 4.0463 2.1579 11.407 3.0452 16.357s2.0125 11.025 2.5006 13.5 1.6342 8.775 2.5469 14 2.254 12.65 2.9806 16.5c2.9812 15.797 2.9963 15.189-0.42052 16.956-3.7844 1.957-9.0625 10.852-9.0754 15.294-6e-3 2.1284-0.49687 3.25-1.422 3.25-1.1569 0-1.4945 3.7562-1.8649 20.75-0.45649 20.943-1.7469 39.61-3.8223 55.292-1.0873 8.216-1.0308 8.7908 1.4847 15.078 1.4383 3.5952 2.6041 7.8515 2.5907 9.4584-0.0404 4.8308-1.9251 11.542-4.0985 14.594-4.2486 5.9665-13.745 8.4551-20.377 5.34zm-108-27.236c-2.8687-0.63312-20.625-6.269-23-7.3002-1.1-0.47763-4.6223-1.6608-7.8273-2.6292-7.4273-2.2443-10.673-5.1644-10.673-9.6032 0-2.8845 7.0735-20.933 14.971-38.199 1.2466-2.7254 4.659-10.638 7.5832-17.584 2.9242-6.9455 6.6959-15.639 8.3815-19.32 1.6856-3.6803 3.0648-7.046 3.0648-7.4794s1.2375-1.9698 2.75-3.4143c2.0708-1.9778 3.9848-2.7031 7.75-2.9371 4.3509-0.27035 5.0425-0.61028 5.3271-2.6183 0.17991-1.2692 0.85491-2.1345 1.5-1.9229 1.7089 0.56056 2.0424 5.632 0.49785 7.5689-4.6241 5.7989-5.5529 11.509-3.3693 20.714 0.90644 3.8212 2.2891 9.6476 3.0725 12.948 0.78345 3.3 2.6006 11.175 4.0381 17.5s3.0552 12.954 3.5948 14.73 0.72664 3.6422 0.4156 4.1455c-0.31104 0.50328-1.7211 6.0246-3.1335 12.27-4.2273 18.691-4.4944 19.593-6.2525 21.119-1.9946 1.7307-5.8843 2.6311-8.6906 2.0118zm221-14.222c-2.9939-1.2254-4.5538-3.318-13.4-17.977-7.0027-11.604-8.0996-14.043-8.0974-18 3e-3 -4.8994-2.3816-31.435-3.9995-44.512-1.0976-8.8713-3.8709-14.193-8.965-17.202-2.4032-1.4196-3.0381-2.481-3.0381-5.079 0-3.9509 0.5824-4.085 3.2137-0.73988 1.882 2.3926 2.1423 2.4523 4.3587 1 1.2965-0.84948 3.5276-1.5445 4.9582-1.5445 4.9983 0 5.0889 0.0839 26.454 24.5 6.7379 7.7 14.11 16.034 16.383 18.52 5.8882 6.4402 17.701 19.891 20.908 23.807 3.7423 4.5699 3.7322 9.8616-0.0257 13.357-3.7322 3.4718-28.346 21.464-31.897 23.316-3.1914 1.6644-3.9844 1.7286-6.8526 0.55473zm-134.5-260.48c-6.6813-1.8542-10.225-3.972-14.425-8.6206-5.675-6.2815-7.5294-11.186-7.5436-19.952-9e-3 -5.8065 0.52207-8.6474 2.3538-12.581 10.541-22.637 42.36-22.983 53.325-0.57929 2.3151 4.73 2.7574 6.8935 2.6906 13.161-0.15564 14.602-7.5617 24.109-22.254 28.568-5.5155 1.6739-8.129 1.6747-14.148 0.0044z"
-        }
+        "building_id": "d8da471c7d76406fa443eb7b831225ad"
+      }
     ],
-    "venue_size": 356158,
-    "aggregations": {
-        "venue_based": "{\"area_map\":{\"aggs\":{\"date_histo\":{\"date_histogram\":{\"field\":\"@timestamp\",\"interval\":\"day\",\"min_doc_count\":1,\"time_zone\":\"$$$\"},\"aggs\":{\"area_wise\":{\"terms\":{\"field\":\"area.id\",\"size\":100,\"missing\":\"missing\",\"exclude\":[\"50428e8a52f343f594d55abc038129b2\",\"68799e931b2949338bc20591e43adc6f\",\"6893c9a23d0a441d93900b6c2a2a14c6\",\"6fa02129add644d2a0d36f2ede0631b0\",\"b67773c62263411eae232e54e33ed863\",\"f1554d8ef8ce41b9b6e7b527e8accbbf\",\"e11dd4a7261244d7872c2c2fd0b53405\"]},\"aggs\":{\"filter_aaon\":{\"filter\":{\"term\":{\"area.aaon\":true}},\"aggs\":{\"dwell_filter\":{\"filters\":{\"filters\":{\"filter_data\":{\"range\":{\"properties.dwell\":{\"gt\":0}}}}},\"aggs\":{\"bucket_anchor\":{\"filters\":{\"filters\":{\"filter_data\":{\"term\":{\"area.ar\":true}}}},\"aggs\":{\"get_range_data\":{\"range\":{\"field\":\"area.aacn\",\"ranges\":[{\"from\":4,\"to\":6}]},\"aggs\":{\"bucket_dwell\":{\"avg\":{\"field\":\"properties.dwell\"}}}}}},\"bucket_shop\":{\"filters\":{\"filters\":{\"filter_data\":{\"term\":{\"area.ar\":false}}}},\"aggs\":{\"get_range_data\":{\"range\":{\"field\":\"area.aacn\",\"ranges\":[{\"from\":4,\"to\":6}]},\"aggs\":{\"bucket_dwell\":{\"avg\":{\"field\":\"properties.dwell\"}}}}}},\"visitor\":{\"filter\":{\"bool\":{\"must\":[{\"range\":{\"area.aacn\":{\"gt\":0,\"lt\":6}}}]}},\"aggs\":{\"visitor_count\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}}}}}}}}}},\"parking_areas\":{\"filters\":{\"filters\":{\"filter_data\":{\"range\":{\"area.aacn\":{\"gte\":-1}}}}},\"aggs\":{\"parking_areas\":{\"terms\":{\"field\":\"area.id\",\"size\":20,\"include\":[\"50428e8a52f343f594d55abc038129b2\",\"68799e931b2949338bc20591e43adc6f\",\"6893c9a23d0a441d93900b6c2a2a14c6\",\"6fa02129add644d2a0d36f2ede0631b0\",\"b67773c62263411eae232e54e33ed863\",\"f1554d8ef8ce41b9b6e7b527e8accbbf\",\"e11dd4a7261244d7872c2c2fd0b53405\"]},\"aggs\":{\"visitor_count\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}}}}}}}}}},\"shop_front_conversion\":{\"aggs\":{\"nested_only\":{\"filters\":{\"filters\":{\"all\":{\"match_all\":{}}}},\"aggs\":{\"trend\":{\"date_histogram\":{\"field\":\"@timestamp\",\"interval\":\"day\",\"min_doc_count\":1,\"time_zone\":\"$$$\"},\"aggs\":{\"en_visitor\":{\"filter\":{\"range\":{\"properties.dwell\":{\"gt\":0}}},\"aggs\":{\"visitors\":{\"filter\":{\"range\":{\"area.aacn\":{\"gt\":0,\"lt\":6}}},\"aggs\":{\"count\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}}}}}},\"en_passerby\":{\"filter\":{\"term\":{\"area.aacn\":0}},\"aggs\":{\"count\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}}}},\"stats\":{\"bucket_script\":{\"buckets_path\":{\"visitor_count\":\"en_visitor>visitors>count\",\"passerby_count\":\"en_passerby>count\"},\"script\":\"(params.visitor_count / (params.visitor_count +params.passerby_count))*100\"}}}},\"add_all_visitors\":{\"sum_bucket\":{\"buckets_path\":\"trend>en_visitor>visitors>count\"}},\"add_all_passerby\":{\"sum_bucket\":{\"buckets_path\":\"trend>en_passerby>count\"}},\"shop_front_conversion\":{\"bucket_script\":{\"buckets_path\":{\"visitor_count\":\"add_all_visitors\",\"passerby_count\":\"add_all_passerby\"},\"script\":\"(params.visitor_count / (params.visitor_count +params.passerby_count))*100\"}},\"shop_front_conversion_highest\":{\"max_bucket\":{\"buckets_path\":\"trend>stats\"}}}},\"global_dwell\":{\"filters\":{\"filters\":{\"all\":{\"match_all\":{}}}},\"aggs\":{\"en_visitor\":{\"filter\":{\"range\":{\"properties.dwell\":{\"gte\":0}}},\"aggs\":{\"visitors\":{\"filter\":{\"range\":{\"area.aacn\":{\"gt\":0,\"lt\":6}}},\"aggs\":{\"count\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}}}}}},\"en_passerby\":{\"filter\":{\"term\":{\"area.aacn\":0}},\"aggs\":{\"count\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}}}},\"stats\":{\"bucket_script\":{\"buckets_path\":{\"visitor_count\":\"en_visitor>visitors>count\",\"passerby_count\":\"en_passerby>count\"},\"script\":\"(params.visitor_count / (params.visitor_count +params.passerby_count))*100\"}}}},\"shop_front_conversion_one_day\":{\"avg_bucket\":{\"buckets_path\":\"global_dwell>stats\"}}}},\"wifi_visitors_stats\":{\"visitors\":{\"aggs\":{\"trend\":{\"date_histogram\":{\"field\":\"@timestamp\",\"interval\":\"day\",\"min_doc_count\":1,\"time_zone\":\"$$$\"},\"aggs\":{\"new_val\":{\"filter\":{\"term\":{\"loyalty\":\"new\"}},\"aggs\":{\"Unique\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}}}},\"repeat_val\":{\"filter\":{\"term\":{\"loyalty\":\"repeat\"}},\"aggs\":{\"Unique\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}}}},\"visitor\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}},\"undefined_vis\":{\"filter\":{\"term\":{\"device.type\":\"undefined\"}},\"aggs\":{\"undefined_count\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}}}},\"undefined_new\":{\"filter\":{\"term\":{\"loyalty\":\"new\"}},\"aggs\":{\"new_undefined\":{\"filter\":{\"term\":{\"device.type\":\"undefined\"}},\"aggs\":{\"new_count\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}}}}}},\"undefined_repeat\":{\"filter\":{\"term\":{\"loyalty\":\"repeat\"}},\"aggs\":{\"repeat_undefined\":{\"filter\":{\"term\":{\"device.type\":\"undefined\"}},\"aggs\":{\"repeat_count\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}}}}}},\"vis_minus_undefined\":{\"bucket_script\":{\"buckets_path\":{\"visitor\":\"visitor\",\"undefined\":\"undefined_vis>undefined_count\"},\"script\":\"params.visitor - params.undefined\"}},\"new_minus_undefined\":{\"bucket_script\":{\"buckets_path\":{\"visitor\":\"new_val>Unique\",\"undefined\":\"undefined_new>new_undefined>new_count\"},\"script\":\"params.visitor - params.undefined\"}},\"repeat_minus_undefined\":{\"bucket_script\":{\"buckets_path\":{\"visitor\":\"repeat_val>Unique\",\"undefined\":\"undefined_repeat>repeat_undefined>repeat_count\"},\"script\":\"params.visitor - params.undefined\"}},\"percentage_repeat\":{\"bucket_script\":{\"buckets_path\":{\"repeat\":\"repeat_minus_undefined\",\"total\":\"vis_minus_undefined\"},\"script\":\"(params.repeat/params.total)\"}},\"percentage_new\":{\"bucket_script\":{\"buckets_path\":{\"new_undefined\":\"new_minus_undefined\",\"total\":\"vis_minus_undefined\"},\"script\":\"(params.new_undefined/params.total)\"}},\"new\":{\"bucket_script\":{\"buckets_path\":{\"visitor\":\"visitor\",\"percent\":\"percentage_new\"},\"script\":\"Math.round(params.visitor*params.percent)\"}},\"repeat\":{\"bucket_script\":{\"buckets_path\":{\"visitor\":\"visitor\",\"percent\":\"new\"},\"script\":\"params.visitor - params.percent\"}}}},\"all_matching_docs\":{\"filters\":{\"filters\":{\"all\":{\"match_all\":{}}}},\"aggs\":{\"new_val\":{\"filter\":{\"term\":{\"loyalty\":\"new\"}},\"aggs\":{\"Unique\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}}}},\"repeat_val\":{\"filter\":{\"term\":{\"loyalty\":\"repeat\"}},\"aggs\":{\"Unique\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}}}},\"visitor\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}},\"undefined_vis\":{\"filter\":{\"term\":{\"device.type\":\"undefined\"}},\"aggs\":{\"undefined_count\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}}}},\"undefined_new\":{\"filter\":{\"term\":{\"loyalty\":\"new\"}},\"aggs\":{\"new_undefined\":{\"filter\":{\"term\":{\"device.type\":\"undefined\"}},\"aggs\":{\"new_count\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}}}}}},\"undefined_repeat\":{\"filter\":{\"term\":{\"loyalty\":\"repeat\"}},\"aggs\":{\"repeat_undefined\":{\"filter\":{\"term\":{\"device.type\":\"undefined\"}},\"aggs\":{\"repeat_count\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}}}}}},\"vis_minus_undefined\":{\"bucket_script\":{\"buckets_path\":{\"visitor\":\"visitor\",\"undefined\":\"undefined_vis>undefined_count\"},\"script\":\"params.visitor - params.undefined\"}},\"new_minus_undefined\":{\"bucket_script\":{\"buckets_path\":{\"visitor\":\"new_val>Unique\",\"undefined\":\"undefined_new>new_undefined>new_count\"},\"script\":\"params.visitor - params.undefined\"}},\"repeat_minus_undefined\":{\"bucket_script\":{\"buckets_path\":{\"visitor\":\"repeat_val>Unique\",\"undefined\":\"undefined_repeat>repeat_undefined>repeat_count\"},\"script\":\"params.visitor - params.undefined\"}},\"percentage_repeat\":{\"bucket_script\":{\"buckets_path\":{\"repeat\":\"repeat_minus_undefined\",\"total\":\"vis_minus_undefined\"},\"script\":\"(params.repeat/params.total)\"}},\"percentage_new\":{\"bucket_script\":{\"buckets_path\":{\"new_undefined\":\"new_minus_undefined\",\"total\":\"vis_minus_undefined\"},\"script\":\"(params.new_undefined/params.total)\"}},\"new\":{\"bucket_script\":{\"buckets_path\":{\"visitor\":\"visitor\",\"percent\":\"percentage_new\"},\"script\":\"Math.round(params.visitor*params.percent)\"}},\"repeat\":{\"bucket_script\":{\"buckets_path\":{\"visitor\":\"visitor\",\"percent\":\"new\"},\"script\":\"params.visitor - params.percent\"}}}}},\"size\":0}},\"wifi_user_dwell_test\":{\"aggs\":{\"date_histo\":{\"date_histogram\":{\"field\":\"@timestamp\",\"interval\":\"day\",\"min_doc_count\":1,\"time_zone\":\"$$$\"},\"aggs\":{\"group_apmac\":{\"terms\":{\"field\":\"device.device_id\",\"size\":40000},\"aggs\":{\"sum_of_dwell\":{\"sum\":{\"field\":\"properties.dwell\"}}}},\"bucket_dwell_minutes\":{\"bucket_script\":{\"buckets_path\":{\"my_var1\":\"bucket_dwell.value\"},\"script\":\"params.my_var1 / (60)\"}},\"bucket_dwell\":{\"avg_bucket\":{\"buckets_path\":\"group_apmac>sum_of_dwell\"}}}},\"global_dwell\":{\"filters\":{\"filters\":{\"all\":{\"match_all\":{}}}},\"aggs\":{\"group_apmac\":{\"terms\":{\"field\":\"device.device_id\",\"size\":40000},\"aggs\":{\"sum_of_dwell\":{\"sum\":{\"field\":\"properties.dwell\"}}}},\"bucket_dwell_minutes\":{\"bucket_script\":{\"buckets_path\":{\"my_var1\":\"bucket_dwell.value\"},\"script\":\"params.my_var1 / (60)\"}},\"bucket_dwell\":{\"avg_bucket\":{\"buckets_path\":\"group_apmac>sum_of_dwell\"}}}}}},\"gross_shopping\":{\"aggs\":{\"trend\":{\"date_histogram\":{\"field\":\"@timestamp\",\"interval\":\"day\",\"min_doc_count\":1,\"time_zone\":\"$$$\"},\"aggs\":{\"visitors\":{\"terms\":{\"field\":\"device.device_id\",\"size\":40000},\"aggs\":{\"sum_of_dwell\":{\"sum\":{\"field\":\"properties.dwell\"}}}},\"daily_visitor_count\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}},\"filtered_count\":{\"avg_bucket\":{\"buckets_path\":\"visitors>sum_of_dwell\"}},\"trend_gross_shopping\":{\"bucket_script\":{\"buckets_path\":{\"daily_avg\":\"filtered_count\",\"daily_count\":\"daily_visitor_count\"},\"script\":\"params.daily_count * params.daily_avg \"}}}},\"for_one_day\":{\"date_histogram\":{\"field\":\"@timestamp\",\"interval\":\"day\",\"min_doc_count\":1,\"time_zone\":\"$$$\"},\"aggs\":{\"visitors\":{\"terms\":{\"field\":\"device.device_id\",\"size\":40000},\"aggs\":{\"sum_of_dwell\":{\"sum\":{\"field\":\"properties.dwell\"}}}},\"daily_visitor_count\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}},\"filtered_count\":{\"avg_bucket\":{\"buckets_path\":\"visitors>sum_of_dwell\"}},\"trend_gross_shopping\":{\"bucket_script\":{\"buckets_path\":{\"daily_avg\":\"filtered_count\",\"daily_count\":\"daily_visitor_count\"},\"script\":\"params.daily_count * params.daily_avg \"}}}},\"gross_shopping_average\":{\"avg_bucket\":{\"buckets_path\":\"trend>filtered_count\"}},\"gross_shopping_average_one_day\":{\"avg_bucket\":{\"buckets_path\":\"for_one_day>filtered_count\"}},\"gross_shopping_highest\":{\"max_bucket\":{\"buckets_path\":\"trend>filtered_count\"}},\"gross_shopping_highest_one_day\":{\"max_bucket\":{\"buckets_path\":\"for_one_day>filtered_count\"}},\"visitor_count\":{\"sum_bucket\":{\"buckets_path\":\"trend>daily_visitor_count\"}}}},\"dwell_histo\":{\"aggs\":{\"trend\":{\"date_histogram\":{\"field\":\"@timestamp\",\"interval\":\"1d\",\"min_doc_count\":0,\"time_zone\":\"$$$\"},\"aggs\":{\"visitor\":{\"filter\":{\"range\":{\"area.aacn\":{\"gt\":0,\"lt\":6}}},\"aggs\":{\"visitors_dwell\":{\"terms\":{\"field\":\"device.device_id\",\"size\":20000},\"aggs\":{\"dwell_sum\":{\"sum\":{\"field\":\"properties.dwell\"}}}}}},\"visitor_count\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}}}}}},\"dwell_segments\":{\"aggs\":{\"date_histo\":{\"date_histogram\":{\"field\":\"@timestamp\",\"interval\":\"1d\",\"min_doc_count\":1,\"time_zone\":\"$$$\"},\"aggs\":{\"group_apmac\":{\"terms\":{\"field\":\"device.device_id\",\"size\":40000},\"aggs\":{\"dwell_sum\":{\"sum\":{\"field\":\"properties.dwell\"}},\"bucket_dwell_minutes\":{\"bucket_script\":{\"buckets_path\":{\"my_var1\":\"dwell_sum.value\"},\"script\":\"params.my_var1 / (60)\"}}}},\"visitor_count\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}}}}}},\"visitors_stats\":{\"aggs\":{\"date_histo\":{\"date_histogram\":{\"field\":\"@timestamp\",\"interval\":\"day\",\"min_doc_count\":1,\"time_zone\":\"$$$\"},\"aggs\":{\"area_wise\":{\"terms\":{\"field\":\"area.id\",\"size\":100,\"missing\":\"missing\",\"exclude\":[\"50428e8a52f343f594d55abc038129b2\",\"68799e931b2949338bc20591e43adc6f\",\"6893c9a23d0a441d93900b6c2a2a14c6\",\"6fa02129add644d2a0d36f2ede0631b0\",\"b67773c62263411eae232e54e33ed863\",\"f1554d8ef8ce41b9b6e7b527e8accbbf\",\"e11dd4a7261244d7872c2c2fd0b53405\"]},\"aggs\":{\"area_filters\":{\"filter\":{\"term\":{\"area.type\":\"aa\"}},\"aggs\":{\"filter_aaon\":{\"filter\":{\"term\":{\"area.aaon\":true}},\"aggs\":{\"dwell_filter\":{\"filters\":{\"filters\":{\"filter_data\":{\"range\":{\"properties.dwell\":{\"gt\":0}}}}},\"aggs\":{\"visitor\":{\"filter\":{\"bool\":{\"must\":[{\"range\":{\"area.aacn\":{\"gt\":0,\"lt\":6}}}]}},\"aggs\":{\"visitor_count\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}}}}}}}}}}}},\"venue_visitor\":{\"filters\":{\"filters\":{\"filter_data\":{\"range\":{\"properties.dwell\":{\"gt\":0}}}}},\"aggs\":{\"visitor\":{\"filter\":{\"bool\":{\"must\":[{\"range\":{\"area.aacn\":{\"gt\":0,\"lt\":6}}}]}},\"aggs\":{\"visitor_count\":{\"cardinality\":{\"field\":\"device.device_id\",\"precision_threshold\":40000}}}}}}}}}}}",
-        "area_based": "{\"wifi_user_dwell_test\":{\"aggs\":{\"date_histo\":{\"date_histogram\":{\"field\":\"@timestamp\",\"interval\":\"day\",\"min_doc_count\":1,\"time_zone\":\"$$$\"},\"aggs\":{\"bucket_anchor\":{\"filters\":{\"filters\":{\"filter_data\":{\"term\":{\"area.ar\":true}}}},\"aggs\":{\"get_range_data\":{\"range\":{\"field\":\"area.aacn\",\"ranges\":[{\"from\":4,\"to\":6}]},\"aggs\":{\"bucket_dwell\":{\"avg\":{\"field\":\"properties.dwell\"}}}}}},\"bucket_shop\":{\"filters\":{\"filters\":{\"filter_data\":{\"term\":{\"area.ar\":false}}}},\"aggs\":{\"get_range_data\":{\"range\":{\"field\":\"area.aacn\",\"ranges\":[{\"from\":4,\"to\":6}]},\"aggs\":{\"bucket_dwell\":{\"avg\":{\"field\":\"properties.dwell\"}}}}}}}},\"global_dwell\":{\"filters\":{\"filters\":{\"all\":{\"match_all\":{}}}},\"aggs\":{\"bucket_anchor\":{\"filters\":{\"filters\":{\"filter_data\":{\"term\":{\"area.ar\":true}}}},\"aggs\":{\"get_range_data\":{\"range\":{\"field\":\"area.aacn\",\"ranges\":[{\"from\":4,\"to\":6}]},\"aggs\":{\"bucket_dwell\":{\"avg\":{\"field\":\"properties.dwell\"}}}}}},\"bucket_shop\":{\"filters\":{\"filters\":{\"filter_data\":{\"term\":{\"area.ar\":false}}}},\"aggs\":{\"get_range_data\":{\"range\":{\"field\":\"area.aacn\",\"ranges\":[{\"from\":4,\"to\":6}]},\"aggs\":{\"bucket_dwell\":{\"avg\":{\"field\":\"properties.dwell\"}}}}}}}}}}}"
+    "pocs": [
+      {
+        "name": "Thato Matlala",
+        "designation": [
+          {
+            "text": "Centre Manager",
+            "language": "en_US"
+          },
+          {
+            "text": "Directeur du centre",
+            "language": "fr"
+          }
+        ],
+        "email": "thato.matlala@cwexcellerate.com",
+        "phone": "011-988-0101",
+        "active": true,
+        "order": 0
+      },
+      {
+        "name": "Kamogelo Phatlhane",
+        "designation": [
+          {
+            "text": "Marketing Manager",
+            "language": "en_US"
+          },
+          {
+            "text": "Responsable Marketing",
+            "language": "fr"
+          }
+        ],
+        "email": "dobsonvillemarketing@mseed.co.za",
+        "phone": "011 988 0101",
+        "active": true,
+        "order": 1
+      }
+    ],
+    "venue_directions": [
+      {
+        "description": [
+          {
+            "text": "75 Elias Motsoaledi Rd",
+            "language": "en_US"
+          },
+          {
+            "text": "75 Elias Motsoaledi Rd",
+            "language": "fr"
+          }
+        ]
+      },
+      {
+        "description": [
+          {
+            "text": "Mmesi Park",
+            "language": "en_US"
+          },
+          {
+            "text": "Mmesi Park",
+            "language": "fr"
+          }
+        ]
+      },
+      {
+        "description": [
+          {
+            "text": "Soweto, South Africa.",
+            "language": "en_US"
+          },
+          {
+            "text": "Soweto, South Africa.",
+            "language": "fr"
+          }
+        ]
+      }
+    ],
+    "_links": {
+      "parent": {
+        "title": "home",
+        "href": "/"
+      },
+      "self": {
+        "title": "venues Lists",
+        "href": "venues/c74c5f7485fe41729d322107dca9483f"
+      },
+      "collection": {
+        "title": "venues",
+        "href": "venues"
+      }
     }
-}
+  }

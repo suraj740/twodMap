@@ -42,26 +42,23 @@ twod.changeTheme(
     }
 );
 (async () => {
-    var response = await fetch('./assets/geojson.json');
-    var pois = await response.json();
-    twod.setGeoJsonData(pois);
 
     //floor -data
     response = await fetch('./assets/venues.json');
     var venue = await response.json();
-    // console.log('venue', venue);
+    console.log('venue', venue);
     twod._getFloorInformation(venue);
     // twod._selectPlaces("01f0930a08fc4996baa4ca1d5cbef56e")
+
+    // var response = await fetch('./assets/randburg_geojson.json');
+    // var pois = await response.json();
+    // twod.setGeoJsonData(pois);
 
     //categories -data
     response = await fetch('./assets/categories.json');
     var categories = await response.json()
 
     twod._addCategoriesToolbar(categories);
-
-    response = await fetch('./assets/categories1.json');
-    var categories1 = await response.json()
-    twod.categories = categories1;
 
     // var categoriesContainer = document.querySelector('#categoriesList')
 
@@ -106,9 +103,9 @@ twod.changeTheme(
     //     btn.classList.toggle('scale-out');
     //     })
     // });
-    twod._addDialog();
+    // twod._addDialog();
 
-    twod.addSearchControl();
+    // twod.addSearchControl();
 })();
 // fetch('./assets/pois.json')
 //     .then(response => {

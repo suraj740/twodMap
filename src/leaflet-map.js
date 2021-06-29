@@ -18,6 +18,7 @@ class TwoDMap {
     constructor() {
         this.showLabel = true;
         this.maskAdded = {};
+        this.imageLayer = {};
         this.marker = {};
         this.currentFloorDetail = {};
         this.categories = [];
@@ -29,14 +30,14 @@ class TwoDMap {
         // this.map.setMaxBounds(this.map.getBounds());
         // var mapBounds = L.latLngBounds(bounds);
         // this.map.setMaxBounds(mapBounds);
-        this.map.fitBounds([[-35, 0], [355, 390]], {
-            padding: [20, 30]
-        });
+        // this.map.fitBounds([[0, -10], [240, 230]], {
+        //     padding: [20, 30]
+        // });
         // this.map.setMaxBounds([[0, 0], [310.535, 677.664]]);
         // L.TileLayer.boundaryCanvas('https://wallpapercave.com/wp/XqRBXyO.jpg', {boundary: this.data, tileSize: 1200, }).addTo(this.map)
 
         // var sidebar = L.control.sidebar('sidebar', {position: 'right'}).addTo(this.map);
-        L.imageOverlay('map_bg.png', [[-35, 0], [355, 390]]).addTo(this.map);
+        // L.imageOverlay('randburg_lower_level.png', [[0, -10], [240, 230]]).addTo(this.map);
         L.control.mousePosition({ position: 'bottomright', lngFirst: true }).addTo(this.map)
     }
 
@@ -76,8 +77,43 @@ class TwoDMap {
         // this.map.fitBounds(this._bounds, {
         //     padding: [20, 30]
         // });
-        this.map.setMaxBounds([[-35, 0], [355, 390]]);
+        // this.map.setMaxBounds([[0, -10], [240, 230]]);
         // this._addToolbar(data);
+    }
+
+    _changeFloorMap (floorData) {
+        this._clearPreviousLayers();
+        if (this.searchControl) {
+            this.map.removeControl(this.searchControl)
+        }
+        console.log('changeFloormap', floorData);
+        var boundSet = this._getMapBounds(floorData.map_info);
+        var productionImg = floorData.map_info.image_id.production;
+        console.log('boundSet', boundSet)
+        this.map.fitBounds(boundSet['floorbounds'], {
+            padding: [20, 30]
+        });
+        this.map.setMaxBounds(boundSet['floorbounds']);
+        // this.map.fitBounds([[0, -10], [240, 230]], {
+        //     padding: [20, 30]
+        // });
+        // this.map.setMaxBounds([[0, -10], [240, 230]]);
+
+        this.imageLayer[floorData.floor_id] = L.imageOverlay(productionImg, boundSet['floorbounds']).addTo(this.map);
+        (async () => {
+            var response = await fetch(`./assets/${floorData.geojson}.json`);
+            var pois = await response.json();
+            this.setGeoJsonData(pois);
+
+
+            response = await fetch('./assets/categories1.json');
+            var categories1 = await response.json();
+            twod.categories = categories1;
+
+            this._addDialog();
+
+            this.addSearchControl();
+        })();
     }
 
 
@@ -320,6 +356,17 @@ class TwoDMap {
 
 
     _clearPreviousLayers() {
+        if (this.featuresLayer) {
+            this.featuresLayer.eachLayer((layer) => {
+                this.map.removeLayer(layer);
+            });
+        }
+        Object.keys(this.imageLayer).map((key) => {
+            if (this.imageLayer[key]) {
+                this.map.removeLayer(this.imageLayer[key]);
+                // this.maskAdded[key] = undefined;
+            }
+        });
         Object.keys(this.maskAdded).map((key) => {
             if (this.maskAdded[key]) {
                 this.map.removeLayer(this.maskAdded[key]);
@@ -501,7 +548,7 @@ class TwoDMap {
 
     addSearchControl() {
         // console.log('this.featuresLayer', this.featuresLayer)
-        var searchControl = new L.Control.Search({
+        this.searchControl = new L.Control.Search({
             layer: this.featuresLayer,
             propertyName: "name.0.text",
             collapsed: false,
@@ -520,7 +567,7 @@ class TwoDMap {
         });
 
 
-        searchControl.on('search:locationfound',(e) => {
+        this.searchControl.on('search:locationfound',(e) => {
 
             //console.log('search:locationfound', );
 
@@ -542,8 +589,7 @@ class TwoDMap {
                 this.featuresLayer.resetStyle(layer);
             });
         });
-
-        this.map.addControl(searchControl);
+            this.map.addControl(this.searchControl);
     }
 
 

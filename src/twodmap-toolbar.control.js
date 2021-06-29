@@ -167,105 +167,125 @@ L.Control.Toolbar = L.Control.extend({
 
             self.zoomMenu = L.DomUtil.create('ul', 'zoom-menu', self.toolbarContainer);
             self.listBtn = [];
-            // building.floor.map((fl, key) => {
-            //     var list = L.DomUtil.create('li', '', self.zoomMenu);
-            //     list.setAttribute('id', fl.floor_id);
-            //     self.listBtn[key] = L.DomUtil.create('a', 'zoom-fab zoom-btn-sm scale-transition scale-out', list);
-            //     self.listBtn[key].setAttribute('title', fl.site_index);
-            //     L.DomUtil.create('i', 'mdi mdi-layers', self.listBtn[key]);
-            //     // self.listBtn[key].innerHTML = fl.site_index;
-            //     L.DomEvent
-            //     .on(list, 'click', L.DomEvent.stopPropagation)
-            //     .on(list, 'dblclick', L.DomEvent.stopPropagation)
-            //     .on(list, 'wheel', L.DomEvent.stopPropagation)
-            //     // .on(list, 'click', self._selectAreas, self);
-            // });
+            building.floor.map((fl, key) => {
+                if (key === 0 && !Object.keys(self._twodMap.currentFloorDetail).length) { // by default select first floor
+                    self._twodMap.currentFloorDetail = fl;
+                    self._twodMap._changeFloorMap(self._twodMap.currentFloorDetail);
+                }
+                var list = L.DomUtil.create('li', '', self.zoomMenu);
+                list.setAttribute('id', fl.floor_id);
+                self.listBtn[key] = L.DomUtil.create('a', 'zoom-fab zoom-btn-sm scale-transition scale-out', list);
+                self.listBtn[key].setAttribute('title', fl.alias[0].text);
+                L.DomUtil.create('i', 'mdi mdi-layers', self.listBtn[key]);
+                // self.listBtn[key].innerHTML = fl.site_index;
+                L.DomEvent
+                .on(list, 'click', L.DomEvent.stopPropagation)
+                .on(list, 'dblclick', L.DomEvent.stopPropagation)
+                .on(list, 'wheel', L.DomEvent.stopPropagation)
+                // .on(list, 'click', self._selectAreas, self);
+                .on(list, 'click', (e) => {
+                        let id = e.currentTarget.getAttribute('id');
+                        self._twodMap.currentFloorDetail = building.floor.find(fl => fl.floor_id === id);
+                        self._twodMap._changeFloorMap(self._twodMap.currentFloorDetail);
+                }, self);
+            });
             L.DomEvent
             .on(self.zoomFab, 'click', L.DomEvent.stopPropagation)
             .on(self.zoomFab, 'dblclick', L.DomEvent.stopPropagation)
             .on(self.zoomFab, 'wheel', L.DomEvent.stopPropagation)
             .on(self.zoomFab, 'click', (e) => {
-                console.log('self', self, building.floor);
-                // console.log(L.DomUtil.getStyle(self._twodMap.dialog._container, 'display'));
-                if (L.DomUtil.getStyle(self._twodMap.dialog._container, 'display') === 'block') {
-                    self._twodMap.dialog.close();
-                    
-                }
-                else {
-                    self._twodMap.dialog.open();
-                }
-                // self._createTreeMenu(building);
-                var treeData = [];
-
-                var jstreeData = self._createMapNode(treeData, venue, '#');
-                console.log('jstreeData', jstreeData);
-                var treeContainer = L.DomUtil.create('div', 'twodmap-jstree');
-                self._twodMap.dialog.setContent(treeContainer);
-                // self._twodMap.$(document).ready(function() {
-
-                    self._twodMap.$('.twodmap-jstree').on('changed.jstree', function (e, data) {
-                        var i, j, r = null;
-                        for (i = 0, j = data.selected.length; i < j; i++) {
-                            label = data.instance.get_path(data.selected[i]).join(' &#x2192; ');
-                            r = data.instance.get_node(data.selected[i]);
-                            if (r.data) {
-                                r.data.venueId = data.instance.get_parent(data.instance.get_parent(data.selected[i]));
-                                r.data.buildingId = data.instance.get_parent(data.selected[i]);
-                                // self._mapOptions.venueId = r.data.venueId;
-                            }
-        
-                        }
-        
-                        // self._log(Logger.DEBUG.name, 'Node Data', r.data);
-                        // self._currentFloorDetail = r.data;
-                        // // console.log(r.data)
-                        // self._jQuery(self.options.menuOptions.closeButton).trigger('click');
-                        // if (this.isLoaded) {
-                        //     self._changeFloorMap(self._currentFloorDetail, label);
-                        // }
-        
-        
-                    }).jstree({
-                        plugins: [
-                          "contextmenu",
-                          "sort",
-                          "state",
-                          "types",
-                          "unique",
-                          "wholerow",
-                          "changed",
-                          "types"
-                        ],
-                        'types': {
-                          'default': {
-                            'icon': 'fa fa-angle-right fa-fw'
-                          },
-                          'f-open': {
-                            'icon': 'fa fa-folder-open fa-fw'
-                          },
-                          'f-closed': {
-                            'icon': 'fa fa-folder fa-fw'
-                          }
-                        },
-                        checkbox: {
-                          three_state: false
-                        },
-                        search: {
-                          show_only_matches: true
-                        },
-                        core: {
-                          data:jstreeData
-                        }
-                    // });
-                    //         .on('loaded.jstree', function () {
-                    //             // Do something here...
-                    //             // self._changeFloorMap(self._currentFloorDetail, label);
-                    //             // self._changeFloorMap(self._currentFloorDetail, label);
-                    //             this.isLoaded = true;
-                    //             console.log('Hello World', this, self._twodMap.$(".jstree-leaf:first-child"));
-                    //             // this.open_node(self._jQuery(".jstree-leaf:first-child"),function(){;},true)
-                    //     });
+                var zoomBtnSm = document.querySelectorAll('.zoom-btn-sm')
+                zoomBtnSm.forEach((btn) => {
+                    btn.classList.toggle('scale-out');
                 });
+            }, self);
+            console.log('current floor', self._twodMap.currentFloorDetail);
+            // L.DomEvent
+            // .on(self.zoomFab, 'click', L.DomEvent.stopPropagation)
+            // .on(self.zoomFab, 'dblclick', L.DomEvent.stopPropagation)
+            // .on(self.zoomFab, 'wheel', L.DomEvent.stopPropagation)
+            // .on(self.zoomFab, 'click', (e) => {
+            //     console.log('self', self, building.floor);
+            //     // console.log(L.DomUtil.getStyle(self._twodMap.dialog._container, 'display'));
+            //     if (L.DomUtil.getStyle(self._twodMap.dialog._container, 'display') === 'block') {
+            //         self._twodMap.dialog.close();
+                    
+            //     }
+            //     else {
+            //         self._twodMap.dialog.open();
+            //     }
+            //     // self._createTreeMenu(building);
+            //     var treeData = [];
+
+            //     var jstreeData = self._createMapNode(treeData, venue, '#');
+            //     console.log('jstreeData', jstreeData);
+            //     var treeContainer = L.DomUtil.create('div', 'twodmap-jstree');
+            //     self._twodMap.dialog.setContent(treeContainer);
+            //     // self._twodMap.$(document).ready(function() {
+
+            //         self._twodMap.$('.twodmap-jstree').on('changed.jstree', function (e, data) {
+            //             var i, j, r = null;
+            //             for (i = 0, j = data.selected.length; i < j; i++) {
+            //                 label = data.instance.get_path(data.selected[i]).join(' &#x2192; ');
+            //                 r = data.instance.get_node(data.selected[i]);
+            //                 if (r.data) {
+            //                     r.data.venueId = data.instance.get_parent(data.instance.get_parent(data.selected[i]));
+            //                     r.data.buildingId = data.instance.get_parent(data.selected[i]);
+            //                     // self._mapOptions.venueId = r.data.venueId;
+            //                 }
+        
+            //             }
+        
+            //             // self._log(Logger.DEBUG.name, 'Node Data', r.data);
+            //             // self._currentFloorDetail = r.data;
+            //             // // console.log(r.data)
+            //             // self._jQuery(self.options.menuOptions.closeButton).trigger('click');
+            //             // if (this.isLoaded) {
+            //             //     self._changeFloorMap(self._currentFloorDetail, label);
+            //             // }
+        
+        
+            //         }).jstree({
+            //             plugins: [
+            //               "contextmenu",
+            //               "sort",
+            //               "state",
+            //               "types",
+            //               "unique",
+            //               "wholerow",
+            //               "changed",
+            //               "types"
+            //             ],
+            //             'types': {
+            //               'default': {
+            //                 'icon': 'fa fa-angle-right fa-fw'
+            //               },
+            //               'f-open': {
+            //                 'icon': 'fa fa-folder-open fa-fw'
+            //               },
+            //               'f-closed': {
+            //                 'icon': 'fa fa-folder fa-fw'
+            //               }
+            //             },
+            //             checkbox: {
+            //               three_state: false
+            //             },
+            //             search: {
+            //               show_only_matches: true
+            //             },
+            //             core: {
+            //               data:jstreeData
+            //             }
+            //         // });
+            //         //         .on('loaded.jstree', function () {
+            //         //             // Do something here...
+            //         //             // self._changeFloorMap(self._currentFloorDetail, label);
+            //         //             // self._changeFloorMap(self._currentFloorDetail, label);
+            //         //             this.isLoaded = true;
+            //         //             console.log('Hello World', this, self._twodMap.$(".jstree-leaf:first-child"));
+            //         //             // this.open_node(self._jQuery(".jstree-leaf:first-child"),function(){;},true)
+            //         //     });
+            //     });
                 
                 // floorList.forEach((fl, key) => {
                     
@@ -280,7 +300,7 @@ L.Control.Toolbar = L.Control.extend({
                 //     }
                 // })
                 
-            })
+            // })
         });
 
         return self.toolbarContainer;
