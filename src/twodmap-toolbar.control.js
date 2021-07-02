@@ -135,10 +135,11 @@ L.Control.Toolbar = L.Control.extend({
         self.previousElement = ''
         self.toolbarContainer = L.DomUtil.create('div', 'scrollmenu');
 
-        categories.map((category) => {
-            var list = L.DomUtil.create('li', 'ripple', self.toolbarContainer);
-            // list.innerHTML = category.name;
+        categories.filter(c => c.type === 'sub').slice(0, 6).map((category) => {
 
+            var list = L.DomUtil.create('li', 'ripple', self.toolbarContainer);
+            list.innerHTML = category.name;
+            list.style.backgroundColor = '#' + category.color;
             list.setAttribute('id', category.id);
             list.setAttribute('title', category.name);
             L.DomUtil.create('i', 'mdi mdi-' + category.icon + ' mdi-24px' , list);

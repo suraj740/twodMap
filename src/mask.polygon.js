@@ -8,7 +8,7 @@ L.Mask = L.Polygon.extend({
     // },
 
     initialize: function (latLngs, options) {
-        console.log(latLngs, options)
+        // console.log(latLngs, options)
         // L.Util.setOptions(this.options, options);
         // this.options = options;
 

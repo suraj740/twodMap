@@ -86,10 +86,13 @@ class TwoDMap {
         if (this.searchControl) {
             this.map.removeControl(this.searchControl)
         }
-        console.log('changeFloormap', floorData);
+        if (this._categoriesToolbar) {
+            this.map.removeControl(this._categoriesToolbar)
+        }
+        // console.log('changeFloormap', floorData);
         var boundSet = this._getMapBounds(floorData.map_info);
         var productionImg = floorData.map_info.image_id.production;
-        console.log('boundSet', boundSet)
+        // console.log('boundSet', boundsSet)
         this.map.fitBounds(boundSet['floorbounds'], {
             padding: [20, 30]
         });
@@ -107,8 +110,10 @@ class TwoDMap {
 
 
             response = await fetch('./assets/categories1.json');
-            var categories1 = await response.json();
-            twod.categories = categories1;
+            var categories = await response.json();
+            this.categories = categories;
+
+            this._addCategoriesToolbar(categories);
 
             this._addDialog();
 
@@ -381,6 +386,22 @@ class TwoDMap {
         });
     }
 
+
+    _clearMaskMarkerLayer() {
+        Object.keys(this.maskAdded).map((key) => {
+            if (this.maskAdded[key]) {
+                this.map.removeLayer(this.maskAdded[key]);
+                // this.maskAdded[key] = undefined;
+            }
+        });
+        Object.keys(this.marker).map((key) => {
+            if (this.marker[key]) {
+                this.map.removeLayer(this.marker[key]);
+                // this.marker[key] = undefined;
+            }
+        });
+    }
+
     _selectMultiplePlaces(idList) {
         this._clearPreviousLayers();
         var mask = [];
@@ -447,8 +468,9 @@ class TwoDMap {
         }
     }
     _selectCategory(id) {
-        this._clearPreviousLayers();
-
+        // this._clearPreviousLayers();
+        this._clearMaskMarkerLayer();
+        var boundSet = this._getMapBounds(this.currentFloorDetail.map_info);
         // console.log('this.data', this.data);
         var data = this.data.filter(item => item.properties.category_ids ? item.properties.category_ids.includes(id) : false);
         var mask = [];
@@ -480,7 +502,7 @@ class TwoDMap {
                 fillOpacity: 0.5,
                 clickable: true,
                 className: 'mask',
-                outerBounds: new L.LatLngBounds([[-35, 0], [355, 390]])
+                outerBounds: new L.LatLngBounds(boundSet['floorbounds'])
             }).addTo(this.map);
 
             var myIcon = L.icon({
@@ -517,7 +539,7 @@ class TwoDMap {
     }
 
     _addCategoriesToolbar(data) {
-        this._engageControl = new L.Control.Toolbar(this, {
+        this._categoriesToolbar = new L.Control.Toolbar(this, {
             type: 'default',
             position : 'bottomleft',
             categories: data,
@@ -548,7 +570,7 @@ class TwoDMap {
 
     addSearchControl() {
         // console.log('this.featuresLayer', this.featuresLayer)
-        this.searchControl = new L.Control.Search({
+        this.searchControl = new L.Control.Search(this, {
             layer: this.featuresLayer,
             propertyName: "name.0.text",
             collapsed: false,

@@ -83,7 +83,8 @@
             return Object.prototype.toString.call(obj) === "[object Object]";
         },
 
-        initialize: function (options) {
+        initialize: function (twodMapInstance, options) {
+            this._twodMap = twodMapInstance;
             L.Util.setOptions(this, options || {});
             this._inputMinSize = this.options.textPlaceholder ? this.options.textPlaceholder.length : 10;
             this._layer = this.options.layer || new L.LayerGroup();
@@ -267,7 +268,8 @@
             list.forEach((c) => {
                 if (c.type === 'main') {
                     option = L.DomUtil.create('option', '', select);
-                    option.innerHTML = c.name;
+                    // L.DomUtil.create('i', 'mdi mdi-' + c.icon , option);
+                    option.innerHTML = '<span class="mdi mdi-' + c.icon +'"></span>' + c.name;
                     option.setAttribute('id', c.id);
                 }
                 
@@ -298,7 +300,7 @@
                 // .on(input, 'blur', this.collapseDelayed, this)
                 // .on(input, 'focus', this.collapseDelayedStop, this);
                 .on(select, 'change', (e) => {
-                    
+                    self.previousElement = '';
                     var value  = document.getElementById('categories-list').value;
                     let id = self.options.$('#categories-list').find('option:selected').attr('id');
                     self.options.dialog.open();
@@ -310,7 +312,10 @@
                         childList.map(c => {
                             let li = L.DomUtil.create('li', '', childContainer);
                             li.innerHTML = c.name;
+                            li.setAttribute('id', c.id);
                             li.style.cursor = 'pointer';
+
+                            L.DomEvent.on(li, 'click', self._selectCategory, self);
                         })
                     }
                     else {
@@ -381,6 +386,28 @@
                 .on(button, 'dblclick', L.DomEvent.stopPropagation);
 
             return button;
+        },
+
+        _selectCategory: function (e) {
+            var self = this;
+            let id = e.currentTarget.getAttribute('id');
+    
+            if (!self.previousElement) {
+                self.previousElement = e.currentTarget; 
+            }
+            if (!L.DomUtil.hasClass(e.currentTarget, 'control-enabled')) {
+                L.DomUtil.addClass(e.currentTarget, 'control-enabled');
+                if (self.previousElement && self.previousElement !== e.currentTarget) {
+                    L.DomUtil.removeClass(self.previousElement, 'control-enabled');
+                    self.previousElement = e.currentTarget;
+                }
+                self._twodMap._selectCategory(id);
+            }
+            else {
+                L.DomUtil.removeClass(e.currentTarget, 'control-enabled');
+                self._twodMap._selectCategory(null);
+            }
+            self.options.dialog.close();
         },
 
         _createTooltip: function (className) {
