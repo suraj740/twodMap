@@ -38,7 +38,9 @@ class TwoDMap {
 
         // var sidebar = L.control.sidebar('sidebar', {position: 'right'}).addTo(this.map);
         // L.imageOverlay('randburg_lower_level.png', [[0, -10], [240, 230]]).addTo(this.map);
-        L.control.mousePosition({ position: 'bottomright', lngFirst: true }).addTo(this.map)
+        if (!L.Browser.mobile) {
+            L.control.mousePosition({ position: 'bottomright', lngFirst: true }).addTo(this.map)
+        }
     }
 
     _createLayer(layerName, options, parent, layerType) {

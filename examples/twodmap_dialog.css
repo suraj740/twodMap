@@ -109,3 +109,29 @@
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+
+
+
+/* categories dialog changes */
+
+
+.category-child {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-child li {
+    padding: 0.5rem;
+    border: 1px solid #999;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.category-child li:first-child {
+    border-top: none;
+}
+/* .category-child li:last-child {
+    border-bottom: 1px solid #999;
+} */

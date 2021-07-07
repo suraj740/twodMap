@@ -10,7 +10,7 @@
             ],
             "type": "",
             "center": [],
-            "category_ids": [],
+            "category_ids": ["1dac59121cef4d11ab77d16d1d47999a", "a7d7dc0ad7054c3f9ef7c634bc5751ee"],
             "pid": "7rhh5ro57z15zj6b65l0tgwg0uonqpkgfbq",
             "style": {
                 "weight": 2,
@@ -113,7 +113,7 @@
             ],
             "type": "",
             "center": [],
-            "category_ids": [],
+            "category_ids": ["1dac59121cef4d11ab77d16d1d47999a", "a7d7dc0ad7054c3f9ef7c634bc5751ee"],
             "pid": "4e5d2grxu6v1jo4570blrcn2ju947nhx674",
             "style": {
                 "weight": 2,
@@ -168,7 +168,7 @@
             ],
             "type": "",
             "center": [],
-            "category_ids": [],
+            "category_ids": ["1dac59121cef4d11ab77d16d1d47999a", "a7d7dc0ad7054c3f9ef7c634bc5751ee"],
             "pid": "esqe86iw0m7iz2pmt53rr8rgpdm6uarsw9i",
             "style": {
                 "weight": 2,

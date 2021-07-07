@@ -55,10 +55,10 @@ twod.changeTheme(
     // twod.setGeoJsonData(pois);
 
     //categories -data
-    response = await fetch('./assets/categories.json');
-    var categories = await response.json()
+    // response = await fetch('./assets/categories.json');
+    // var categories = await response.json()
 
-    twod._addCategoriesToolbar(categories);
+    // twod._addCategoriesToolbar(categories);
 
     // var categoriesContainer = document.querySelector('#categoriesList')
 
