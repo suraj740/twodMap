@@ -16,7 +16,7 @@ var options = {
     maxZoom: 5,
     // projection: L.Projection.LonLat,
     // minZoom: 1,
-    zoom: 0,
+    // zoom: 0,
     // rotate: true,
     // maxBounds: [[0, 0], [310.535, 677.664]],
     projection: L.Projection.LonLat,

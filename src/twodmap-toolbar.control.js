@@ -135,14 +135,39 @@ L.Control.Toolbar = L.Control.extend({
         self.previousElement = ''
         self.toolbarContainer = L.DomUtil.create('div', 'scrollmenu');
 
-        categories.filter(c => c.type === 'sub').slice(0, 6).map((category) => {
+        categories.filter(c => c.type === 'main').slice(0, 2).map((category) => {
 
-            var list = L.DomUtil.create('li', 'ripple', self.toolbarContainer);
-            list.innerHTML = category.name;
+            let list = L.DomUtil.create('li', 'ripple', self.toolbarContainer);
             list.style.backgroundColor = '#' + category.color;
             list.setAttribute('id', category.id);
             list.setAttribute('title', category.name);
-            L.DomUtil.create('i', 'mdi mdi-' + category.icon + ' mdi-24px' , list);
+
+            let listContent = L.DomUtil.create('div', '', list);
+            listContent.style.display = 'flex';
+            listContent.style.flexDirection = 'column';
+            L.DomUtil.create('i', 'mdi mdi-' + category.icon + ' mdi-24px' , listContent);
+            // let title = L.DomUtil.create('span', '', listContent);
+            // title.innerHTML = category.name.substring(0, 1);
+            L.DomEvent
+            .on(list, 'click', L.DomEvent.stopPropagation)
+            .on(list, 'dblclick', L.DomEvent.stopPropagation)
+            .on(list, 'wheel', L.DomEvent.stopPropagation)
+            .on(list, 'click', self._selectItem, self);
+        });
+
+        categories.filter(c => c.parent === '1722532bfca54366bdfcc0278c064877').map((category) => {
+
+            let list = L.DomUtil.create('li', 'ripple', self.toolbarContainer);
+            list.style.backgroundColor = '#' + category.color;
+            list.setAttribute('id', category.id);
+            list.setAttribute('title', category.name);
+
+            let listContent = L.DomUtil.create('div', '', list);
+            listContent.style.display = 'flex';
+            listContent.style.flexDirection = 'column';
+            L.DomUtil.create('i', 'mdi mdi-' + category.icon + ' mdi-24px' , listContent);
+            // let title = L.DomUtil.create('span', '', listContent);
+            // title.innerHTML = category.name.substring(0, 1);
             L.DomEvent
             .on(list, 'click', L.DomEvent.stopPropagation)
             .on(list, 'dblclick', L.DomEvent.stopPropagation)

@@ -27,6 +27,8 @@ class TwoDMap {
     }
     initMap(mapId, options) {
         this.map = L.map(mapId, options);
+
+        // console.log(this.map);
         // this.map.setMaxBounds(this.map.getBounds());
         // var mapBounds = L.latLngBounds(bounds);
         // this.map.setMaxBounds(mapBounds);
@@ -94,7 +96,7 @@ class TwoDMap {
         // console.log('changeFloormap', floorData);
         var boundSet = this._getMapBounds(floorData.map_info);
         var productionImg = floorData.map_info.image_id.production;
-        // console.log('boundSet', boundsSet)
+        // console.log('boundSet', boundSet)
         this.map.fitBounds(boundSet['floorbounds'], {
             padding: [20, 30]
         });
@@ -107,8 +109,8 @@ class TwoDMap {
         this.imageLayer[floorData.floor_id] = L.imageOverlay(productionImg, boundSet['floorbounds']).addTo(this.map);
         (async () => {
             var response = await fetch(`./assets/${floorData.geojson}.json`);
-            var pois = await response.json();
-            this.setGeoJsonData(pois);
+            var areas = await response.json();
+            this.setGeoJsonData(areas);
 
 
             response = await fetch('./assets/categories1.json');
@@ -116,6 +118,10 @@ class TwoDMap {
             this.categories = categories;
 
             this._addCategoriesToolbar(categories);
+
+            response = await fetch('./assets/poi.json');
+            var poiLayer = await response.json();
+            this.poisLayer = L.geoJSON(poiLayer.map(poi => poi.location));
 
             this._addDialog();
 
@@ -386,6 +392,13 @@ class TwoDMap {
                 // this.marker[key] = undefined;
             }
         });
+
+
+        // if (this.layerGroup) {
+        //     this.layerGroup.eachLayer((layer) => {
+        //         this.map.removeLayer(layer);
+        //     });
+        // }
     }
 
 
@@ -571,23 +584,34 @@ class TwoDMap {
 
 
     addSearchControl() {
+        this.layerGroup = L.layerGroup([this.featuresLayer, this.poisLayer]);
         // console.log('this.featuresLayer', this.featuresLayer)
         this.searchControl = new L.Control.Search(this, {
-            layer: this.featuresLayer,
+            // layer: this.featuresLayer,
+            layer: this.layerGroup,
             propertyName: "name.0.text",
             collapsed: false,
             autoCollapse: false,
             position: 'topright',
-            marker: false,
+            marker: {
+                icon: true,
+                // animate: true,
+                circle: false
+            },
             position: 'topcenter',
             categories: this.categories,
             $: $,
             dialog: this.dialog,
             moveToLocation: function (latlng, title, map) {
                 //map.fitBounds( latlng.layer.getBounds() );
-                var zoom = map.getBoundsZoom(latlng.layer.getBounds());
-                map.setView(latlng, zoom); // access the zoom
-            }
+                // var zoom = map.getBoundsZoom(latlng.layer.getBounds());
+                // map.setView(latlng, zoom); // access the zoom
+                map.setView(latlng, 2); // access the zoom
+            },
+            buildTip: function(text, val) {
+                // console.log('val', val)
+                return `<li>${text}</li>`;
+            } 
         });
 
 
@@ -624,7 +648,7 @@ class TwoDMap {
             initOpen: false,
         }).addTo(this.map);
         // this.dialog.freeze();
-        this.dialog.hideClose();
+        // this.dialog.hideClose();
 
 
         if (L.Browser.mobile) {

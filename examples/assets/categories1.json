@@ -132,7 +132,7 @@
     {
         "color": "A3BE35",
         "description": "",
-        "icon": "restuarant",
+        "icon": "food",
         "id": "a0dda37c4bfd4b5dac0f85f4a34d3f37",
         "image": "",
         "name": "Restaurants",
@@ -162,7 +162,7 @@
     {
         "color": "EFAB35",
         "description": "",
-        "icon": "hide",
+        "icon": "eye-off",
         "id": "c7d278bb77d347bba924cd4c098e6a76",
         "image": "",
         "name": "Assets Hide",
@@ -182,7 +182,7 @@
     {
         "color": "79B473",
         "description": "Assets Grass ",
-        "icon": "icon_id",
+        "icon": "eye-off",
         "id": "00114bc88abe45bf91bac4c365fb02a8",
         "image": "",
         "name": "Assets Grass ",
@@ -192,7 +192,7 @@
     {
         "color": "E5E7E8",
         "description": "Assets Hallway",
-        "icon": "icon_id",
+        "icon": "eye-off",
         "id": "bea7cb628f1745dcbb8e6e4be5ebd251",
         "image": "",
         "name": "Assets Hallway",
@@ -202,7 +202,7 @@
     {
         "color": "93999F",
         "description": "Assets Parking",
-        "icon": "icon_id",
+        "icon": "alert-octagon",
         "id": "5c19302282c249d78d6fd97fb8fe0c71",
         "image": "",
         "name": "Assets Parking",
@@ -212,7 +212,7 @@
     {
         "color": "666666",
         "description": "Assets Road Access",
-        "icon": "icon_id",
+        "icon": "eye-off",
         "id": "11b927b263d94cf4bd40672c56716721",
         "image": "",
         "name": "Assets Road Access",
@@ -232,7 +232,7 @@
     {
         "color": "A9A9A900",
         "description": "Disabled Parking",
-        "icon": "disabled",
+        "icon": "alert-octagon",
         "id": "1a8d5baba6f041cd93d2953e0ae3ef87",
         "image": "",
         "name": "Disabled Parking",
@@ -242,7 +242,7 @@
     {
         "color": "A9A9A900",
         "description": "Entrances",
-        "icon": "entrance",
+        "icon": "home",
         "id": "7384647ad5d741f186449e10d80d2618",
         "image": "",
         "name": "Entrances",
@@ -282,7 +282,7 @@
     {
         "color": "a8a9af00",
         "description": "Rest Rooms",
-        "icon": "restroom",
+        "icon": "paper-roll",
         "id": "32c3c72b04e14a8b836b873867595f88",
         "image": "",
         "name": "Rest Rooms",

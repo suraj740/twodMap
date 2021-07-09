@@ -167,7 +167,7 @@
         setLayer: function (layer) {	//set search layer at runtime
             //this.options.layer = layer; //setting this, run only this._recordsFromLayer()
             this._layer = layer;
-            this._layer.addTo(this._map);
+            // this._layer.addTo(this._map); // to hide markers by default -- sg
             return this;
         },
 
@@ -451,6 +451,7 @@
                     .disableClickPropagation(tip)
                     .on(tip, 'click', L.DomEvent.stop, this)
                     .on(tip, 'click', function (e) {
+                        console.log('on tip click');
                         this._input.value = text;
                         this._handleAutoresize();
                         this._input.focus();
@@ -800,7 +801,7 @@
             if (this._layer) {
                 //TODO _recordsFromLayer must return array of objects, formatted from _formatData
                 this._recordsCache = this._recordsFromLayer();
-
+                console.log('_recordsCache', this._recordsCache);
                 records = this._filterData(this._input.value, this._recordsCache);
 
                 this.showTooltip(records);

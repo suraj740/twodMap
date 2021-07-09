@@ -271,8 +271,9 @@ div.scrollmenu li {
     /* margin: 0.5rem;
     border-radius: 50%; */
     border-right: 1px solid #fff;
-    width: 35px;
-    height: 35px;
+    /* width: 35px; */
+    min-width: 35px;
+    /* height: 35px; */
     cursor: pointer;
 }
 

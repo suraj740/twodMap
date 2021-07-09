@@ -1,0 +1,782 @@
+[
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "2efa4e78ce364cbdb184511439bc1fb1",
+        "identifier": "PEEB1F1002",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "543f38ca6f664748b985f211686d6b8f",
+        "identifier": "PEEB1F1003",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "2ef7d39f82674ed2bff3a2fa7a6cd040",
+        "identifier": "PEEB1F1004",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "79fbe20354e746cdad5a943b05a794ac",
+        "identifier": "PEEB1F1005",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "8824b722980d409f9551e25de57ddc50",
+        "identifier": "PAAB1F1001",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "312d2d8f43f04580a882131b2f8a576b",
+        "identifier": "PAAB1F1002",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "33b9490086fe4bc7b3cdb4e15cb4ab0b",
+        "identifier": "PAAB1F1003",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "3db0c6d119004c2496e1a57f54f8a609",
+        "identifier": "PAAB1F1004",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "cc3e55304e8041fe86b245abc1028939",
+        "identifier": "PAAB1F1005",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "465af9a745ce4b87b373c0b1a4bacb32",
+        "identifier": "PAAB1F1006",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "b1571e52865748558084bc0f14b76b6d",
+        "identifier": "PAAB1F1007",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "a9f0a4ec97b148a294c85db30625fc34",
+        "identifier": "PNNB1F1001",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "e3db709ba7ad47ec9e2383c4a2187712",
+        "identifier": "PNNB1F1002",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "81803bba10c94cc2851574b57716bd8c",
+        "identifier": "PCSB1F1001",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "956f9065b7084e12a0a750e47788c450",
+        "identifier": "PRRB1F1001",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "c15edffa1eae43b0a518b4499f9e6a05",
+        "identifier": "PRRB1F1002",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "5828f1bcb9d7422f9d30c04d1bce7006",
+        "identifier": "PRRB1F1003",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "ae66faa44d594f1e9c0213e3aae2d82d",
+        "identifier": "PDPB1F1002",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "f3c397412aed4dac8bd7ad4ef7df9072",
+        "identifier": "PDPB1F1001",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "7626ec98686b468fbde9a0b53c888a56",
+        "identifier": "PFFB1F1001",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "9ed93c12fd1e4b32aa304cd8f0e566b4",
+        "identifier": "PLLB1F1001",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "498a8dc247fc40449ff3f82b1aa3f210",
+        "identifier": "PLLB1F1002",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "a58ad0ed5c4c4aa699bba47698b34f4a",
+        "identifier": "PTNB1F1001",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "858feb6118514de48a80a81099fc8763",
+        "identifier": "PFFB1F1001_01",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "8ef8b579ec944cffbea0c946e89e5a06",
+        "identifier": "NPPARKINGLINESB1F1001",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "c8b5948030db40df81d7df984550db2f",
+        "identifier": "NPGRASSB1F1001",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "c30fb87aa9a643c980edeb7a816d1cd1",
+        "identifier": "NPPAVINGB1F1001",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "fd8fa776d88c4557b8ab26a6f9b53e4a",
+        "identifier": "NPPARKB1F1001",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "c84b5a9734a641a0a3b28cff3d758d65",
+        "identifier": "NPROADB1F1001",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    98,
+                    129
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    },
+    {
+        "building": "0dae3ab4c05b4e0794bb5f284e8df9e4",
+        "floor": "9c9e203b76a946d4aaad694264daaa6c",
+        "id": "eadd1e42199b4426809409fbda6a2831",
+        "identifier": "PFFB1F1001_1",
+        "location": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    98.5515,
+                    140.89045
+                ]
+            },
+            "properties": {
+                "name": [
+                    {
+                        "text": "Dinagat Islands",
+                        "language": "en_US"
+                    }
+                ]
+            }
+        },
+        "reference": null,
+        "status": "active"
+    }
+]
