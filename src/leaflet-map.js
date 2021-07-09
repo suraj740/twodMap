@@ -621,9 +621,15 @@ class TwoDMap {
         this.dialog = L.control.dialog({
             position: 'topcenter',
             anchor: [50],
-            initOpen: false
+            initOpen: false,
         }).addTo(this.map);
-        this.dialog.freeze();
+        // this.dialog.freeze();
+        this.dialog.hideClose();
+
+
+        if (L.Browser.mobile) {
+            this.dialog.setSize([250, 300]);
+        }
     }
 
     changeTheme(data) {
