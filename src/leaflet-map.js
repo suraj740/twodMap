@@ -593,13 +593,14 @@ class TwoDMap {
 
 
     _selectPois(id) {
-        console.log('pois', id);
-        console.log('poisLayer', this.poisData)
+        // console.log('pois', id);
+        // console.log('poisLayer', this.poisData)
         this._clearMarkers();
+        let currenrFloorId = this.currentFloorDetail.floor_id;
         // var boundSet = this._getMapBounds(this.currentFloorDetail.map_info);
         // // console.log('this.data', this.data);
-        var data = this.poisData.filter(poi => poi.reference ?  poi.reference === id : false);
-        console.log('filtered poi data', data);
+        var data = this.poisData.filter(poi => poi.floor === currenrFloorId).filter(poi => poi.reference ?  poi.reference === id : false);
+        // console.log('filtered poi data', data);
 
         var myIcon = L.icon({
             iconUrl: './parking.png',
