@@ -172,7 +172,7 @@ L.Control.Toolbar = L.Control.extend({
             .on(list, 'click', L.DomEvent.stopPropagation)
             .on(list, 'dblclick', L.DomEvent.stopPropagation)
             .on(list, 'wheel', L.DomEvent.stopPropagation)
-            .on(list, 'click', self._selectItem, self);
+            .on(list, 'click', self._selectPois, self);
         });
         L.DomEvent
         .on(self.toolbarContainer, 'click', L.DomEvent.stopPropagation)
@@ -464,6 +464,27 @@ L.Control.Toolbar = L.Control.extend({
         else {
             L.DomUtil.removeClass(e.currentTarget, 'control-enabled');
             self._twodMap._selectCategory(null);
+        }
+    },
+
+    _selectPois: function (e) {
+        var self = this;
+        let id = e.currentTarget.getAttribute('id');
+
+        if (!self.previousElement) {
+            self.previousElement = e.currentTarget; 
+        }
+        if (!L.DomUtil.hasClass(e.currentTarget, 'control-enabled')) {
+            L.DomUtil.addClass(e.currentTarget, 'control-enabled');
+            if (self.previousElement && self.previousElement !== e.currentTarget) {
+                L.DomUtil.removeClass(self.previousElement, 'control-enabled');
+                self.previousElement = e.currentTarget;
+            }
+            self._twodMap._selectPois(id);
+        }
+        else {
+            L.DomUtil.removeClass(e.currentTarget, 'control-enabled');
+            self._twodMap._selectPois(null);
         }
     },
     _createTreeMenu: function (building) {

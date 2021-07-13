@@ -120,8 +120,8 @@ class TwoDMap {
             this._addCategoriesToolbar(categories);
 
             response = await fetch('./assets/poi.json');
-            var poiLayer = await response.json();
-            this.poisLayer = L.geoJSON(poiLayer.map(poi => poi.location));
+            this.poisData = await response.json();
+            this.poisLayer = L.geoJSON(this.poisData.map(poi => poi.location));
 
             this._addDialog();
 
@@ -417,6 +417,15 @@ class TwoDMap {
         });
     }
 
+    _clearMarkers() {
+        Object.keys(this.marker).map((key) => {
+            if (this.marker[key]) {
+                this.map.removeLayer(this.marker[key]);
+                // this.marker[key] = undefined;
+            }
+        });
+    }
+
     _selectMultiplePlaces(idList) {
         this._clearPreviousLayers();
         var mask = [];
@@ -581,6 +590,36 @@ class TwoDMap {
             'imagebounds': [[0, 0], [map_info.scale_y, map_info.scale_x]],
         };
     };
+
+
+    _selectPois(id) {
+        console.log('pois', id);
+        console.log('poisLayer', this.poisData)
+        this._clearMarkers();
+        // var boundSet = this._getMapBounds(this.currentFloorDetail.map_info);
+        // // console.log('this.data', this.data);
+        var data = this.poisData.filter(poi => poi.reference ?  poi.reference === id : false);
+        console.log('filtered poi data', data);
+
+        var myIcon = L.icon({
+            iconUrl: './parking.png',
+            iconSize: [28, 28],
+            // iconAnchor: [10, 44],
+            popupAnchor: [5, -10],
+            // shadowUrl: './pngegg.png',
+            // shadowSize: [28, 65],
+            // shadowAnchor: [22, 64]
+        });
+        data.map((item, key) => {
+            this.marker[key] = L.marker([item.location.geometry.coordinates[1], item.location.geometry.coordinates[0]], {
+                icon: myIcon, bounceOnAdd: true,
+                bounceOnAddOptions: { duration: 500, height: 150, loop: 1 },
+                bounceOnAddCallback: function () { console.log("done"); }
+            })
+                .addTo(this.map)
+                .bindPopup(this._getTranslatedText(item.location.properties.name, 'en_US'), { className: 'popup-marker', closeOnClick: false, closeButton: false, autoClose: false }).openPopup([item.location.geometry.coordinates[0], item.location.geometry.coordinates[1]]);
+        });
+    } 
 
 
     addSearchControl() {

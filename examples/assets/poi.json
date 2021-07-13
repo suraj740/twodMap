@@ -9,20 +9,20 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    0,
-                    0
+                    98.5515,
+                    140.89045
                 ]
             },
             "properties": {
                 "name": [
                     {
-                        "text": "Dinagat Islands",
+                        "text": "Parking 1",
                         "language": "en_US"
                     }
                 ]
             }
         },
-        "reference": null,
+        "reference": "aa0330c6a8d847bf82940eeb50b7a883",
         "status": "active"
     },
     {
@@ -35,20 +35,20 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    0,
-                    0
+                    43.25,
+                    132
                 ]
             },
             "properties": {
                 "name": [
                     {
-                        "text": "Dinagat Islands",
+                        "text": "Parking 2",
                         "language": "en_US"
                     }
                 ]
             }
         },
-        "reference": null,
+        "reference": "aa0330c6a8d847bf82940eeb50b7a883",
         "status": "active"
     },
     {
@@ -61,20 +61,20 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    0,
-                    0
+                    43,
+                    84.5
                 ]
             },
             "properties": {
                 "name": [
                     {
-                        "text": "Dinagat Islands",
+                        "text": "Parking 3",
                         "language": "en_US"
                     }
                 ]
             }
         },
-        "reference": null,
+        "reference": "aa0330c6a8d847bf82940eeb50b7a883",
         "status": "active"
     },
     {
@@ -94,7 +94,7 @@
             "properties": {
                 "name": [
                     {
-                        "text": "Dinagat Islands",
+                        "text": "Parking 3",
                         "language": "en_US"
                     }
                 ]
