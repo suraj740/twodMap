@@ -55,12 +55,29 @@ body,
 }
 .popup-marker .leaflet-popup-content {
     margin: 0px 10px;
+    text-align: center;
+    position: relative;
 }
+
+
+.popup-marker .leaflet-popup-content::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 17px;
+    margin-left: -5px;
+    border: 9px solid #0000;
+    border-top-color: #545f66;
+}
+
+
 .popup-marker > .leaflet-popup-content-wrapper {
     background: #0000007a;
     color: #fff;
     padding: -5px;
 }
+
+
 
 .mdi {
     /* position: relative;

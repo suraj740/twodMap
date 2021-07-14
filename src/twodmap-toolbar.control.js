@@ -165,7 +165,18 @@ L.Control.Toolbar = L.Control.extend({
             let listContent = L.DomUtil.create('div', '', list);
             listContent.style.display = 'flex';
             listContent.style.flexDirection = 'column';
-            L.DomUtil.create('i', 'mdi mdi-' + category.icon + ' mdi-24px' , listContent);
+            listContent.style.alignItems = 'center';
+            // L.DomUtil.create('i', 'mdi mdi-' + category.icon + ' mdi-24px' , listContent);
+            if (category.image) {
+                let img = L.DomUtil.create('img', '', listContent);
+                img.setAttribute('src', `./${category.image}.png`);
+                img.setAttribute('height', '25');
+                img.setAttribute('width', '25');
+            }
+            else {
+                L.DomUtil.create('i', 'mdi mdi-' + category.icon + ' mdi-24px' , listContent);
+            }
+            
             // let title = L.DomUtil.create('span', '', listContent);
             // title.innerHTML = category.name.substring(0, 1);
             L.DomEvent

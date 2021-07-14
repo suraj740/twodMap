@@ -224,7 +224,7 @@
         "description": "ATMs",
         "icon": "atm",
         "id": "97aeae8a81974480b240f36f0a756833",
-        "image": "",
+        "image": "atm",
         "name": "ATMs",
         "parent": "1722532bfca54366bdfcc0278c064877",
         "type": "sub"
@@ -254,7 +254,8 @@
         "description": "Escalator",
         "icon": "escalator",
         "id": "ac31159c2c48415686de7d3e70513aa0",
-        "image": "",
+
+        "image": "escalator",
         "name": "Escalator",
         "parent": "1722532bfca54366bdfcc0278c064877",
         "type": "sub"
@@ -264,7 +265,7 @@
         "description": "Lifts",
         "icon": "elevator",
         "id": "593f9a8cf0c7442599013dd7cbf17dc6",
-        "image": "",
+        "image": "lift-sign",
         "name": "Lifts",
         "parent": "1722532bfca54366bdfcc0278c064877",
         "type": "sub"
@@ -274,7 +275,7 @@
         "description": "Parking",
         "icon": "parking",
         "id": "aa0330c6a8d847bf82940eeb50b7a883",
-        "image": "",
+        "image": "parking",
         "name": "Parking",
         "parent": "1722532bfca54366bdfcc0278c064877",
         "type": "sub"
@@ -284,7 +285,7 @@
         "description": "Rest Rooms",
         "icon": "paper-roll",
         "id": "32c3c72b04e14a8b836b873867595f88",
-        "image": "",
+        "image": "toilet",
         "name": "Rest Rooms",
         "parent": "1722532bfca54366bdfcc0278c064877",
         "type": "sub"
@@ -314,7 +315,7 @@
         "description": "Stairs",
         "icon": "stairs",
         "id": "68bef86a3cdb40b995dce097c002cec7",
-        "image": "",
+        "image": "stairs",
         "name": "Stairs",
         "parent": "1722532bfca54366bdfcc0278c064877",
         "type": "sub"

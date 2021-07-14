@@ -595,6 +595,7 @@ class TwoDMap {
     _selectPois(id) {
         // console.log('pois', id);
         // console.log('poisLayer', this.poisData)
+        let selectedCategory = this.categories.find(cat => cat.id === id);
         this._clearMarkers();
         let currenrFloorId = this.currentFloorDetail.floor_id;
         // var boundSet = this._getMapBounds(this.currentFloorDetail.map_info);
@@ -603,10 +604,11 @@ class TwoDMap {
         // console.log('filtered poi data', data);
 
         var myIcon = L.icon({
-            iconUrl: './parking.png',
+            // iconUrl: './parking.png',
+            iconUrl: `${selectedCategory.image}.png`,
             iconSize: [28, 28],
             // iconAnchor: [10, 44],
-            popupAnchor: [5, -10],
+            popupAnchor: [2, -10],
             // shadowUrl: './pngegg.png',
             // shadowSize: [28, 65],
             // shadowAnchor: [22, 64]

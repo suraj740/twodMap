@@ -274,6 +274,7 @@ div.scrollmenu li {
     /* width: 35px; */
     min-width: 35px;
     /* height: 35px; */
+    min-height: 34px;
     cursor: pointer;
 }
 
