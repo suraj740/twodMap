@@ -2,7 +2,7 @@
 // var newLeaflet = new leafletModule();
 // console.log('test');
 // newLeaflet.initMap();
-console.log('laeflert', Lf);
+// console.log('laeflert', Lf);
 // Lf.leafletModule.initMap();
 var twod = new Lf.TwoDMap();
 var options = {
@@ -46,7 +46,7 @@ twod.changeTheme(
     //floor -data
     response = await fetch('./assets/venues.json');
     var venue = await response.json();
-    console.log('venue', venue);
+    // console.log('venue', venue);
     twod._getFloorInformation(venue);
     // twod._selectPlaces("01f0930a08fc4996baa4ca1d5cbef56e")
 
@@ -126,26 +126,3 @@ twod.changeTheme(
 //             })
 //         });
 //     });
-    
-
-
-function _getMapBounds(map_info) {
-    // Format follows [y-coordinate, x-coordinate]
-
-    map_info.scale_y = parseFloat(map_info.scale_y, 10);
-    map_info.scale_x = parseFloat(map_info.scale_x, 10);
-    var bottomLeft = [0, 0], topRight = [map_info.scale_y, map_info.scale_x];
-
-    if (map_info.orig_x) {
-        bottomLeft[1] = -map_info.orig_x
-    }
-
-    if (map_info.orig_y) {
-        bottomLeft[0] = -map_info.orig_y
-    }
-
-    return {
-        'floorbounds': [bottomLeft, topRight],
-        'imagebounds': [[0, 0], [map_info.scale_y, map_info.scale_x]],
-    };
-};

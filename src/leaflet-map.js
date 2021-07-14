@@ -11,6 +11,7 @@ require('./twodmap.search.control.js');
 require('./twodmap.sidebar.js');
 require('./boundarycanvas.js');
 require('./twodmap.dialog.js');
+require('./twodmap.loader.js');
 var $ = require('jquery');
 var turf = require('@turf/turf');
 var jstree = require('jstree');
@@ -43,6 +44,8 @@ class TwoDMap {
         if (!L.Browser.mobile) {
             L.control.mousePosition({ position: 'bottomright', lngFirst: true }).addTo(this.map)
         }
+
+        this.controlLoader = L.control.loader().addTo(this.map);
     }
 
     _createLayer(layerName, options, parent, layerType) {
@@ -108,6 +111,7 @@ class TwoDMap {
 
         this.imageLayer[floorData.floor_id] = L.imageOverlay(productionImg, boundSet['floorbounds']).addTo(this.map);
         (async () => {
+            this.controlLoader.show();
             var response = await fetch(`./assets/${floorData.geojson}.json`);
             var areas = await response.json();
             this.setGeoJsonData(areas);
@@ -126,6 +130,8 @@ class TwoDMap {
             this._addDialog();
 
             this.addSearchControl();
+
+            this.controlLoader.hide();
         })();
     }
 
