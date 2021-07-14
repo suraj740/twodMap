@@ -577,11 +577,11 @@ class TwoDMap {
         map_info.scale_x = parseFloat(map_info.scale_x, 10);
         var bottomLeft = [0, 0], topRight = [map_info.scale_y, map_info.scale_x];
 
-        if (map_info.orig_x) {
+        if (map_info.hasOwnProperty('orig_x')) {
             bottomLeft[1] = -map_info.orig_x
         }
 
-        if (map_info.orig_y) {
+        if (map_info.hasOwnProperty('orig_y')) {
             bottomLeft[0] = -map_info.orig_y
         }
 

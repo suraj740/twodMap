@@ -15,8 +15,8 @@ var options = {
     // zoomOffset: -1,
     maxZoom: 5,
     // projection: L.Projection.LonLat,
-    minZoom: 2,
-    // zoom: 0,
+    // minZoom: 2,
+    // zoom: 2,
     // rotate: true,
     // maxBounds: [[0, 0], [310.535, 677.664]],
     projection: L.Projection.LonLat,
@@ -149,57 +149,3 @@ function _getMapBounds(map_info) {
         'imagebounds': [[0, 0], [map_info.scale_y, map_info.scale_x]],
     };
 };
-
-var mapInfo = {
-    "origin": "123.0,322",
-    "floor_offset": {
-        "production": [
-            [
-                -12.34,
-                -12.43
-            ],
-            [
-                43,
-                50
-            ]
-        ]
-    },
-    "name": [
-        {
-            "text": "Ground Level",
-            "language": "en_US"
-        }
-    ],
-    "title": [
-        {
-            "text": "Ground Level",
-            "language": "en_US"
-        }
-    ],
-    "file_type": "png",
-    "use_scope": "INTERNAL",
-    "coordinate_system": "WGS84",
-    "ref_geo2": "10.0,10.0",
-    "ref_geo1": "10.0,10.0",
-    "image_id": {
-        "production": "85693da63af7456f83296cdcffe9a037",
-        "dev": "85693da63af7456f83296cdcffe9a037",
-        "calibration": "85693da63af7456f83296cdcffe9a037"
-    },
-    "url": [
-        {
-            "text": "Ground Level",
-            "language": "en_US"
-        }
-    ],
-    "scale_x": "677.664",
-    "scale_y": "310.535",
-    "dim_x": 677.664,
-    "dim_y": 310.535,
-    "orig_x": 0.0,
-    "orig_y": 0.0,
-    "map_type": "vg_3d"
-}
-
-var boundSet = self._getMapBounds(mapInfo);
-console.log('boundSet', boundSet);
