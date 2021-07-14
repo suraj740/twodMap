@@ -962,6 +962,7 @@
         },
 
         initialize: function (latlng, options) {
+            
             L.setOptions(this, options);
 
             if (options.icon === true)
@@ -974,6 +975,10 @@
         },
 
         onAdd: function (map) {
+            if (this._markerSearch) {
+                map.removeLayer(this._markerSearch);
+            }
+
             L.Marker.prototype.onAdd.call(this, map);
             if (this._circleLoc) {
                 map.addLayer(this._circleLoc);
