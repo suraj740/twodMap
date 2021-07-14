@@ -165,7 +165,7 @@ L.Control.Toolbar = L.Control.extend({
             let listContent = L.DomUtil.create('div', '', list);
             listContent.style.display = 'flex';
             listContent.style.flexDirection = 'column';
-            listContent.style.alignItems = 'center';
+            // listContent.style.alignItem = 'center';
             // L.DomUtil.create('i', 'mdi mdi-' + category.icon + ' mdi-24px' , listContent);
             if (category.image) {
                 let img = L.DomUtil.create('img', '', listContent);

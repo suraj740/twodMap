@@ -251,6 +251,7 @@
 /* horizontal scroll bar */
 
 div.scrollmenu {
+    display: flex;
     background-color: #a9b39f;
     overflow: auto;
     white-space: nowrap;
@@ -262,7 +263,10 @@ div.scrollmenu {
 }
 
 div.scrollmenu li {
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     text-align: center;
     padding: 8px;
