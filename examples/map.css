@@ -198,3 +198,16 @@ body,
 	background: url('images/leaflet-loader.gif') center center no-repeat rgba(255,255,255,0.8);
     z-index: 999;
 }
+
+.marker-color {
+    filter: opacity(0.16) drop-shadow(0 0 0 #ddd);
+}
+
+.selected-marker-color {
+    /* background-color: rgb(236, 190, 38); */
+    /* background-color: #fff; */
+    /* filter: opacity(.5) drop-shadow(0 0 0 #3cb6b5); */
+    filter: opacity(.5) drop-shadow(0 0 0 #3cb6b5) saturate(1000%);
+    /* filter: opacity(.5) drop-shadow(0 0 0 #3cb6b5) drop-shadow(0 0 0 #3cb6b5) drop-shadow(0 0 0 #3cb6b5) drop-shadow(0 0 0 #3cb6b5) drop-shadow(0 0 0 #3cb6b5) drop-shadow(0 0 0 #3cb6b5); repeat drop-shadow 2-3 times to make it stronger  */
+    
+}

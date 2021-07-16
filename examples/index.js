@@ -21,7 +21,8 @@ var options = {
     // maxBounds: [[0, 0], [310.535, 677.664]],
     projection: L.Projection.LonLat,
     // center: L.latLng(123.0,322),
-    center: [0, 0],
+    center: L.latLng(-10, 0),
+    // center: [0, 0],
     // zoomSnap: 0.25,
     zoomControlPosition: "bottomright",
     // center: L.latLng(37.8, -96)

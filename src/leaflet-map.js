@@ -12,6 +12,7 @@ require('./twodmap.sidebar.js');
 require('./boundarycanvas.js');
 require('./twodmap.dialog.js');
 require('./twodmap.loader.js');
+require('./twodmap-custom-icon.js');
 var $ = require('jquery');
 var turf = require('@turf/turf');
 var jstree = require('jstree');
@@ -24,7 +25,7 @@ class TwoDMap {
         this.currentFloorDetail = {};
         this.categories = [];
         this.$ = $;
-        console.log('jstree', jstree);
+        // console.log('jstree', jstree);
     }
     initMap(mapId, options) {
         this.map = L.map(mapId, options);
@@ -130,7 +131,9 @@ class TwoDMap {
             this._addDialog();
 
             this.addSearchControl();
-
+            this._selectPois('68bef86a3cdb40b995dce097c002cec7', true); // show stairs pois by default
+            this._selectPois('593f9a8cf0c7442599013dd7cbf17dc6', true); // show elevator pois by default
+            this._selectPois('ac31159c2c48415686de7d3e70513aa0', true); // show escalator pois by default
             this.controlLoader.hide();
         })();
     }
@@ -598,11 +601,14 @@ class TwoDMap {
     };
 
 
-    _selectPois(id) {
+    _selectPois(id, hidePopup) {
+
+        if (!hidePopup) {
+            this._clearMarkers();
+        }
         // console.log('pois', id);
         // console.log('poisLayer', this.poisData)
         let selectedCategory = this.categories.find(cat => cat.id === id);
-        this._clearMarkers();
         let currenrFloorId = this.currentFloorDetail.floor_id;
         // var boundSet = this._getMapBounds(this.currentFloorDetail.map_info);
         // // console.log('this.data', this.data);
@@ -612,21 +618,26 @@ class TwoDMap {
         var myIcon = L.icon({
             // iconUrl: './parking.png',
             iconUrl: `${selectedCategory.image}.png`,
-            iconSize: [28, 28],
+            iconSize: [25, 25],
             // iconAnchor: [10, 44],
             popupAnchor: [2, -10],
             // shadowUrl: './pngegg.png',
             // shadowSize: [28, 65],
             // shadowAnchor: [22, 64]
+            className: !hidePopup ? 'selected-marker-color' : 'marker-color'
         });
+
         data.map((item, key) => {
             this.marker[key] = L.marker([item.location.geometry.coordinates[1], item.location.geometry.coordinates[0]], {
                 icon: myIcon, bounceOnAdd: true,
                 bounceOnAddOptions: { duration: 500, height: 150, loop: 1 },
                 bounceOnAddCallback: function () { console.log("done"); }
             })
-                .addTo(this.map)
-                .bindPopup(this._getTranslatedText(item.location.properties.name, 'en_US'), { className: 'popup-marker', closeOnClick: false, closeButton: false, autoClose: false }).openPopup([item.location.geometry.coordinates[0], item.location.geometry.coordinates[1]]);
+                .addTo(this.map);
+
+                if (!hidePopup) {
+                    this.marker[key].bindPopup(this._getTranslatedText(item.location.properties.name, 'en_US'), { className: 'popup-marker', closeOnClick: false, closeButton: false, autoClose: false }).openPopup([item.location.geometry.coordinates[0], item.location.geometry.coordinates[1]]);
+                }
         });
     } 
 
