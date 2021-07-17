@@ -190,17 +190,36 @@ class TwoDMap {
         }
 
         const zoomToFeature = e => {
+            geojson.resetStyle(this.previousLayer);
             var layer = e.target;
-
+            console.log('layer', layer);
+            this.previousLayer = layer;
+            if(this.selectedMarker) {
+                this.map.removeLayer(this.selectedMarker);
+            }
             if (layer.feature.geometry.type === "Polygon") {
                 // L.marker(center, {icon: smallIcon}).addTo(this.map);
                 var bounds = layer.getBounds();
                 // Get center of bounds
                 var center = bounds.getCenter();
+                var myIcon = L.icon({
+                    iconUrl: './marker.png',
+                    iconSize: [28, 45],
+                    iconAnchor: [14, 45],
+                    // popupAnchor: [0, -50],
+                });
                 // Use center to put marker on map
-                var marker = L.marker(center).addTo(this.map);
+                this.selectedMarker = L.marker(center, {icon: myIcon}).addTo(this.map)
+                // .bindPopup(this._getTranslatedText(layer.feature.properties.name, 'en_US'), { className: 'popup-marker', closeOnClick: false, closeButton: false, autoClose: false })
+                // .openPopup(center);
+                layer.setStyle({
+                    fillColor: '#3cb6b5',
+                    weight: 1,
+                    opacity: 1,
+                    fillOpacity: 1,
+                });
             }
-            this.map.fitBounds(e.target.getBounds());
+            // this.map.fitBounds(e.target.getBounds()); // to zoom geojson
         }
         let ploygonArea = {}
         const onEachFeature = (feature, layer) => {
@@ -234,8 +253,8 @@ class TwoDMap {
             // });
 
             layer.on({
-                mouseover: highlightFeature,
-                mouseout: resetHighlight,
+                // mouseover: highlightFeature,
+                // mouseout: resetHighlight,
                 click: zoomToFeature,
             });
             // layer._leaflet_id = feature.properties.pid;
@@ -505,6 +524,7 @@ class TwoDMap {
         this._clearMaskMarkerLayer();
         var boundSet = this._getMapBounds(this.currentFloorDetail.map_info);
         // console.log('this.data', this.data);
+        // console.log('this.fetauresLayer', this.featuresLayer);
         var data = this.data.filter(item => item.properties.category_ids ? item.properties.category_ids.includes(id) : false);
         var mask = [];
         var centers = [];
