@@ -522,7 +522,9 @@ class TwoDMap {
     _selectCategory(id) {
         // this._clearPreviousLayers();
         this._clearMaskMarkerLayer();
-        this.map.removeLayer(this.selectedMarker);
+        if (this.selectedMarker) {
+            this.map.removeLayer(this.selectedMarker);
+        }
         var boundSet = this._getMapBounds(this.currentFloorDetail.map_info);
         // console.log('this.data', this.data);
         // console.log('this.fetauresLayer', this.featuresLayer);
