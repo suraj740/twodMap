@@ -192,7 +192,7 @@ class TwoDMap {
         const zoomToFeature = e => {
             geojson.resetStyle(this.previousLayer);
             var layer = e.target;
-            console.log('layer', layer);
+            // console.log('layer', layer);
             this.previousLayer = layer;
             if(this.selectedMarker) {
                 this.map.removeLayer(this.selectedMarker);
@@ -522,12 +522,24 @@ class TwoDMap {
     _selectCategory(id) {
         // this._clearPreviousLayers();
         this._clearMaskMarkerLayer();
+        this.map.removeLayer(this.selectedMarker);
         var boundSet = this._getMapBounds(this.currentFloorDetail.map_info);
         // console.log('this.data', this.data);
         // console.log('this.fetauresLayer', this.featuresLayer);
-        var data = this.data.filter(item => item.properties.category_ids ? item.properties.category_ids.includes(id) : false);
+        this.featuresLayer.resetStyle();
+        // var data = this.data.filter(item => item.properties.category_ids ? item.properties.category_ids.includes(id) : false);
+        var data = []
+        this.featuresLayer.eachLayer(layer => {
+            if (layer.feature.properties.category_ids) {
+                if (layer.feature.properties.category_ids.includes(id)) {
+                    data.push(layer);
+                    layer.setStyle({fillColor: '#3cb6b5', fillOpacity: 1})
+                }
+            }
+        });
         var mask = [];
         var centers = [];
+        // console.log('data', data);
         if (data.length) {
             data.map((id) => {
                 // if (data.geometry.type === 'Polygon') {
@@ -536,11 +548,11 @@ class TwoDMap {
             });
             data.map((item, key) => {
                 
-                if (item.geometry.type === 'Polygon') {
-                    var latLngs = item.geometry.coordinates[0];
+                if (item.feature.geometry.type === 'Polygon') {
+                    var latLngs = item.feature.geometry.coordinates[0];
                     // var latLngs = area.area.polygon.coordinates[0];
                     centers.push(
-                        turf.centerOfMass(item).geometry.coordinates
+                        turf.centerOfMass(item.feature).geometry.coordinates
                     );
                     // console.log('latLngs', latLngs, key, mask.length);
                     latLngs.map((latlng) => {
@@ -586,7 +598,7 @@ class TwoDMap {
                     bounceOnAddCallback: function () { console.log("done"); }
                 })
                     .addTo(this.map)
-                    .bindPopup(item.properties.name[0].text, { className: 'popup-marker', closeOnClick: false, closeButton: false, autoClose: false }).openPopup([centers[key][1], centers[key][0]]);
+                    .bindPopup(item.feature.properties.name[0].text, { className: 'popup-marker', closeOnClick: false, closeButton: false, autoClose: false }).openPopup([centers[key][1], centers[key][0]]);
             });
         }
     }
