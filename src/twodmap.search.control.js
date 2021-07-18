@@ -305,21 +305,42 @@
                     let id = self.options.$('#categories-list').find('option:selected').attr('id');
                     self.options.dialog.open();
                     // console.log(value, id);
-                    let childList = list.filter(c => c.parent === id);
-                    // console.log('childList' , childList)
-                    var childContainer = L.DomUtil.create('ul', 'category-child');
-                    if (childList.length > 0) {
-                        childList.map(c => {
-                            let li = L.DomUtil.create('li', '', childContainer);
-                            li.innerHTML = c.name;
-                            li.setAttribute('id', c.id);
-                            li.style.cursor = 'pointer';
+                    var childContainer;
+                    if (value === 'Services') {
+                        let childList = list.filter(c => c.parent === id);
+                        // console.log('childList' , childList)
+                        childContainer = L.DomUtil.create('ul', 'category-child');
+                        if (childList.length > 0) {
+                            childList.map(c => {
+                                let li = L.DomUtil.create('li', '', childContainer);
+                                li.innerHTML = c.name;
+                                li.setAttribute('id', c.id);
+                                li.style.cursor = 'pointer';
 
-                            L.DomEvent.on(li, 'click', self._selectCategory, self);
-                        })
+                                L.DomEvent.on(li, 'click', self._selectPois, self);
+                            })
+                        }
+                        else {
+                            childContainer.innerHTML = 'No Sub Categories Found!!'
+                        }
                     }
                     else {
-                        childContainer.innerHTML = 'No Sub Categories Found!!'
+                        let childList = list.filter(c => c.parent === id);
+                        // console.log('childList' , childList)
+                        childContainer = L.DomUtil.create('ul', 'category-child');
+                        if (childList.length > 0) {
+                            childList.map(c => {
+                                let li = L.DomUtil.create('li', '', childContainer);
+                                li.innerHTML = c.name;
+                                li.setAttribute('id', c.id);
+                                li.style.cursor = 'pointer';
+
+                                L.DomEvent.on(li, 'click', self._selectCategory, self);
+                            })
+                        }
+                        else {
+                            childContainer.innerHTML = 'No Sub Categories Found!!'
+                        }
                     }
                     self.options.dialog.setContent(childContainer);
                 }, this)
@@ -390,8 +411,19 @@
 
         _selectCategory: function (e) {
             var self = this;
+            self._shuffleLayer(e, '_selectCategory');
+            self.options.dialog.close();
+        },
+
+        _selectPois: function (e) {
+            var self = this;
+            self._shuffleLayer(e, '_selectPois');
+            self.options.dialog.close();
+        },
+
+        _shuffleLayer: function (e, customSelect) {
+            var self = this;
             let id = e.currentTarget.getAttribute('id');
-    
             if (!self.previousElement) {
                 self.previousElement = e.currentTarget; 
             }
@@ -401,13 +433,12 @@
                     L.DomUtil.removeClass(self.previousElement, 'control-enabled');
                     self.previousElement = e.currentTarget;
                 }
-                self._twodMap._selectCategory(id);
+                self._twodMap[customSelect](id);
             }
             else {
                 L.DomUtil.removeClass(e.currentTarget, 'control-enabled');
-                self._twodMap._selectCategory(null);
+                self._twodMap[customSelect](null);
             }
-            self.options.dialog.close();
         },
 
         _createTooltip: function (className) {
