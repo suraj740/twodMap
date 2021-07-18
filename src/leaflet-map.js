@@ -24,6 +24,7 @@ class TwoDMap {
         this.marker = {};
         this.currentFloorDetail = {};
         this.categories = [];
+        this.marker['staticPoi'] = {};
         this.$ = $;
         // console.log('jstree', jstree);
     }
@@ -190,6 +191,10 @@ class TwoDMap {
         }
 
         const zoomToFeature = e => {
+            this._clearMarkers(); // clear all markers
+            if (this.selectedPoi) {
+                L.DomUtil.removeClass($('#' + this.selectedPoi)[0], 'control-enabled') // to remove selected control once geojson layer is selected
+            }
             geojson.resetStyle(this.previousLayer);
             var layer = e.target;
             // console.log('layer', layer);
@@ -415,9 +420,17 @@ class TwoDMap {
             }
         });
         Object.keys(this.marker).map((key) => {
-            if (this.marker[key]) {
+            if (this.marker[key] && key !== 'staticPoi') {
                 this.map.removeLayer(this.marker[key]);
                 // this.marker[key] = undefined;
+            }
+            if (key === 'staticPoi') { // to remove static pois on floor change
+                Object.keys(this.marker[key]).map((key1) => {
+                    if (this.marker[key][key1]) {
+                        this.map.removeLayer(this.marker[key][key1]);
+                        // this.marker[key] = undefined;
+                    }
+                });
             }
         });
 
@@ -446,8 +459,9 @@ class TwoDMap {
     }
 
     _clearMarkers() {
+        // console.log('marker', this.marker);
         Object.keys(this.marker).map((key) => {
-            if (this.marker[key]) {
+            if (this.marker[key] && key !== 'staticPoi') {
                 this.map.removeLayer(this.marker[key]);
                 // this.marker[key] = undefined;
             }
@@ -635,10 +649,15 @@ class TwoDMap {
     };
 
 
-    _selectPois(id, hidePopup) {
-
-        if (!hidePopup) {
+    _selectPois(id, staticPoi) {
+        this.selectedPoi = id;
+        if (!staticPoi) {
             this._clearMarkers();
+        }
+
+        if (this.selectedMarker) {
+            this.map.removeLayer(this.selectedMarker);
+            this.featuresLayer.resetStyle();
         }
         // console.log('pois', id);
         // console.log('poisLayer', this.poisData)
@@ -648,31 +667,65 @@ class TwoDMap {
         // // console.log('this.data', this.data);
         var data = this.poisData.filter(poi => poi.floor === currenrFloorId).filter(poi => poi.reference ?  poi.reference === id : false);
         // console.log('filtered poi data', data);
-
-        var myIcon = L.icon({
-            // iconUrl: './parking.png',
-            iconUrl: `${selectedCategory.image}.png`,
-            iconSize: [25, 25],
-            // iconAnchor: [10, 44],
-            popupAnchor: [2, -10],
-            // shadowUrl: './pngegg.png',
-            // shadowSize: [28, 65],
-            // shadowAnchor: [22, 64]
-            className: !hidePopup ? 'selected-marker-color' : 'marker-color'
-        });
-
-        data.map((item, key) => {
-            this.marker[key] = L.marker([item.location.geometry.coordinates[1], item.location.geometry.coordinates[0]], {
-                icon: myIcon, bounceOnAdd: true,
-                bounceOnAddOptions: { duration: 500, height: 150, loop: 1 },
-                bounceOnAddCallback: function () { console.log("done"); }
-            })
-                .addTo(this.map);
-
-                if (!hidePopup) {
-                    this.marker[key].bindPopup(this._getTranslatedText(item.location.properties.name, 'en_US'), { className: 'popup-marker', closeOnClick: false, closeButton: false, autoClose: false }).openPopup([item.location.geometry.coordinates[0], item.location.geometry.coordinates[1]]);
+        if (data.length) {
+            var myIcon = L.icon({
+                // iconUrl: './parking.png',
+                iconUrl: `${selectedCategory.image}.png`,
+                iconSize: [25, 25],
+                // iconAnchor: [10, 44],
+                popupAnchor: [2, -10],
+                // shadowUrl: './pngegg.png',
+                // shadowSize: [28, 65],
+                // shadowAnchor: [22, 64]
+                className: !staticPoi ? 'selected-marker-color' : 'marker-color'
+            });
+    
+            data.map((item, key) => {
+                if (staticPoi) {
+                    this.marker['staticPoi'][item.id] = L.marker([item.location.geometry.coordinates[1], item.location.geometry.coordinates[0]], {
+                        icon: myIcon, bounceOnAdd: true,
+                        bounceOnAddOptions: { duration: 500, height: 150, loop: 1 },
+                        bounceOnAddCallback: function () { console.log("done"); }
+                    }).addTo(this.map);
                 }
-        });
+                else {
+                    this.marker[item.id] = L.marker([item.location.geometry.coordinates[1], item.location.geometry.coordinates[0]], {
+                        icon: myIcon, bounceOnAdd: true,
+                        bounceOnAddOptions: { duration: 500, height: 150, loop: 1 },
+                        bounceOnAddCallback: function () { console.log("done"); }
+                    })
+                    .addTo(this.map);
+    
+                    this.marker[item.id].bindPopup(this._getTranslatedText(item.location.properties.name, 'en_US'), { className: 'popup-marker', closeOnClick: false, closeButton: false, autoClose: false }).openPopup([item.location.geometry.coordinates[0], item.location.geometry.coordinates[1]]);
+                }
+                    
+                    // else {
+                    //     this.marker[key].bindPopup(this._getTranslatedText(item.location.properties.name, 'en_US'), { className: 'popup-marker', closeOnClick: false, closeButton: false, autoClose: false })
+                    // }
+            });
+        }
+        
+
+        // Object.keys(this.marker).map((key) => {
+        //     if (this.marker[key]) {
+        //         this.marker[key].on('click', onClick);
+        //         function onClick(e) {
+        //             console.log(e, this);
+        //             // this.options.icon.options.className = 'marker-color';
+        //             // this.bindPopup();
+        //             // if (this.options.icon.options.className === 'marker-color') {
+        //                 this.options.icon.options.className = 'selected-marker-color';
+        //             // }
+        //             // else {
+        //             //     this.options.icon.options.className = 'marker-color';
+        //             // }
+        //             this.openPopup();
+        //             this.setIcon(this.options.icon);
+        //             // alert(this.getLatLng());
+        //         }
+        //     }
+        // });
+        
     } 
 
 
