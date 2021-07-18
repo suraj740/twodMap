@@ -451,7 +451,7 @@ class TwoDMap {
             }
         });
         Object.keys(this.marker).map((key) => {
-            if (this.marker[key]) {
+            if (this.marker[key] && key !== 'staticPoi') {
                 this.map.removeLayer(this.marker[key]);
                 // this.marker[key] = undefined;
             }
@@ -464,7 +464,7 @@ class TwoDMap {
             if (this.marker[key] && key !== 'staticPoi') {
                 this.map.removeLayer(this.marker[key]);
                 // this.marker[key] = undefined;
-            }
+            } 
         });
     }
 
@@ -652,13 +652,14 @@ class TwoDMap {
     _selectPois(id, staticPoi) {
         this.selectedPoi = id;
         if (!staticPoi) {
-            this._clearMarkers();
+            // this._clearMarkers();
+            this._clearMaskMarkerLayer();
         }
 
         if (this.selectedMarker) {
             this.map.removeLayer(this.selectedMarker);
-            this.featuresLayer.resetStyle();
         }
+        this.featuresLayer.resetStyle();
         // console.log('pois', id);
         // console.log('poisLayer', this.poisData)
         let selectedCategory = this.categories.find(cat => cat.id === id);
